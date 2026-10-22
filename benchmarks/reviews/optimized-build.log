@@ -1,0 +1,2049 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.optimized
+#1 transferring dockerfile: 1.67kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/gradle:8.13.0-jdk8
+#2 ...
+
+#3 [auth] library/gradle:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal
+#4 ...
+
+#2 [internal] load metadata for docker.io/library/gradle:8.13.0-jdk8
+#2 DONE 1.9s
+
+#4 [internal] load metadata for icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal
+#4 DONE 4.8s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [builder 1/3] FROM docker.io/library/gradle:8.13.0-jdk8@sha256:d13a660f62f35e5d2a9f950947274849919666d1278b22cc4c8270e64337b4ba
+#6 resolve docker.io/library/gradle:8.13.0-jdk8@sha256:d13a660f62f35e5d2a9f950947274849919666d1278b22cc4c8270e64337b4ba 0.0s done
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 3.77kB done
+#7 DONE 0.0s
+
+#8 [builder 2/3] COPY . /home/gradle
+#8 DONE 0.0s
+
+#9 [stage-1 1/3] FROM icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117
+#9 resolve icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117 0.0s done
+#9 DONE 0.3s
+
+#10 [builder 3/3] RUN gradle build
+#10 1.168 Starting a Gradle Daemon (subsequent builds will be faster)
+#10 ...
+
+#9 [stage-1 1/3] FROM icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117
+#9 sha256:156aa2a17483fdb5ab4f084399ed233a9d641f682eec1ebc51ae6c42455aa9a4 0B / 2.83MB 4.8s
+#9 sha256:6e685a76f79f19d3971bd25c4c43f54064b66a3fa747d466731e412744521f1e 13.09kB / 13.09kB 3.4s done
+#9 sha256:93b05a97102f2f0ec831b9817444e2e9813eedcce4dd5400558cd4032093e50f 733B / 733B 3.1s done
+#9 sha256:63cad009a1eb8cd67ccacda9c9cf406228ec9cfe124440075d48a2e381746189 0B / 5.27kB 4.8s
+#9 sha256:678c58b17d32695bdfb052012ea3c225c46151e2537790ba5423ceeb51235689 0B / 15.18MB 1.7s
+#9 sha256:d4ab71d73b3b65f3f1c450247495a44db292e6f69f42693100d725384a05854c 0B / 2.96MB 1.5s
+#9 sha256:156aa2a17483fdb5ab4f084399ed233a9d641f682eec1ebc51ae6c42455aa9a4 1.05MB / 2.83MB 5.3s
+#9 sha256:156aa2a17483fdb5ab4f084399ed233a9d641f682eec1ebc51ae6c42455aa9a4 2.10MB / 2.83MB 5.4s
+#9 sha256:156aa2a17483fdb5ab4f084399ed233a9d641f682eec1ebc51ae6c42455aa9a4 2.83MB / 2.83MB 5.5s done
+#9 sha256:63cad009a1eb8cd67ccacda9c9cf406228ec9cfe124440075d48a2e381746189 5.27kB / 5.27kB 5.7s done
+#9 sha256:561269ee2b130dc3c9a932cece2883448b5989d09248416dee1be33b798993aa 0B / 31.75kB 0.2s
+#9 sha256:558f5de9b015c169714fead96cad9135b21f87acfbc001f9a7669ae2131af006 0B / 242B 0.2s
+#9 sha256:678c58b17d32695bdfb052012ea3c225c46151e2537790ba5423ceeb51235689 1.05MB / 15.18MB 4.5s
+#9 sha256:558f5de9b015c169714fead96cad9135b21f87acfbc001f9a7669ae2131af006 242B / 242B 2.2s done
+#9 sha256:678c58b17d32695bdfb052012ea3c225c46151e2537790ba5423ceeb51235689 3.15MB / 15.18MB 4.8s
+#9 sha256:561269ee2b130dc3c9a932cece2883448b5989d09248416dee1be33b798993aa 31.75kB / 31.75kB 2.4s done
+#9 sha256:d708fa87c4cec6b3a5d942c5cd307979cf8c24fd5bee9854c0c5a528811a897e 0B / 11.98kB 0.2s
+#9 sha256:f91429c1d64358f349643c73edb20af04053d18744e1d42458d6faf1785f256b 0B / 1.05kB 0.2s
+#9 sha256:678c58b17d32695bdfb052012ea3c225c46151e2537790ba5423ceeb51235689 6.29MB / 15.18MB 5.1s
+#9 sha256:d4ab71d73b3b65f3f1c450247495a44db292e6f69f42693100d725384a05854c 1.05MB / 2.96MB 4.8s
+#9 sha256:678c58b17d32695bdfb052012ea3c225c46151e2537790ba5423ceeb51235689 10.49MB / 15.18MB 5.4s
+#9 sha256:d4ab71d73b3b65f3f1c450247495a44db292e6f69f42693100d725384a05854c 2.96MB / 2.96MB 5.1s done
+#9 sha256:9b0c3dd9c9bbe174460c8eb4436593bf8b73c6d45febdf61130935f9272b7b70 0B / 5.36MB 0.2s
+#9 sha256:678c58b17d32695bdfb052012ea3c225c46151e2537790ba5423ceeb51235689 15.18MB / 15.18MB 5.7s done
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 0B / 58.20MB 0.2s
+#9 sha256:d708fa87c4cec6b3a5d942c5cd307979cf8c24fd5bee9854c0c5a528811a897e 11.98kB / 11.98kB 1.9s done
+#9 sha256:f19a86b8598d60033a17b81e17415d7e3d0d27d960dbf515861e8237e9cd61ab 0B / 8.64MB 0.2s
+#9 sha256:f91429c1d64358f349643c73edb20af04053d18744e1d42458d6faf1785f256b 1.05kB / 1.05kB 2.1s done
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 0B / 34.95MB 0.2s
+#9 ...
+
+#10 [builder 3/3] RUN gradle build
+#10 11.77 > Task :reviews-application:compileJava
+#10 11.77 > Task :reviews-application:processResources NO-SOURCE
+#10 11.77 > Task :reviews-application:classes
+#10 11.87 > Task :reviews-application:war
+#10 11.87 > Task :reviews-application:assemble
+#10 11.97 > Task :reviews-application:compileTestJava
+#10 11.97 > Task :reviews-application:processTestResources NO-SOURCE
+#10 11.97 > Task :reviews-application:testClasses
+#10 12.17 > Task :reviews-application:test
+#10 12.17 > Task :reviews-application:check
+#10 12.17 > Task :reviews-application:build
+#10 12.17 > Task :reviews-wlpcfg:copyApplication
+#10 12.17 > Task :reviews-wlpcfg:build
+#10 12.26 
+#10 12.26 [Incubating] Problems report is available at: file:///home/gradle/build/reports/problems/problems-report.html
+#10 12.26 
+#10 12.26 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+#10 12.26 
+#10 12.26 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+#10 12.26 
+#10 12.26 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+#10 12.26 
+#10 12.26 BUILD SUCCESSFUL in 11s
+#10 12.26 5 actionable tasks: 5 executed
+#10 DONE 12.8s
+
+#9 [stage-1 1/3] FROM icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117
+#9 sha256:9b0c3dd9c9bbe174460c8eb4436593bf8b73c6d45febdf61130935f9272b7b70 2.10MB / 5.36MB 4.1s
+#9 sha256:9b0c3dd9c9bbe174460c8eb4436593bf8b73c6d45febdf61130935f9272b7b70 5.36MB / 5.36MB 4.7s done
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 0B / 12.72MB 0.2s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 4.19MB / 58.20MB 5.0s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 8.39MB / 58.20MB 5.4s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 2.10MB / 34.95MB 4.2s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 5.24MB / 34.95MB 4.4s
+#9 sha256:f19a86b8598d60033a17b81e17415d7e3d0d27d960dbf515861e8237e9cd61ab 1.05MB / 8.64MB 4.7s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 7.34MB / 34.95MB 4.5s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 14.68MB / 58.20MB 5.9s
+#9 sha256:f19a86b8598d60033a17b81e17415d7e3d0d27d960dbf515861e8237e9cd61ab 2.35MB / 8.64MB 4.8s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 9.44MB / 34.95MB 4.7s
+#9 sha256:f19a86b8598d60033a17b81e17415d7e3d0d27d960dbf515861e8237e9cd61ab 4.19MB / 8.64MB 5.0s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 11.53MB / 34.95MB 4.8s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 17.83MB / 58.20MB 6.2s
+#9 sha256:f19a86b8598d60033a17b81e17415d7e3d0d27d960dbf515861e8237e9cd61ab 8.64MB / 8.64MB 5.2s done
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 14.68MB / 34.95MB 5.0s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 20.97MB / 58.20MB 6.3s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 17.83MB / 34.95MB 5.3s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 25.17MB / 58.20MB 6.6s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 22.02MB / 34.95MB 5.6s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 28.31MB / 58.20MB 6.9s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 25.17MB / 34.95MB 5.9s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 31.46MB / 58.20MB 7.2s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 29.36MB / 34.95MB 6.2s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 34.60MB / 58.20MB 7.5s
+#9 sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 32.51MB / 34.95MB 6.3s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 37.75MB / 58.20MB 7.8s
+#9 extracting sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 41.94MB / 58.20MB 8.0s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 46.14MB / 58.20MB 8.3s
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 1.05MB / 12.72MB 4.1s
+#9 extracting sha256:46efed360141e0b81ca4ce57a61d8c655704056cf027a163650b3e4941d67ee7 0.6s done
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 49.28MB / 58.20MB 8.6s
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 3.15MB / 12.72MB 4.4s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 53.48MB / 58.20MB 8.9s
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 6.29MB / 12.72MB 4.7s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 56.62MB / 58.20MB 9.2s
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 8.39MB / 12.72MB 4.8s
+#9 sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 58.20MB / 58.20MB 9.4s done
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 9.44MB / 12.72MB 5.0s
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 12.72MB / 12.72MB 5.1s
+#9 sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 12.72MB / 12.72MB 5.1s done
+#9 extracting sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d
+#9 extracting sha256:6da94106f75286ccfdf08c0d764cfe0c670df4abf70f7f92ae5ab8b8d215015d 0.4s done
+#9 DONE 19.1s
+
+#9 [stage-1 1/3] FROM icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117
+#9 extracting sha256:f19a86b8598d60033a17b81e17415d7e3d0d27d960dbf515861e8237e9cd61ab 0.1s done
+#9 DONE 19.2s
+
+#9 [stage-1 1/3] FROM icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117
+#9 extracting sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f
+#9 extracting sha256:4a6b2b1a76bfce1b52937908a5ae8ad63ac889b248a2919a623cee17cc55cb0f 0.8s done
+#9 DONE 19.9s
+
+#9 [stage-1 1/3] FROM icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117
+#9 extracting sha256:9b0c3dd9c9bbe174460c8eb4436593bf8b73c6d45febdf61130935f9272b7b70 0.1s done
+#9 extracting sha256:f91429c1d64358f349643c73edb20af04053d18744e1d42458d6faf1785f256b 0.0s done
+#9 extracting sha256:d708fa87c4cec6b3a5d942c5cd307979cf8c24fd5bee9854c0c5a528811a897e 0.0s done
+#9 extracting sha256:558f5de9b015c169714fead96cad9135b21f87acfbc001f9a7669ae2131af006
+#9 extracting sha256:558f5de9b015c169714fead96cad9135b21f87acfbc001f9a7669ae2131af006 0.0s done
+#9 extracting sha256:561269ee2b130dc3c9a932cece2883448b5989d09248416dee1be33b798993aa 0.0s done
+#9 extracting sha256:d4ab71d73b3b65f3f1c450247495a44db292e6f69f42693100d725384a05854c 0.1s done
+#9 extracting sha256:678c58b17d32695bdfb052012ea3c225c46151e2537790ba5423ceeb51235689 0.1s done
+#9 DONE 20.3s
+
+#9 [stage-1 1/3] FROM icr.io/appcafe/open-liberty:kernel-slim-java17-openj9-ubi-minimal@sha256:89ac8b618f016290dfb3eb2757fd03430b9bfd9785d0e6bc156731425283f117
+#9 extracting sha256:63cad009a1eb8cd67ccacda9c9cf406228ec9cfe124440075d48a2e381746189 0.0s done
+#9 extracting sha256:93b05a97102f2f0ec831b9817444e2e9813eedcce4dd5400558cd4032093e50f 0.0s done
+#9 extracting sha256:6e685a76f79f19d3971bd25c4c43f54064b66a3fa747d466731e412744521f1e 0.0s done
+#9 extracting sha256:156aa2a17483fdb5ab4f084399ed233a9d641f682eec1ebc51ae6c42455aa9a4
+#9 extracting sha256:156aa2a17483fdb5ab4f084399ed233a9d641f682eec1ebc51ae6c42455aa9a4 0.2s done
+#9 DONE 20.5s
+
+#11 [stage-1 2/3] COPY --from=builder /home/gradle/reviews-wlpcfg/servers/LibertyProjectServer/ /opt/ol/wlp/usr/servers/defaultServer/
+#11 DONE 0.2s
+
+#12 [stage-1 3/3] RUN /opt/ol/wlp/bin/featureUtility installServerFeatures  --acceptLicense /opt/ol/wlp/usr/servers/defaultServer/server.xml --verbose &&     chmod -R g=rwx /opt/ol/wlp/output/defaultServer/
+#12 0.499 
+#12 0.585 [1A[2K[0m[10/22/26, 9:52:06:746 GMT]Checking for missing features required by the server ...
+#12 0.592 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.667 [1A[2K[0m[10/22/26, 9:52:06:842 GMT]file not found for bootstrap.properties under server: defaultServer
+#12 0.668 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.672 [1A[2K[0m[10/22/26, 9:52:06:846 GMT]Processing /opt/ol/wlp/usr/servers/defaultServer/configDropins/defaults
+#12 0.672 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.678 [1A[2K[0m[10/22/26, 9:52:06:852 GMT]file not found for bootstrap.properties under server: defaults
+#12 0.678 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.679 [1A[2K[0m[10/22/26, 9:52:06:853 GMT]Processing /opt/ol/wlp/usr/servers/defaultServer/configDropins/overrides
+#12 0.679 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.679 [1A[2K[0m[10/22/26, 9:52:06:854 GMT]The defaultServer server requires the following features: jsonp-1.0 jaxrs-2.0
+#12 0.680 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.681 [1A[2K[0m[10/22/26, 9:52:06:855 GMT]all server features: [jsonp-1.0, jaxrs-2.0]
+#12 0.681 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.692 [1A[2K[0m[10/22/26, 9:52:06:867 GMT]Initializing ...
+#12 0.692 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.697 [1A[2K[0m[10/22/26, 9:52:06:871 GMT]http.proxyHost null
+#12 0.697 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.697 [1A[2K[0m[10/22/26, 9:52:06:872 GMT]https.proxyHost null
+#12 0.697 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.697 [1A[2K[0m[10/22/26, 9:52:06:872 GMT]proxy exclusion list: null
+#12 0.698 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.698 [1A[2K[0m[10/22/26, 9:52:06:872 GMT]Environment variables: 
+#12 0.698 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.698 [1A[2K[0m[10/22/26, 9:52:06:872 GMT]FEATURE_REPO_URL: null
+#12 0.698 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.698 [1A[2K[0m[10/22/26, 9:52:06:873 GMT]http.nonProxyHosts: null
+#12 0.698 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.698 [1A[2K[0m[10/22/26, 9:52:06:873 GMT]FEATURE_REPO_USER: null
+#12 0.698 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.699 [1A[2K[0m[10/22/26, 9:52:06:873 GMT]WLP_AES_ENCRYPTION_KEY: *********
+#12 0.699 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.699 [1A[2K[0m[10/22/26, 9:52:06:874 GMT]FEATURE_UTILITY_MAVEN_REPOSITORIES: []
+#12 0.700 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.700 [1A[2K[0m[10/22/26, 9:52:06:874 GMT]FEATURE_REPO_PASSWORD: *********
+#12 0.700 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.700 [1A[2K[0m[10/22/26, 9:52:06:874 GMT]FEATURE_VERIFY: null
+#12 0.701 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.702 [1A[2K[0m[10/22/26, 9:52:06:876 GMT]FEATURE_LOCAL_REPO: null
+#12 0.702 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.705 [1A[2K[0m[10/22/26, 9:52:06:879 GMT]No featureUtility.properties detected.
+#12 0.705 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.705 [1A[2K[0m[10/22/26, 9:52:06:880 GMT]additional jsons: []
+#12 0.706 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.710 [1A[2K[0m[10/22/26, 9:52:06:885 GMT]JSONs required: [io.openliberty.features:features:26.0.0.10]
+#12 0.711 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.717 [1A[2K[0m[10/22/26, 9:52:06:891 GMT]Found the following jsons locally: []
+#12 0.717 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.717 [1A[2K[0m[10/22/26, 9:52:06:892 GMT]Could not find all json files from local directories, now downloading from Maven..
+#12 0.718 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 0.721 [1A[2K[0m[10/22/26, 9:52:06:896 GMT]Using 8 threads to download artifacts.
+#12 0.722 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 1.310 [1A[2K[0m[10/22/26, 9:52:07:485 GMT]Response code - https://repo.maven.apache.org/maven2/:200
+#12 1.311 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 1.822 [1A[2K[0m[10/22/26, 9:52:07:996 GMT]Successfully validated SHA512 checksum for file: features-26.0.0.10.json
+#12 1.822 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 1.822 [1A[2K[0m[10/22/26, 9:52:07:997 GMT]Downloaded the following json files from remote: [/root/.m2/repository/io/openliberty/features/features/26.0.0.10/features-26.0.0.10.json]
+#12 1.822 [31m<[32;5m[0m[31m---------------------> 0%[0m
+#12 1.822 [1A[2K[0m[10/22/26, 9:52:07:997 GMT]Finished finding jsons
+#12 1.824 [31m<[32;5m==[0m[31m-------------------> 10%[0m
+#12 1.824 [1A[2K[0m[31m<[32;5m==[0m[31m-------------------> 10%[0m
+#12 1.827 [1A[2K[0m[10/22/26, 9:52:08:002 GMT]Initialized install kernel map
+#12 1.827 [31m<[32;5m====[0m[31m-----------------> 15%[0m
+#12 1.872 [1A[2K[0m[10/22/26, 9:52:08:047 GMT]Downloading key... file:/opt/ol/wlp/lib/versions/public_key/libertyKey.asc
+#12 1.872 [31m<[32;5m====[0m[31m-----------------> 15%[0m
+#12 1.898 [1A[2K[0m[31m<[32;5m====[0m[31m-----------------> 15%[0m
+#12 1.898 [1A[2K[0m[10/22/26, 9:52:08:073 GMT]Resolving remote features. This process might take several minutes to complete.
+#12 1.898 [31m<[32;5m====[0m[31m-----------------> 15%[0m
+#12 3.182 [1A[2K[0m[10/22/26, 9:52:09:357 GMT]Preparing assets for installation. This process might take several minutes to complete.
+#12 3.182 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.183 [1A[2K[0m[10/22/26, 9:52:09:357 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:26.0.0.10
+#12 3.183 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.184 [1A[2K[0m[10/22/26, 9:52:09:359 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:26.0.0.10
+#12 3.184 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.185 [1A[2K[0m[10/22/26, 9:52:09:359 GMT]Processing artifact: io.openliberty.features:jsonp-1.0:26.0.0.10
+#12 3.185 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.185 [1A[2K[0m[10/22/26, 9:52:09:360 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:26.0.0.10
+#12 3.186 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.186 [1A[2K[0m[10/22/26, 9:52:09:361 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:26.0.0.10
+#12 3.186 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.188 [1A[2K[0m[10/22/26, 9:52:09:361 GMT]Processing artifact: io.openliberty.features:io.openliberty.jandex.internal-3.0:26.0.0.10
+#12 3.188 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.188 [1A[2K[0m[10/22/26, 9:52:09:362 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:26.0.0.10
+#12 3.188 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.188 [1A[2K[0m[10/22/26, 9:52:09:362 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:26.0.0.10
+#12 3.188 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.188 [1A[2K[0m[10/22/26, 9:52:09:363 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:26.0.0.10
+#12 3.189 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.189 [1A[2K[0m[10/22/26, 9:52:09:364 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:26.0.0.10
+#12 3.189 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.190 [1A[2K[0m[10/22/26, 9:52:09:364 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:26.0.0.10
+#12 3.190 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.191 [1A[2K[0m[10/22/26, 9:52:09:365 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:26.0.0.10
+#12 3.191 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.191 [1A[2K[0m[10/22/26, 9:52:09:366 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:26.0.0.10
+#12 3.193 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.193 [1A[2K[0m[10/22/26, 9:52:09:367 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:26.0.0.10
+#12 3.193 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.193 [1A[2K[0m[10/22/26, 9:52:09:367 GMT]Processing artifact: io.openliberty.features:io.openliberty.eePlatform.7.0.internal-1.0:26.0.0.10
+#12 3.193 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.193 [1A[2K[0m[10/22/26, 9:52:09:367 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:26.0.0.10
+#12 3.193 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.193 [1A[2K[0m[10/22/26, 9:52:09:368 GMT]Processing artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:26.0.0.10
+#12 3.193 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.194 [1A[2K[0m[10/22/26, 9:52:09:368 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:26.0.0.10
+#12 3.194 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.194 [1A[2K[0m[10/22/26, 9:52:09:369 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:26.0.0.10
+#12 3.195 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.195 [1A[2K[0m[10/22/26, 9:52:09:370 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:26.0.0.10
+#12 3.195 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.196 [1A[2K[0m[10/22/26, 9:52:09:371 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:26.0.0.10
+#12 3.196 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.197 [1A[2K[0m[10/22/26, 9:52:09:371 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:26.0.0.10
+#12 3.197 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.198 [1A[2K[0m[10/22/26, 9:52:09:372 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:26.0.0.10
+#12 3.198 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.198 [1A[2K[0m[10/22/26, 9:52:09:373 GMT]Processing artifact: io.openliberty.features:servlet-3.1:26.0.0.10
+#12 3.199 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.200 [1A[2K[0m[10/22/26, 9:52:09:373 GMT]Processing artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:26.0.0.10
+#12 3.200 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.200 [1A[2K[0m[10/22/26, 9:52:09:374 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:26.0.0.10
+#12 3.200 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.200 [1A[2K[0m[10/22/26, 9:52:09:375 GMT]Processing artifact: io.openliberty.features:json-1.0:26.0.0.10
+#12 3.201 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.201 [1A[2K[0m[10/22/26, 9:52:09:375 GMT]Processing artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:26.0.0.10
+#12 3.201 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.202 [1A[2K[0m[10/22/26, 9:52:09:376 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:26.0.0.10
+#12 3.202 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.202 [1A[2K[0m[10/22/26, 9:52:09:377 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:26.0.0.10
+#12 3.203 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.203 [1A[2K[0m[10/22/26, 9:52:09:378 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:26.0.0.10
+#12 3.203 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.204 [1A[2K[0m[10/22/26, 9:52:09:378 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:26.0.0.10
+#12 3.204 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.205 [1A[2K[0m[10/22/26, 9:52:09:379 GMT]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:26.0.0.10
+#12 3.205 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.205 [1A[2K[0m[10/22/26, 9:52:09:380 GMT]Processing artifact: io.openliberty.features:jaxrsClient-2.0:26.0.0.10
+#12 3.206 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.206 [1A[2K[0m[10/22/26, 9:52:09:380 GMT]Processing artifact: io.openliberty.features:jaxrs-2.0:26.0.0.10
+#12 3.206 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.207 [1A[2K[0m[10/22/26, 9:52:09:382 GMT]Establishing a connection to the configured Maven repository ...
+#12 3.207 This process might take several minutes to complete.
+#12 3.207 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.253 [1A[2K[0m[10/22/26, 9:52:09:427 GMT]Response code - https://repo.maven.apache.org/maven2/:200
+#12 3.253 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.253 [1A[2K[0m[10/22/26, 9:52:09:428 GMT]Successfully connected to the configured repository.
+#12 3.254 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.254 [1A[2K[0m[10/22/26, 9:52:09:428 GMT]number of missing features: 140
+#12 3.254 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.259 [1A[2K[0m[10/22/26, 9:52:09:433 GMT]Finding 140 maven artifacts.. 
+#12 3.260 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.561 [1A[2K[0m[10/22/26, 9:52:09:736 GMT]Finding 124 maven artifacts.. 
+#12 3.561 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 3.862 [1A[2K[0m[10/22/26, 9:52:10:037 GMT]Finding 103 maven artifacts.. 
+#12 3.862 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 4.163 [1A[2K[0m[10/22/26, 9:52:10:338 GMT]Finding 79 maven artifacts.. 
+#12 4.163 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 4.464 [1A[2K[0m[10/22/26, 9:52:10:638 GMT]Finding 61 maven artifacts.. 
+#12 4.464 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 4.766 [1A[2K[0m[10/22/26, 9:52:10:940 GMT]Finding 47 maven artifacts.. 
+#12 4.766 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.068 [1A[2K[0m[10/22/26, 9:52:11:242 GMT]Finding 24 maven artifacts.. 
+#12 5.068 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.369 [1A[2K[0m[10/22/26, 9:52:11:544 GMT]Finding 0 maven artifacts.. 
+#12 5.369 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.671 [1A[2K[0m[10/22/26, 9:52:11:845 GMT]Downloading required features ...
+#12 5.673 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.676 [1A[2K[0m[10/22/26, 9:52:11:851 GMT]Remaining artifacts: 140
+#12 5.676 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.812 [1A[2K[0m[10/22/26, 9:52:11:987 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.pom
+#12 5.812 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.837 [1A[2K[0m[10/22/26, 9:52:12:011 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.pom.asc
+#12 5.837 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.850 [1A[2K[0m[10/22/26, 9:52:12:024 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.pom
+#12 5.850 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.885 [1A[2K[0m[10/22/26, 9:52:12:059 GMT]Successfully validated SHA512 checksum for file: jsonp-1.0-26.0.0.10.esa
+#12 5.885 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.889 [1A[2K[0m[10/22/26, 9:52:12:064 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.pom.asc
+#12 5.889 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.894 [1A[2K[0m[10/22/26, 9:52:12:069 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.esa.asc
+#12 5.894 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.901 [1A[2K[0m[10/22/26, 9:52:12:076 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.esa
+#12 5.901 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.936 [1A[2K[0m[10/22/26, 9:52:12:111 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.esa.asc
+#12 5.937 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.960 [1A[2K[0m[10/22/26, 9:52:12:134 GMT]Successfully validated SHA512 checksum for file: jsonp-1.0-26.0.0.10.pom.asc
+#12 5.960 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.977 [1A[2K[0m[10/22/26, 9:52:12:152 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:26.0.0.10.pom
+#12 5.977 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.977 [1A[2K[0m[10/22/26, 9:52:12:152 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:26.0.0.10.esa.asc
+#12 5.977 [31m<[32;5m======[0m[31m---------------> 25%[0m
+#12 5.977 [1A[2K[0m[10/22/26, 9:52:12:152 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:26.0.0.10.pom.asc
+#12 5.977 [31m<[32;5m======[0m[31m---------------> 26%[0m
+#12 5.977 [1A[2K[0m[10/22/26, 9:52:12:152 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:26.0.0.10.esa
+#12 5.977 [31m<[32;5m======[0m[31m---------------> 26%[0m
+#12 5.978 [1A[2K[0m[10/22/26, 9:52:12:152 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:26.0.0.10.pom
+#12 5.978 [31m<[32;5m======[0m[31m---------------> 26%[0m
+#12 5.979 [1A[2K[0m[10/22/26, 9:52:12:153 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:26.0.0.10.esa.asc
+#12 5.979 [31m<[32;5m======[0m[31m---------------> 26%[0m
+#12 5.979 [1A[2K[0m[10/22/26, 9:52:12:154 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:26.0.0.10.pom.asc
+#12 5.979 [31m<[32;5m======[0m[31m---------------> 26%[0m
+#12 5.980 [1A[2K[0m[10/22/26, 9:52:12:154 GMT]Finished downloading artifact: io.openliberty.features:jsonp-1.0:26.0.0.10.esa
+#12 5.980 [31m<[32;5m======[0m[31m---------------> 26%[0m
+#12 5.980 [1A[2K[0m[10/22/26, 9:52:12:155 GMT]Finished downloading artifact: io.openliberty.features:jsonp-1.0:26.0.0.10.pom.asc
+#12 5.980 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 5.980 [1A[2K[0m[10/22/26, 9:52:12:155 GMT]Remaining artifacts: 131
+#12 5.981 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 5.995 [1A[2K[0m[10/22/26, 9:52:12:170 GMT]Successfully validated SHA512 checksum for file: jsonp-1.0-26.0.0.10.esa.asc
+#12 5.995 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.021 [1A[2K[0m[10/22/26, 9:52:12:195 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.esa.asc
+#12 6.021 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.035 [1A[2K[0m[10/22/26, 9:52:12:209 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.esa
+#12 6.035 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.181 [1A[2K[0m[10/22/26, 9:52:12:356 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.pom.asc
+#12 6.181 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.182 [1A[2K[0m[10/22/26, 9:52:12:356 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.pom
+#12 6.182 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.184 [1A[2K[0m[10/22/26, 9:52:12:358 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.esa
+#12 6.184 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.196 [1A[2K[0m[10/22/26, 9:52:12:370 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.esa
+#12 6.196 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.235 [1A[2K[0m[10/22/26, 9:52:12:410 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.esa.asc
+#12 6.235 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.236 [1A[2K[0m[10/22/26, 9:52:12:410 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.pom.asc
+#12 6.236 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.282 [1A[2K[0m[10/22/26, 9:52:12:456 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:26.0.0.10.esa
+#12 6.282 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.282 [1A[2K[0m[10/22/26, 9:52:12:457 GMT]Finished downloading artifact: io.openliberty.features:jsonp-1.0:26.0.0.10.esa.asc
+#12 6.282 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.282 [1A[2K[0m[10/22/26, 9:52:12:457 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:26.0.0.10.esa
+#12 6.282 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.282 [1A[2K[0m[10/22/26, 9:52:12:457 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:26.0.0.10.esa.asc
+#12 6.282 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.282 [1A[2K[0m[10/22/26, 9:52:12:457 GMT]Successfully validated SHA512 checksum for file: io.openliberty.jandex.internal-3.0-26.0.0.10.esa
+#12 6.284 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.284 [1A[2K[0m[10/22/26, 9:52:12:457 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:26.0.0.10.pom.asc
+#12 6.284 [31m<[32;5m======[0m[31m---------------> 27%[0m
+#12 6.284 [1A[2K[0m[10/22/26, 9:52:12:458 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:26.0.0.10.esa
+#12 6.284 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.284 [1A[2K[0m[10/22/26, 9:52:12:458 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:26.0.0.10.pom
+#12 6.284 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.284 [1A[2K[0m[10/22/26, 9:52:12:459 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:26.0.0.10.esa.asc
+#12 6.284 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.284 [1A[2K[0m[10/22/26, 9:52:12:459 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:26.0.0.10.pom.asc
+#12 6.285 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.285 [1A[2K[0m[10/22/26, 9:52:12:459 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.jandex.internal-3.0:26.0.0.10.esa
+#12 6.285 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.285 [1A[2K[0m[10/22/26, 9:52:12:460 GMT]Remaining artifacts: 121
+#12 6.285 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.293 [1A[2K[0m[10/22/26, 9:52:12:468 GMT]Successfully validated SHA512 checksum for file: io.openliberty.jandex.internal-3.0-26.0.0.10.pom
+#12 6.293 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.304 [1A[2K[0m[10/22/26, 9:52:12:479 GMT]Successfully validated SHA512 checksum for file: io.openliberty.jandex.internal-3.0-26.0.0.10.esa.asc
+#12 6.304 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.401 [1A[2K[0m[10/22/26, 9:52:12:575 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.anno-1.0-26.0.0.10.pom
+#12 6.401 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.439 [1A[2K[0m[10/22/26, 9:52:12:613 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.anno-1.0-26.0.0.10.pom.asc
+#12 6.439 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.443 [1A[2K[0m[10/22/26, 9:52:12:618 GMT]Successfully validated SHA512 checksum for file: io.openliberty.jandex.internal-3.0-26.0.0.10.pom.asc
+#12 6.443 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.462 [1A[2K[0m[10/22/26, 9:52:12:636 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.anno-1.0-26.0.0.10.esa.asc
+#12 6.462 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.503 [1A[2K[0m[10/22/26, 9:52:12:677 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.pom
+#12 6.503 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.550 [1A[2K[0m[10/22/26, 9:52:12:724 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.pom
+#12 6.550 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.559 [1A[2K[0m[10/22/26, 9:52:12:734 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.esa.asc
+#12 6.559 [31m<[32;5m======[0m[31m---------------> 28%[0m
+#12 6.586 [1A[2K[0m[10/22/26, 9:52:12:760 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:26.0.0.10.pom
+#12 6.586 [31m<[32;5m======[0m[31m---------------> 29%[0m
+#12 6.586 [1A[2K[0m[10/22/26, 9:52:12:761 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.jandex.internal-3.0:26.0.0.10.pom
+#12 6.586 [31m<[32;5m======[0m[31m---------------> 29%[0m
+#12 6.587 [1A[2K[0m[10/22/26, 9:52:12:761 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.jandex.internal-3.0:26.0.0.10.esa.asc
+#12 6.587 [31m<[32;5m======[0m[31m---------------> 29%[0m
+#12 6.587 [1A[2K[0m[10/22/26, 9:52:12:762 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.jandex.internal-3.0:26.0.0.10.pom.asc
+#12 6.587 [31m<[32;5m======[0m[31m---------------> 29%[0m
+#12 6.588 [1A[2K[0m[10/22/26, 9:52:12:762 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:26.0.0.10.pom
+#12 6.588 [31m<[32;5m======[0m[31m---------------> 29%[0m
+#12 6.588 [1A[2K[0m[10/22/26, 9:52:12:763 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:26.0.0.10.esa.asc
+#12 6.588 [31m<[32;5m======[0m[31m---------------> 29%[0m
+#12 6.588 [1A[2K[0m[10/22/26, 9:52:12:763 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:26.0.0.10.pom.asc
+#12 6.588 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.589 [1A[2K[0m[10/22/26, 9:52:12:763 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:26.0.0.10.pom
+#12 6.589 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.589 [1A[2K[0m[10/22/26, 9:52:12:764 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:26.0.0.10.esa.asc
+#12 6.589 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.590 [1A[2K[0m[10/22/26, 9:52:12:764 GMT]Remaining artifacts: 112
+#12 6.590 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.591 [1A[2K[0m[10/22/26, 9:52:12:765 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.pom.asc
+#12 6.591 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.591 [1A[2K[0m[10/22/26, 9:52:12:766 GMT]Successfully validated SHA512 checksum for file: jsonp-1.0-26.0.0.10.pom
+#12 6.591 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.611 [1A[2K[0m[10/22/26, 9:52:12:785 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.esa
+#12 6.611 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.614 [1A[2K[0m[10/22/26, 9:52:12:789 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.pom
+#12 6.614 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.643 [1A[2K[0m[10/22/26, 9:52:12:818 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.esa
+#12 6.643 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.666 [1A[2K[0m[10/22/26, 9:52:12:841 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.esa.asc
+#12 6.666 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.678 [1A[2K[0m[10/22/26, 9:52:12:852 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.pom
+#12 6.678 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.694 [1A[2K[0m[10/22/26, 9:52:12:868 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.pom.asc
+#12 6.694 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.740 [1A[2K[0m[10/22/26, 9:52:12:915 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.pom.asc
+#12 6.740 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.772 [1A[2K[0m[10/22/26, 9:52:12:946 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.esa.asc
+#12 6.772 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.775 [1A[2K[0m[10/22/26, 9:52:12:949 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.esa
+#12 6.775 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.811 [1A[2K[0m[10/22/26, 9:52:12:986 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.pom
+#12 6.811 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.813 [1A[2K[0m[10/22/26, 9:52:12:988 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.esa
+#12 6.814 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.855 [1A[2K[0m[10/22/26, 9:52:13:030 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.esa
+#12 6.855 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.886 [1A[2K[0m[10/22/26, 9:52:13:060 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.pom
+#12 6.886 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.891 [1A[2K[0m[10/22/26, 9:52:13:066 GMT]Finished downloading artifact: io.openliberty.features:jsonp-1.0:26.0.0.10.pom
+#12 6.891 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.891 [1A[2K[0m[10/22/26, 9:52:13:066 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:26.0.0.10.esa
+#12 6.892 [31m<[32;5m======[0m[31m---------------> 30%[0m
+#12 6.892 [1A[2K[0m[10/22/26, 9:52:13:066 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:26.0.0.10.pom.asc
+#12 6.893 [31m<[32;5m======[0m[31m---------------> 31%[0m
+#12 6.893 [1A[2K[0m[10/22/26, 9:52:13:068 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:26.0.0.10.esa
+#12 6.893 [31m<[32;5m======[0m[31m---------------> 31%[0m
+#12 6.893 [1A[2K[0m[10/22/26, 9:52:13:068 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:26.0.0.10.pom
+#12 6.893 [31m<[32;5m======[0m[31m---------------> 31%[0m
+#12 6.894 [1A[2K[0m[10/22/26, 9:52:13:068 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:26.0.0.10.esa.asc
+#12 6.894 [31m<[32;5m========[0m[31m-------------> 31%[0m
+#12 6.894 [1A[2K[0m[10/22/26, 9:52:13:068 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:26.0.0.10.pom.asc
+#12 6.894 [31m<[32;5m========[0m[31m-------------> 31%[0m
+#12 6.894 [1A[2K[0m[10/22/26, 9:52:13:069 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:26.0.0.10.esa
+#12 6.894 [31m<[32;5m========[0m[31m-------------> 31%[0m
+#12 6.894 [1A[2K[0m[10/22/26, 9:52:13:069 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:26.0.0.10.pom
+#12 6.895 [31m<[32;5m========[0m[31m-------------> 32%[0m
+#12 6.895 [1A[2K[0m[10/22/26, 9:52:13:069 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:26.0.0.10.esa.asc
+#12 6.895 [31m<[32;5m========[0m[31m-------------> 32%[0m
+#12 6.895 [1A[2K[0m[10/22/26, 9:52:13:070 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:26.0.0.10.pom.asc
+#12 6.895 [31m<[32;5m========[0m[31m-------------> 32%[0m
+#12 6.895 [1A[2K[0m[10/22/26, 9:52:13:070 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:26.0.0.10.esa
+#12 6.895 [31m<[32;5m========[0m[31m-------------> 32%[0m
+#12 6.896 [1A[2K[0m[10/22/26, 9:52:13:070 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:26.0.0.10.pom
+#12 6.896 [31m<[32;5m========[0m[31m-------------> 32%[0m
+#12 6.896 [1A[2K[0m[10/22/26, 9:52:13:070 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:26.0.0.10.esa
+#12 6.896 [31m<[32;5m========[0m[31m-------------> 32%[0m
+#12 6.896 [1A[2K[0m[10/22/26, 9:52:13:071 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:26.0.0.10.pom
+#12 6.896 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.896 [1A[2K[0m[10/22/26, 9:52:13:071 GMT]Remaining artifacts: 97
+#12 6.896 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.909 [1A[2K[0m[10/22/26, 9:52:13:084 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.esa
+#12 6.909 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.918 [1A[2K[0m[10/22/26, 9:52:13:093 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.esa.asc
+#12 6.918 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.926 [1A[2K[0m[10/22/26, 9:52:13:101 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.pom
+#12 6.926 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.928 [1A[2K[0m[10/22/26, 9:52:13:103 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.anno-1.0-26.0.0.10.esa
+#12 6.928 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.952 [1A[2K[0m[10/22/26, 9:52:13:126 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.esa.asc
+#12 6.952 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.954 [1A[2K[0m[10/22/26, 9:52:13:129 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.pom.asc
+#12 6.954 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 6.968 [1A[2K[0m[10/22/26, 9:52:13:143 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.pom.asc
+#12 6.968 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.002 [1A[2K[0m[10/22/26, 9:52:13:177 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.esa.asc
+#12 7.002 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.029 [1A[2K[0m[10/22/26, 9:52:13:204 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.pom.asc
+#12 7.029 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.076 [1A[2K[0m[10/22/26, 9:52:13:250 GMT]Successfully validated SHA512 checksum for file: io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.esa.asc
+#12 7.076 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.104 [1A[2K[0m[10/22/26, 9:52:13:278 GMT]Successfully validated SHA512 checksum for file: io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.esa
+#12 7.104 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.113 [1A[2K[0m[10/22/26, 9:52:13:288 GMT]Successfully validated SHA512 checksum for file: io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.pom
+#12 7.113 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.142 [1A[2K[0m[10/22/26, 9:52:13:317 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.pom
+#12 7.142 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.159 [1A[2K[0m[10/22/26, 9:52:13:333 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.pom.asc
+#12 7.159 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.197 [1A[2K[0m[10/22/26, 9:52:13:372 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:26.0.0.10.esa
+#12 7.197 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.197 [1A[2K[0m[10/22/26, 9:52:13:372 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:26.0.0.10.esa.asc
+#12 7.198 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.198 [1A[2K[0m[10/22/26, 9:52:13:373 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:26.0.0.10.pom.asc
+#12 7.198 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.198 [1A[2K[0m[10/22/26, 9:52:13:373 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:26.0.0.10.esa.asc
+#12 7.199 [31m<[32;5m========[0m[31m-------------> 33%[0m
+#12 7.199 [1A[2K[0m[10/22/26, 9:52:13:373 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:26.0.0.10.pom.asc
+#12 7.199 [31m<[32;5m========[0m[31m-------------> 34%[0m
+#12 7.199 [1A[2K[0m[10/22/26, 9:52:13:373 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:26.0.0.10.esa
+#12 7.199 [31m<[32;5m========[0m[31m-------------> 34%[0m
+#12 7.199 [1A[2K[0m[10/22/26, 9:52:13:373 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:26.0.0.10.pom
+#12 7.199 [31m<[32;5m========[0m[31m-------------> 34%[0m
+#12 7.199 [1A[2K[0m[10/22/26, 9:52:13:374 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:26.0.0.10.pom.asc
+#12 7.199 [31m<[32;5m========[0m[31m-------------> 34%[0m
+#12 7.199 [1A[2K[0m[10/22/26, 9:52:13:374 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:26.0.0.10.pom
+#12 7.199 [31m<[32;5m========[0m[31m-------------> 34%[0m
+#12 7.199 [1A[2K[0m[10/22/26, 9:52:13:374 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:26.0.0.10.esa.asc
+#12 7.200 [31m<[32;5m========[0m[31m-------------> 34%[0m
+#12 7.200 [1A[2K[0m[10/22/26, 9:52:13:374 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:26.0.0.10.pom.asc
+#12 7.200 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.200 [1A[2K[0m[10/22/26, 9:52:13:374 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.eePlatform.7.0.internal-1.0:26.0.0.10.esa
+#12 7.200 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.200 [1A[2K[0m[10/22/26, 9:52:13:375 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.eePlatform.7.0.internal-1.0:26.0.0.10.pom
+#12 7.200 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.200 [1A[2K[0m[10/22/26, 9:52:13:375 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.eePlatform.7.0.internal-1.0:26.0.0.10.esa.asc
+#12 7.200 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.200 [1A[2K[0m[10/22/26, 9:52:13:375 GMT]Remaining artifacts: 83
+#12 7.200 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.227 [1A[2K[0m[10/22/26, 9:52:13:401 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.pom
+#12 7.227 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.234 [1A[2K[0m[10/22/26, 9:52:13:409 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.esa
+#12 7.234 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.273 [1A[2K[0m[10/22/26, 9:52:13:447 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.esa.asc
+#12 7.273 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.286 [1A[2K[0m[10/22/26, 9:52:13:460 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.esa
+#12 7.286 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.344 [1A[2K[0m[10/22/26, 9:52:13:519 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.api-3.1-26.0.0.10.pom
+#12 7.344 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.356 [1A[2K[0m[10/22/26, 9:52:13:531 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.api-3.1-26.0.0.10.esa
+#12 7.356 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.367 [1A[2K[0m[10/22/26, 9:52:13:541 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.api-3.1-26.0.0.10.esa.asc
+#12 7.367 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.380 [1A[2K[0m[10/22/26, 9:52:13:555 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.pom.asc
+#12 7.380 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.404 [1A[2K[0m[10/22/26, 9:52:13:578 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.injection-1.0-26.0.0.10.esa
+#12 7.404 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.404 [1A[2K[0m[10/22/26, 9:52:13:579 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.api-3.1-26.0.0.10.pom.asc
+#12 7.404 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.418 [1A[2K[0m[10/22/26, 9:52:13:592 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.injection-1.0-26.0.0.10.pom
+#12 7.418 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.433 [1A[2K[0m[10/22/26, 9:52:13:608 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.esa.asc
+#12 7.433 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.501 [1A[2K[0m[10/22/26, 9:52:13:676 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:26.0.0.10.esa.asc
+#12 7.501 [31m<[32;5m========[0m[31m-------------> 35%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:676 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:26.0.0.10.esa
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 36%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:26.0.0.10.esa
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 36%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:26.0.0.10.pom
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 36%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:26.0.0.10.esa.asc
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 36%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:26.0.0.10.pom.asc
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 36%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:26.0.0.10.esa
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 36%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:26.0.0.10.pom
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:26.0.0.10.esa.asc
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:677 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:26.0.0.10.pom.asc
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:678 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:26.0.0.10.esa
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:678 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:26.0.0.10.pom
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.504 [1A[2K[0m[10/22/26, 9:52:13:678 GMT]Remaining artifacts: 71
+#12 7.504 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.507 [1A[2K[0m[10/22/26, 9:52:13:681 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.esa
+#12 7.507 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.517 [1A[2K[0m[10/22/26, 9:52:13:691 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.esa.asc
+#12 7.517 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.530 [1A[2K[0m[10/22/26, 9:52:13:704 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.esa
+#12 7.530 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.542 [1A[2K[0m[10/22/26, 9:52:13:717 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.pom
+#12 7.542 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.579 [1A[2K[0m[10/22/26, 9:52:13:753 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.injection-1.0-26.0.0.10.esa.asc
+#12 7.579 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.636 [1A[2K[0m[10/22/26, 9:52:13:811 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.pom.asc
+#12 7.636 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.637 [1A[2K[0m[10/22/26, 9:52:13:811 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.esa
+#12 7.637 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.738 [1A[2K[0m[10/22/26, 9:52:13:913 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.pom
+#12 7.738 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.739 [1A[2K[0m[10/22/26, 9:52:13:913 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.pom
+#12 7.739 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.740 [1A[2K[0m[10/22/26, 9:52:13:914 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.pom.asc
+#12 7.740 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.756 [1A[2K[0m[10/22/26, 9:52:13:930 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.pom.asc
+#12 7.756 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.778 [1A[2K[0m[10/22/26, 9:52:13:952 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.esa.asc
+#12 7.778 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.786 [1A[2K[0m[10/22/26, 9:52:13:961 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.esa.asc
+#12 7.787 [31m<[32;5m========[0m[31m-------------> 37%[0m
+#12 7.804 [1A[2K[0m[10/22/26, 9:52:13:979 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:26.0.0.10.esa.asc
+#12 7.804 [31m<[32;5m========[0m[31m-------------> 38%[0m
+#12 7.804 [1A[2K[0m[10/22/26, 9:52:13:979 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:26.0.0.10.esa
+#12 7.804 [31m<[32;5m========[0m[31m-------------> 38%[0m
+#12 7.804 [1A[2K[0m[10/22/26, 9:52:13:979 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:26.0.0.10.pom
+#12 7.805 [31m<[32;5m========[0m[31m-------------> 38%[0m
+#12 7.805 [1A[2K[0m[10/22/26, 9:52:13:980 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:26.0.0.10.esa.asc
+#12 7.805 [31m<[32;5m========[0m[31m-------------> 38%[0m
+#12 7.805 [1A[2K[0m[10/22/26, 9:52:13:980 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:26.0.0.10.pom.asc
+#12 7.806 [31m<[32;5m========[0m[31m-------------> 38%[0m
+#12 7.806 [1A[2K[0m[10/22/26, 9:52:13:980 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:26.0.0.10.esa
+#12 7.806 [31m<[32;5m========[0m[31m-------------> 38%[0m
+#12 7.806 [1A[2K[0m[10/22/26, 9:52:13:981 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:26.0.0.10.pom
+#12 7.806 [31m<[32;5m========[0m[31m-------------> 39%[0m
+#12 7.806 [1A[2K[0m[10/22/26, 9:52:13:981 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:26.0.0.10.esa.asc
+#12 7.806 [31m<[32;5m========[0m[31m-------------> 39%[0m
+#12 7.806 [1A[2K[0m[10/22/26, 9:52:13:981 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:26.0.0.10.pom.asc
+#12 7.806 [31m<[32;5m========[0m[31m-------------> 39%[0m
+#12 7.807 [1A[2K[0m[10/22/26, 9:52:13:981 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:26.0.0.10.esa
+#12 7.807 [31m<[32;5m========[0m[31m-------------> 39%[0m
+#12 7.807 [1A[2K[0m[10/22/26, 9:52:13:982 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:26.0.0.10.pom
+#12 7.807 [31m<[32;5m========[0m[31m-------------> 39%[0m
+#12 7.807 [1A[2K[0m[10/22/26, 9:52:13:982 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:26.0.0.10.esa.asc
+#12 7.807 [31m<[32;5m========[0m[31m-------------> 39%[0m
+#12 7.807 [1A[2K[0m[10/22/26, 9:52:13:982 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:26.0.0.10.pom.asc
+#12 7.808 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.808 [1A[2K[0m[10/22/26, 9:52:13:982 GMT]Remaining artifacts: 58
+#12 7.808 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.838 [1A[2K[0m[10/22/26, 9:52:14:012 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.pom.asc
+#12 7.838 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.853 [1A[2K[0m[10/22/26, 9:52:14:028 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.injection-1.0-26.0.0.10.pom.asc
+#12 7.853 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.869 [1A[2K[0m[10/22/26, 9:52:14:044 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.esa.asc
+#12 7.869 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.889 [1A[2K[0m[10/22/26, 9:52:14:064 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.esa
+#12 7.890 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.911 [1A[2K[0m[10/22/26, 9:52:14:085 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.pom
+#12 7.911 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.926 [1A[2K[0m[10/22/26, 9:52:14:101 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.pom.asc
+#12 7.927 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.931 [1A[2K[0m[10/22/26, 9:52:14:106 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.pom
+#12 7.931 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 7.986 [1A[2K[0m[10/22/26, 9:52:14:161 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.esa.asc
+#12 7.986 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.049 [1A[2K[0m[10/22/26, 9:52:14:224 GMT]Successfully validated SHA512 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.esa
+#12 8.049 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.082 [1A[2K[0m[10/22/26, 9:52:14:256 GMT]Successfully validated SHA512 checksum for file: servlet-3.1-26.0.0.10.pom.asc
+#12 8.082 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.097 [1A[2K[0m[10/22/26, 9:52:14:271 GMT]Successfully validated SHA512 checksum for file: servlet-3.1-26.0.0.10.esa.asc
+#12 8.097 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.108 [1A[2K[0m[10/22/26, 9:52:14:283 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:26.0.0.10.pom.asc
+#12 8.108 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.108 [1A[2K[0m[10/22/26, 9:52:14:283 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:26.0.0.10.esa
+#12 8.108 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.108 [1A[2K[0m[10/22/26, 9:52:14:283 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:26.0.0.10.pom
+#12 8.109 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.109 [1A[2K[0m[10/22/26, 9:52:14:283 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:26.0.0.10.esa.asc
+#12 8.109 [31m<[32;5m========[0m[31m-------------> 40%[0m
+#12 8.109 [1A[2K[0m[10/22/26, 9:52:14:283 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:26.0.0.10.pom.asc
+#12 8.109 [31m<[32;5m========[0m[31m-------------> 41%[0m
+#12 8.109 [1A[2K[0m[10/22/26, 9:52:14:283 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:26.0.0.10.pom
+#12 8.109 [31m<[32;5m========[0m[31m-------------> 41%[0m
+#12 8.109 [1A[2K[0m[10/22/26, 9:52:14:284 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:26.0.0.10.esa.asc
+#12 8.109 [31m<[32;5m========[0m[31m-------------> 41%[0m
+#12 8.109 [1A[2K[0m[10/22/26, 9:52:14:284 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:26.0.0.10.pom.asc
+#12 8.109 [31m<[32;5m==========[0m[31m-----------> 41%[0m
+#12 8.110 [1A[2K[0m[10/22/26, 9:52:14:284 GMT]Finished downloading artifact: io.openliberty.features:servlet-3.1:26.0.0.10.esa.asc
+#12 8.110 [31m<[32;5m==========[0m[31m-----------> 41%[0m
+#12 8.110 [1A[2K[0m[10/22/26, 9:52:14:284 GMT]Finished downloading artifact: io.openliberty.features:servlet-3.1:26.0.0.10.pom.asc
+#12 8.110 [31m<[32;5m==========[0m[31m-----------> 41%[0m
+#12 8.110 [1A[2K[0m[10/22/26, 9:52:14:285 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:26.0.0.10.esa
+#12 8.110 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.110 [1A[2K[0m[10/22/26, 9:52:14:285 GMT]Remaining artifacts: 47
+#12 8.110 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.119 [1A[2K[0m[10/22/26, 9:52:14:294 GMT]Successfully validated SHA512 checksum for file: servlet-3.1-26.0.0.10.pom
+#12 8.119 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.137 [1A[2K[0m[10/22/26, 9:52:14:312 GMT]Successfully validated SHA512 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.esa.asc
+#12 8.137 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.142 [1A[2K[0m[10/22/26, 9:52:14:316 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.esa
+#12 8.142 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.152 [1A[2K[0m[10/22/26, 9:52:14:326 GMT]Successfully validated SHA512 checksum for file: servlet-3.1-26.0.0.10.esa
+#12 8.152 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.193 [1A[2K[0m[10/22/26, 9:52:14:367 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.pom
+#12 8.193 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.234 [1A[2K[0m[10/22/26, 9:52:14:408 GMT]Successfully validated SHA512 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.pom.asc
+#12 8.234 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.264 [1A[2K[0m[10/22/26, 9:52:14:439 GMT]Successfully validated SHA512 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.pom
+#12 8.264 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.303 [1A[2K[0m[10/22/26, 9:52:14:478 GMT]Successfully validated SHA512 checksum for file: json-1.0-26.0.0.10.esa
+#12 8.303 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.309 [1A[2K[0m[10/22/26, 9:52:14:484 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.esa
+#12 8.309 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.311 [1A[2K[0m[10/22/26, 9:52:14:484 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.esa.asc
+#12 8.311 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.314 [1A[2K[0m[10/22/26, 9:52:14:488 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.pom.asc
+#12 8.314 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.375 [1A[2K[0m[10/22/26, 9:52:14:549 GMT]Successfully validated SHA512 checksum for file: json-1.0-26.0.0.10.pom.asc
+#12 8.375 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.377 [1A[2K[0m[10/22/26, 9:52:14:552 GMT]Successfully validated SHA512 checksum for file: json-1.0-26.0.0.10.esa.asc
+#12 8.377 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.386 [1A[2K[0m[10/22/26, 9:52:14:561 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.internal-3.1-26.0.0.10.esa.asc
+#12 8.386 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.411 [1A[2K[0m[10/22/26, 9:52:14:585 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.internal-3.1-26.0.0.10.esa
+#12 8.411 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.411 [1A[2K[0m[10/22/26, 9:52:14:586 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:26.0.0.10.esa
+#12 8.411 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.412 [1A[2K[0m[10/22/26, 9:52:14:586 GMT]Finished downloading artifact: io.openliberty.features:servlet-3.1:26.0.0.10.esa
+#12 8.412 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.412 [1A[2K[0m[10/22/26, 9:52:14:587 GMT]Finished downloading artifact: io.openliberty.features:servlet-3.1:26.0.0.10.pom
+#12 8.412 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.413 [1A[2K[0m[10/22/26, 9:52:14:587 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:26.0.0.10.pom
+#12 8.413 [31m<[32;5m==========[0m[31m-----------> 42%[0m
+#12 8.413 [1A[2K[0m[10/22/26, 9:52:14:588 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:26.0.0.10.esa.asc
+#12 8.413 [31m<[32;5m==========[0m[31m-----------> 43%[0m
+#12 8.414 [1A[2K[0m[10/22/26, 9:52:14:588 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:26.0.0.10.pom.asc
+#12 8.414 [31m<[32;5m==========[0m[31m-----------> 43%[0m
+#12 8.414 [1A[2K[0m[10/22/26, 9:52:14:589 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:26.0.0.10.esa
+#12 8.414 [31m<[32;5m==========[0m[31m-----------> 43%[0m
+#12 8.414 [1A[2K[0m[10/22/26, 9:52:14:589 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:26.0.0.10.pom
+#12 8.414 [31m<[32;5m==========[0m[31m-----------> 43%[0m
+#12 8.414 [1A[2K[0m[10/22/26, 9:52:14:589 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:26.0.0.10.esa.asc
+#12 8.414 [31m<[32;5m==========[0m[31m-----------> 43%[0m
+#12 8.414 [1A[2K[0m[10/22/26, 9:52:14:589 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:26.0.0.10.pom.asc
+#12 8.415 [31m<[32;5m==========[0m[31m-----------> 43%[0m
+#12 8.415 [1A[2K[0m[10/22/26, 9:52:14:589 GMT]Finished downloading artifact: io.openliberty.features:json-1.0:26.0.0.10.esa
+#12 8.415 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.415 [1A[2K[0m[10/22/26, 9:52:14:590 GMT]Finished downloading artifact: io.openliberty.features:json-1.0:26.0.0.10.esa.asc
+#12 8.415 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.415 [1A[2K[0m[10/22/26, 9:52:14:590 GMT]Finished downloading artifact: io.openliberty.features:json-1.0:26.0.0.10.pom.asc
+#12 8.415 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.415 [1A[2K[0m[10/22/26, 9:52:14:590 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:26.0.0.10.esa
+#12 8.416 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.416 [1A[2K[0m[10/22/26, 9:52:14:590 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:26.0.0.10.esa.asc
+#12 8.416 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.416 [1A[2K[0m[10/22/26, 9:52:14:591 GMT]Remaining artifacts: 32
+#12 8.416 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.450 [1A[2K[0m[10/22/26, 9:52:14:624 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.pom
+#12 8.450 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.453 [1A[2K[0m[10/22/26, 9:52:14:627 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.internal-3.1-26.0.0.10.pom
+#12 8.453 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.453 [1A[2K[0m[10/22/26, 9:52:14:628 GMT]Successfully validated SHA512 checksum for file: io.openliberty.servlet.internal-3.1-26.0.0.10.pom.asc
+#12 8.454 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.458 [1A[2K[0m[10/22/26, 9:52:14:633 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.esa.asc
+#12 8.459 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.461 [1A[2K[0m[10/22/26, 9:52:14:636 GMT]Successfully validated SHA512 checksum for file: json-1.0-26.0.0.10.pom
+#12 8.461 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.480 [1A[2K[0m[10/22/26, 9:52:14:655 GMT]Successfully validated SHA512 checksum for file: io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.pom.asc
+#12 8.480 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.483 [1A[2K[0m[10/22/26, 9:52:14:658 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.pom.asc
+#12 8.483 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.560 [1A[2K[0m[10/22/26, 9:52:14:735 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.pom
+#12 8.560 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.577 [1A[2K[0m[10/22/26, 9:52:14:751 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.esa
+#12 8.577 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.580 [1A[2K[0m[10/22/26, 9:52:14:754 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.esa
+#12 8.580 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.588 [1A[2K[0m[10/22/26, 9:52:14:762 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.esa.asc
+#12 8.588 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.611 [1A[2K[0m[10/22/26, 9:52:14:785 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.esa.asc
+#12 8.611 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.617 [1A[2K[0m[10/22/26, 9:52:14:792 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.pom
+#12 8.617 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.625 [1A[2K[0m[10/22/26, 9:52:14:800 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.pom.asc
+#12 8.625 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.691 [1A[2K[0m[10/22/26, 9:52:14:866 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.pom.asc
+#12 8.692 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.717 [1A[2K[0m[10/22/26, 9:52:14:891 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.eePlatform.7.0.internal-1.0:26.0.0.10.pom.asc
+#12 8.717 [31m<[32;5m==========[0m[31m-----------> 44%[0m
+#12 8.717 [1A[2K[0m[10/22/26, 9:52:14:892 GMT]Finished downloading artifact: io.openliberty.features:json-1.0:26.0.0.10.pom
+#12 8.718 [31m<[32;5m==========[0m[31m-----------> 45%[0m
+#12 8.718 [1A[2K[0m[10/22/26, 9:52:14:892 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:26.0.0.10.pom
+#12 8.718 [31m<[32;5m==========[0m[31m-----------> 45%[0m
+#12 8.718 [1A[2K[0m[10/22/26, 9:52:14:893 GMT]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:26.0.0.10.pom.asc
+#12 8.718 [31m<[32;5m==========[0m[31m-----------> 45%[0m
+#12 8.718 [1A[2K[0m[10/22/26, 9:52:14:893 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:26.0.0.10.pom
+#12 8.718 [31m<[32;5m==========[0m[31m-----------> 45%[0m
+#12 8.718 [1A[2K[0m[10/22/26, 9:52:14:893 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:26.0.0.10.esa.asc
+#12 8.718 [31m<[32;5m==========[0m[31m-----------> 45%[0m
+#12 8.719 [1A[2K[0m[10/22/26, 9:52:14:893 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:26.0.0.10.pom.asc
+#12 8.720 [31m<[32;5m==========[0m[31m-----------> 46%[0m
+#12 8.720 [1A[2K[0m[10/22/26, 9:52:14:895 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:26.0.0.10.esa
+#12 8.720 [31m<[32;5m==========[0m[31m-----------> 46%[0m
+#12 8.720 [1A[2K[0m[10/22/26, 9:52:14:895 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:26.0.0.10.pom
+#12 8.721 [31m<[32;5m==========[0m[31m-----------> 46%[0m
+#12 8.721 [1A[2K[0m[10/22/26, 9:52:14:895 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:26.0.0.10.esa.asc
+#12 8.721 [31m<[32;5m==========[0m[31m-----------> 46%[0m
+#12 8.723 [1A[2K[0m[10/22/26, 9:52:14:896 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:26.0.0.10.pom.asc
+#12 8.723 [31m<[32;5m==========[0m[31m-----------> 46%[0m
+#12 8.723 [1A[2K[0m[10/22/26, 9:52:14:896 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:26.0.0.10.esa
+#12 8.723 [31m<[32;5m==========[0m[31m-----------> 46%[0m
+#12 8.723 [1A[2K[0m[10/22/26, 9:52:14:897 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.pom.asc
+#12 8.723 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.723 [1A[2K[0m[10/22/26, 9:52:14:897 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:26.0.0.10.pom
+#12 8.723 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.723 [1A[2K[0m[10/22/26, 9:52:14:897 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.pom
+#12 8.723 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.723 [1A[2K[0m[10/22/26, 9:52:14:897 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:26.0.0.10.esa.asc
+#12 8.723 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.724 [1A[2K[0m[10/22/26, 9:52:14:898 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:26.0.0.10.pom.asc
+#12 8.724 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.724 [1A[2K[0m[10/22/26, 9:52:14:898 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:26.0.0.10.pom.asc
+#12 8.724 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.724 [1A[2K[0m[10/22/26, 9:52:14:899 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:26.0.0.10.pom
+#12 8.724 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.725 [1A[2K[0m[10/22/26, 9:52:14:899 GMT]Remaining artifacts: 15
+#12 8.725 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.739 [1A[2K[0m[10/22/26, 9:52:14:913 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.esa
+#12 8.739 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.778 [1A[2K[0m[10/22/26, 9:52:14:952 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.pom
+#12 8.778 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.778 [1A[2K[0m[10/22/26, 9:52:14:952 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.esa.asc
+#12 8.778 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.806 [1A[2K[0m[10/22/26, 9:52:14:981 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.esa.asc
+#12 8.806 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.850 [1A[2K[0m[10/22/26, 9:52:15:024 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.esa
+#12 8.850 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.851 [1A[2K[0m[10/22/26, 9:52:15:026 GMT]Successfully validated SHA512 checksum for file: jaxrsClient-2.0-26.0.0.10.esa.asc
+#12 8.851 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.854 [1A[2K[0m[10/22/26, 9:52:15:029 GMT]Successfully validated SHA512 checksum for file: jaxrsClient-2.0-26.0.0.10.pom.asc
+#12 8.854 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.883 [1A[2K[0m[10/22/26, 9:52:15:057 GMT]Successfully validated SHA512 checksum for file: jaxrsClient-2.0-26.0.0.10.esa
+#12 8.883 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.906 [1A[2K[0m[10/22/26, 9:52:15:080 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.pom.asc
+#12 8.906 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.927 [1A[2K[0m[10/22/26, 9:52:15:101 GMT]Successfully validated SHA512 checksum for file: jaxrs-2.0-26.0.0.10.esa.asc
+#12 8.927 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.948 [1A[2K[0m[10/22/26, 9:52:15:122 GMT]Successfully validated SHA512 checksum for file: jaxrs-2.0-26.0.0.10.esa
+#12 8.948 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.988 [1A[2K[0m[10/22/26, 9:52:15:162 GMT]Successfully validated SHA512 checksum for file: jaxrsClient-2.0-26.0.0.10.pom
+#12 8.988 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 8.992 [1A[2K[0m[10/22/26, 9:52:15:167 GMT]Successfully validated SHA512 checksum for file: jaxrs-2.0-26.0.0.10.pom
+#12 8.992 [31m<[32;5m==========[0m[31m-----------> 47%[0m
+#12 9.026 [1A[2K[0m[10/22/26, 9:52:15:201 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:26.0.0.10.esa
+#12 9.026 [31m<[32;5m==========[0m[31m-----------> 48%[0m
+#12 9.026 [1A[2K[0m[10/22/26, 9:52:15:201 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:26.0.0.10.pom
+#12 9.026 [31m<[32;5m==========[0m[31m-----------> 48%[0m
+#12 9.027 [1A[2K[0m[10/22/26, 9:52:15:201 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:26.0.0.10.esa.asc
+#12 9.027 [31m<[32;5m==========[0m[31m-----------> 48%[0m
+#12 9.027 [1A[2K[0m[10/22/26, 9:52:15:202 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:26.0.0.10.esa
+#12 9.027 [31m<[32;5m==========[0m[31m-----------> 48%[0m
+#12 9.027 [1A[2K[0m[10/22/26, 9:52:15:202 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:26.0.0.10.esa.asc
+#12 9.027 [31m<[32;5m==========[0m[31m-----------> 48%[0m
+#12 9.027 [1A[2K[0m[10/22/26, 9:52:15:202 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:26.0.0.10.pom.asc
+#12 9.028 [31m<[32;5m==========[0m[31m-----------> 48%[0m
+#12 9.028 [1A[2K[0m[10/22/26, 9:52:15:203 GMT]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:26.0.0.10.esa
+#12 9.028 [31m<[32;5m==========[0m[31m-----------> 49%[0m
+#12 9.029 [1A[2K[0m[10/22/26, 9:52:15:203 GMT]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:26.0.0.10.pom
+#12 9.029 [31m<[32;5m==========[0m[31m-----------> 49%[0m
+#12 9.029 [1A[2K[0m[10/22/26, 9:52:15:204 GMT]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:26.0.0.10.esa.asc
+#12 9.029 [31m<[32;5m==========[0m[31m-----------> 49%[0m
+#12 9.029 [1A[2K[0m[10/22/26, 9:52:15:204 GMT]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:26.0.0.10.pom.asc
+#12 9.029 [31m<[32;5m==========[0m[31m-----------> 49%[0m
+#12 9.029 [1A[2K[0m[10/22/26, 9:52:15:204 GMT]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:26.0.0.10.esa
+#12 9.029 [31m<[32;5m==========[0m[31m-----------> 49%[0m
+#12 9.030 [1A[2K[0m[10/22/26, 9:52:15:204 GMT]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:26.0.0.10.pom
+#12 9.030 [31m<[32;5m==========[0m[31m-----------> 49%[0m
+#12 9.030 [1A[2K[0m[10/22/26, 9:52:15:205 GMT]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:26.0.0.10.esa.asc
+#12 9.030 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 9.030 [1A[2K[0m[10/22/26, 9:52:15:205 GMT]Successfully validated SHA512 checksum for file: jaxrs-2.0-26.0.0.10.pom.asc
+#12 9.030 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 9.030 [1A[2K[0m[10/22/26, 9:52:15:205 GMT]Remaining artifacts: 2
+#12 9.031 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 9.333 [1A[2K[0m[10/22/26, 9:52:15:507 GMT]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:26.0.0.10.pom.asc
+#12 9.333 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 9.333 [1A[2K[0m[10/22/26, 9:52:15:507 GMT]Remaining artifacts: 1
+#12 9.333 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 9.634 [1A[2K[0m[10/22/26, 9:52:15:809 GMT]Remaining artifacts: 1
+#12 9.634 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 9.935 [1A[2K[0m[10/22/26, 9:52:16:110 GMT]Remaining artifacts: 1
+#12 9.935 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 10.24 [1A[2K[0m[10/22/26, 9:52:16:411 GMT]Remaining artifacts: 1
+#12 10.24 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 10.54 [1A[2K[0m[10/22/26, 9:52:16:712 GMT]Remaining artifacts: 1
+#12 10.54 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 10.84 [1A[2K[0m[10/22/26, 9:52:17:013 GMT]Remaining artifacts: 1
+#12 10.84 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 11.14 [1A[2K[0m[10/22/26, 9:52:17:315 GMT]Remaining artifacts: 1
+#12 11.14 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 11.44 [1A[2K[0m[10/22/26, 9:52:17:616 GMT]Remaining artifacts: 1
+#12 11.44 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 11.74 [1A[2K[0m[10/22/26, 9:52:17:917 GMT]Remaining artifacts: 1
+#12 11.74 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 12.04 [1A[2K[0m[10/22/26, 9:52:18:218 GMT]Remaining artifacts: 1
+#12 12.04 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 12.35 [1A[2K[0m[10/22/26, 9:52:18:520 GMT]Remaining artifacts: 1
+#12 12.35 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 12.65 [1A[2K[0m[10/22/26, 9:52:18:821 GMT]Remaining artifacts: 1
+#12 12.65 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 12.95 [1A[2K[0m[10/22/26, 9:52:19:122 GMT]Remaining artifacts: 1
+#12 12.95 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 13.25 [1A[2K[0m[10/22/26, 9:52:19:423 GMT]Remaining artifacts: 1
+#12 13.25 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 13.55 [1A[2K[0m[10/22/26, 9:52:19:724 GMT]Remaining artifacts: 1
+#12 13.55 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 13.85 [1A[2K[0m[10/22/26, 9:52:20:025 GMT]Remaining artifacts: 1
+#12 13.85 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 14.15 [1A[2K[0m[10/22/26, 9:52:20:325 GMT]Remaining artifacts: 1
+#12 14.15 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 14.45 [1A[2K[0m[10/22/26, 9:52:20:627 GMT]Remaining artifacts: 1
+#12 14.45 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 14.75 [1A[2K[0m[10/22/26, 9:52:20:928 GMT]Remaining artifacts: 1
+#12 14.75 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 15.02 [1A[2K[0m[10/22/26, 9:52:21:196 GMT]Successfully validated SHA512 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.esa
+#12 15.02 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 15.05 [1A[2K[0m[10/22/26, 9:52:21:229 GMT]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:26.0.0.10.esa
+#12 15.05 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 15.05 [1A[2K[0m[10/22/26, 9:52:21:229 GMT]Remaining artifacts: 0
+#12 15.05 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 15.35 [1A[2K[0m[31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 15.36 [1A[2K[0m[10/22/26, 9:52:21:536 GMT]Downloaded the following feature signautres from the remote maven repository:[/root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/26.0.0.10/com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/26.0.0.10/com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/26.0.0.10/com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/26.0.0.10/com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/jsonp-1.0/26.0.0.10/jsonp-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/jsonp-1.0/26.0.0.10/jsonp-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/26.0.0.10/com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/26.0.0.10/com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/26.0.0.10/com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/26.0.0.10/com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.jandex.internal-3.0/26.0.0.10/io.openliberty.jandex.internal-3.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/26.0.0.10/com.ibm.websphere.appserver.anno-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.jandex.internal-3.0/26.0.0.10/io.openliberty.jandex.internal-3.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/26.0.0.10/com.ibm.websphere.appserver.anno-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/26.0.0.10/com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/26.0.0.10/com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/26.0.0.10/com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/26.0.0.10/com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/26.0.0.10/com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/26.0.0.10/com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/26.0.0.10/com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/26.0.0.10/com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.eePlatform.7.0.internal-1.0/26.0.0.10/io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/26.0.0.10/com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.eePlatform.7.0.internal-1.0/26.0.0.10/io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/26.0.0.10/com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/26.0.0.10/com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/26.0.0.10/io.openliberty.servlet.api-3.1-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/26.0.0.10/com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/26.0.0.10/io.openliberty.servlet.api-3.1-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/26.0.0.10/com.ibm.websphere.appserver.injection-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/26.0.0.10/com.ibm.websphere.appserver.injection-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/26.0.0.10/com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/26.0.0.10/com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/26.0.0.10/com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/26.0.0.10/com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/26.0.0.10/com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/26.0.0.10/com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/servlet-3.1/26.0.0.10/servlet-3.1-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/servlet-3.1/26.0.0.10/servlet-3.1-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/26.0.0.10/io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/26.0.0.10/io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/json-1.0/26.0.0.10/json-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/json-1.0/26.0.0.10/json-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/26.0.0.10/io.openliberty.servlet.internal-3.1-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/26.0.0.10/com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/26.0.0.10/io.openliberty.servlet.internal-3.1-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/26.0.0.10/com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/26.0.0.10/com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/26.0.0.10/com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/26.0.0.10/jaxrsClient-2.0-26.0.0.10.esa.asc, /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/26.0.0.10/jaxrsClient-2.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/jaxrs-2.0/26.0.0.10/jaxrs-2.0-26.0.0.10.pom.asc, /root/.m2/repository/io/openliberty/features/jaxrs-2.0/26.0.0.10/jaxrs-2.0-26.0.0.10.esa.asc]
+#12 15.36 [31m<[32;5m==========[0m[31m-----------> 50%[0m
+#12 15.36 [1A[2K[0m[10/22/26, 9:52:21:537 GMT]Downloaded the following features from the remote maven repository:[/root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/26.0.0.10/com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/26.0.0.10/com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/jsonp-1.0/26.0.0.10/jsonp-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/26.0.0.10/com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/26.0.0.10/com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.jandex.internal-3.0/26.0.0.10/io.openliberty.jandex.internal-3.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/26.0.0.10/com.ibm.websphere.appserver.anno-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/26.0.0.10/com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/26.0.0.10/com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/26.0.0.10/com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/26.0.0.10/com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/26.0.0.10/com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.eePlatform.7.0.internal-1.0/26.0.0.10/io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/26.0.0.10/com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/26.0.0.10/io.openliberty.servlet.api-3.1-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/26.0.0.10/com.ibm.websphere.appserver.injection-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/26.0.0.10/com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/26.0.0.10/com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/26.0.0.10/com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/servlet-3.1/26.0.0.10/servlet-3.1-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/26.0.0.10/io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/json-1.0/26.0.0.10/json-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/26.0.0.10/io.openliberty.servlet.internal-3.1-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/26.0.0.10/com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/26.0.0.10/com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/26.0.0.10/jaxrsClient-2.0-26.0.0.10.esa, /root/.m2/repository/io/openliberty/features/jaxrs-2.0/26.0.0.10/jaxrs-2.0-26.0.0.10.esa]
+#12 15.36 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 15.36 [1A[2K[0m[10/22/26, 9:52:21:538 GMT]Verifying signatures ...
+#12 15.36 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 15.37 [1A[2K[0m[10/22/26, 9:52:21:540 GMT]Available public keyIDs: bd9fd5be9e68ca00	
+#12 15.37 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 15.37 [1A[2K[0m[10/22/26, 9:52:21:541 GMT]Verifying com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.esa ...
+#12 15.37 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 15.37 [1A[2K[0m[10/22/26, 9:52:21:543 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 15.37 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 15.37 [1A[2K[0m[10/22/26, 9:52:21:543 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 15.37 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 16.19 [1A[2K[0m[10/22/26, 9:52:22:367 GMT]Successfully verified the com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.esa feature.
+#12 16.19 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 16.19 [1A[2K[0m[10/22/26, 9:52:22:367 GMT]Verifying com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.esa ...
+#12 16.19 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 16.19 [1A[2K[0m[10/22/26, 9:52:22:368 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.19 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 16.19 [1A[2K[0m[10/22/26, 9:52:22:368 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.19 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 16.24 [1A[2K[0m[10/22/26, 9:52:22:413 GMT]Successfully verified the com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.esa feature.
+#12 16.24 [31m<[32;5m============[0m[31m---------> 60%[0m
+#12 16.24 [1A[2K[0m[10/22/26, 9:52:22:413 GMT]Verifying jsonp-1.0-26.0.0.10.esa ...
+#12 16.24 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.24 [1A[2K[0m[10/22/26, 9:52:22:414 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.24 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.24 [1A[2K[0m[10/22/26, 9:52:22:414 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.24 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.26 [1A[2K[0m[10/22/26, 9:52:22:433 GMT]Successfully verified the jsonp-1.0-26.0.0.10.esa feature.
+#12 16.26 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.26 [1A[2K[0m[10/22/26, 9:52:22:433 GMT]Verifying com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.esa ...
+#12 16.26 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.26 [1A[2K[0m[10/22/26, 9:52:22:434 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.26 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.26 [1A[2K[0m[10/22/26, 9:52:22:434 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.26 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.28 [1A[2K[0m[10/22/26, 9:52:22:454 GMT]Successfully verified the com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.esa feature.
+#12 16.28 [31m<[32;5m============[0m[31m---------> 61%[0m
+#12 16.28 [1A[2K[0m[10/22/26, 9:52:22:454 GMT]Verifying com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.esa ...
+#12 16.28 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.28 [1A[2K[0m[10/22/26, 9:52:22:455 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.28 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.28 [1A[2K[0m[10/22/26, 9:52:22:455 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.28 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.37 [1A[2K[0m[10/22/26, 9:52:22:544 GMT]Successfully verified the com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.esa feature.
+#12 16.37 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.37 [1A[2K[0m[10/22/26, 9:52:22:545 GMT]Verifying io.openliberty.jandex.internal-3.0-26.0.0.10.esa ...
+#12 16.37 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.37 [1A[2K[0m[10/22/26, 9:52:22:545 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.37 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.37 [1A[2K[0m[10/22/26, 9:52:22:545 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.37 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.40 [1A[2K[0m[10/22/26, 9:52:22:573 GMT]Successfully verified the io.openliberty.jandex.internal-3.0-26.0.0.10.esa feature.
+#12 16.40 [31m<[32;5m==============[0m[31m-------> 61%[0m
+#12 16.40 [1A[2K[0m[10/22/26, 9:52:22:574 GMT]Verifying com.ibm.websphere.appserver.anno-1.0-26.0.0.10.esa ...
+#12 16.40 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.40 [1A[2K[0m[10/22/26, 9:52:22:574 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.40 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.40 [1A[2K[0m[10/22/26, 9:52:22:574 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.40 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.45 [1A[2K[0m[10/22/26, 9:52:22:621 GMT]Successfully verified the com.ibm.websphere.appserver.anno-1.0-26.0.0.10.esa feature.
+#12 16.45 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.45 [1A[2K[0m[10/22/26, 9:52:22:622 GMT]Verifying com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.esa ...
+#12 16.45 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.45 [1A[2K[0m[10/22/26, 9:52:22:622 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.45 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.45 [1A[2K[0m[10/22/26, 9:52:22:622 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.45 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.50 [1A[2K[0m[10/22/26, 9:52:22:676 GMT]Successfully verified the com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.esa feature.
+#12 16.50 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.50 [1A[2K[0m[10/22/26, 9:52:22:676 GMT]Verifying com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.esa ...
+#12 16.50 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.50 [1A[2K[0m[10/22/26, 9:52:22:676 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.50 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.50 [1A[2K[0m[10/22/26, 9:52:22:677 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.50 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.54 [1A[2K[0m[10/22/26, 9:52:22:710 GMT]Successfully verified the com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.esa feature.
+#12 16.54 [31m<[32;5m==============[0m[31m-------> 62%[0m
+#12 16.54 [1A[2K[0m[10/22/26, 9:52:22:711 GMT]Verifying com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.esa ...
+#12 16.54 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.54 [1A[2K[0m[10/22/26, 9:52:22:711 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.54 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.54 [1A[2K[0m[10/22/26, 9:52:22:712 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.54 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.55 [1A[2K[0m[10/22/26, 9:52:22:726 GMT]Successfully verified the com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.esa feature.
+#12 16.55 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.55 [1A[2K[0m[10/22/26, 9:52:22:726 GMT]Verifying com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.esa ...
+#12 16.55 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.55 [1A[2K[0m[10/22/26, 9:52:22:727 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.55 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.55 [1A[2K[0m[10/22/26, 9:52:22:727 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.55 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.58 [1A[2K[0m[10/22/26, 9:52:22:753 GMT]Successfully verified the com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.esa feature.
+#12 16.58 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.58 [1A[2K[0m[10/22/26, 9:52:22:753 GMT]Verifying com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.esa ...
+#12 16.58 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.58 [1A[2K[0m[10/22/26, 9:52:22:754 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.58 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.58 [1A[2K[0m[10/22/26, 9:52:22:754 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.58 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.60 [1A[2K[0m[10/22/26, 9:52:22:770 GMT]Successfully verified the com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.esa feature.
+#12 16.60 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.60 [1A[2K[0m[10/22/26, 9:52:22:770 GMT]Verifying com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.esa ...
+#12 16.60 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.60 [1A[2K[0m[10/22/26, 9:52:22:770 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.60 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.60 [1A[2K[0m[10/22/26, 9:52:22:770 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.60 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.62 [1A[2K[0m[10/22/26, 9:52:22:797 GMT]Successfully verified the com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.esa feature.
+#12 16.62 [31m<[32;5m==============[0m[31m-------> 63%[0m
+#12 16.62 [1A[2K[0m[10/22/26, 9:52:22:797 GMT]Verifying com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.esa ...
+#12 16.62 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.62 [1A[2K[0m[10/22/26, 9:52:22:798 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.62 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.62 [1A[2K[0m[10/22/26, 9:52:22:798 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.62 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.64 [1A[2K[0m[10/22/26, 9:52:22:816 GMT]Successfully verified the com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.esa feature.
+#12 16.64 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.64 [1A[2K[0m[10/22/26, 9:52:22:817 GMT]Verifying io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.esa ...
+#12 16.64 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.64 [1A[2K[0m[10/22/26, 9:52:22:817 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.64 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.64 [1A[2K[0m[10/22/26, 9:52:22:817 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.64 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.66 [1A[2K[0m[10/22/26, 9:52:22:832 GMT]Successfully verified the io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.esa feature.
+#12 16.66 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.66 [1A[2K[0m[10/22/26, 9:52:22:833 GMT]Verifying com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.esa ...
+#12 16.66 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.66 [1A[2K[0m[10/22/26, 9:52:22:833 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.66 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.66 [1A[2K[0m[10/22/26, 9:52:22:833 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.66 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.71 [1A[2K[0m[10/22/26, 9:52:22:885 GMT]Successfully verified the com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.esa feature.
+#12 16.71 [31m<[32;5m==============[0m[31m-------> 64%[0m
+#12 16.71 [1A[2K[0m[10/22/26, 9:52:22:885 GMT]Verifying io.openliberty.servlet.api-3.1-26.0.0.10.esa ...
+#12 16.71 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.71 [1A[2K[0m[10/22/26, 9:52:22:885 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.71 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.71 [1A[2K[0m[10/22/26, 9:52:22:886 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.71 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.73 [1A[2K[0m[10/22/26, 9:52:22:905 GMT]Successfully verified the io.openliberty.servlet.api-3.1-26.0.0.10.esa feature.
+#12 16.73 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.73 [1A[2K[0m[10/22/26, 9:52:22:905 GMT]Verifying com.ibm.websphere.appserver.injection-1.0-26.0.0.10.esa ...
+#12 16.73 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.73 [1A[2K[0m[10/22/26, 9:52:22:905 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.73 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.73 [1A[2K[0m[10/22/26, 9:52:22:905 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.73 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.75 [1A[2K[0m[10/22/26, 9:52:22:930 GMT]Successfully verified the com.ibm.websphere.appserver.injection-1.0-26.0.0.10.esa feature.
+#12 16.75 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.76 [1A[2K[0m[10/22/26, 9:52:22:930 GMT]Verifying com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.esa ...
+#12 16.76 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.76 [1A[2K[0m[10/22/26, 9:52:22:930 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.76 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.76 [1A[2K[0m[10/22/26, 9:52:22:930 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.76 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.77 [1A[2K[0m[10/22/26, 9:52:22:943 GMT]Successfully verified the com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.esa feature.
+#12 16.77 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.77 [1A[2K[0m[10/22/26, 9:52:22:944 GMT]Verifying com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.esa ...
+#12 16.77 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.77 [1A[2K[0m[10/22/26, 9:52:22:944 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.77 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.77 [1A[2K[0m[10/22/26, 9:52:22:944 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.77 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.78 [1A[2K[0m[10/22/26, 9:52:22:958 GMT]Successfully verified the com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.esa feature.
+#12 16.78 [31m<[32;5m==============[0m[31m-------> 65%[0m
+#12 16.78 [1A[2K[0m[10/22/26, 9:52:22:958 GMT]Verifying com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.esa ...
+#12 16.78 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.78 [1A[2K[0m[10/22/26, 9:52:22:959 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.78 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.78 [1A[2K[0m[10/22/26, 9:52:22:959 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.78 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.80 [1A[2K[0m[10/22/26, 9:52:22:973 GMT]Successfully verified the com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.esa feature.
+#12 16.80 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.80 [1A[2K[0m[10/22/26, 9:52:22:974 GMT]Verifying com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.esa ...
+#12 16.80 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.80 [1A[2K[0m[10/22/26, 9:52:22:974 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.80 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.80 [1A[2K[0m[10/22/26, 9:52:22:975 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.80 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.83 [1A[2K[0m[10/22/26, 9:52:23:003 GMT]Successfully verified the com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.esa feature.
+#12 16.83 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.83 [1A[2K[0m[10/22/26, 9:52:23:003 GMT]Verifying com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.esa ...
+#12 16.83 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.83 [1A[2K[0m[10/22/26, 9:52:23:004 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.83 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.83 [1A[2K[0m[10/22/26, 9:52:23:004 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.83 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.99 [1A[2K[0m[10/22/26, 9:52:23:165 GMT]Successfully verified the com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.esa feature.
+#12 16.99 [31m<[32;5m==============[0m[31m-------> 66%[0m
+#12 16.99 [1A[2K[0m[10/22/26, 9:52:23:166 GMT]Verifying servlet-3.1-26.0.0.10.esa ...
+#12 16.99 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 16.99 [1A[2K[0m[10/22/26, 9:52:23:166 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 16.99 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 16.99 [1A[2K[0m[10/22/26, 9:52:23:166 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 16.99 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.09 [1A[2K[0m[10/22/26, 9:52:23:261 GMT]Successfully verified the servlet-3.1-26.0.0.10.esa feature.
+#12 17.09 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.09 [1A[2K[0m[10/22/26, 9:52:23:261 GMT]Verifying io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.esa ...
+#12 17.09 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.09 [1A[2K[0m[10/22/26, 9:52:23:262 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.09 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.09 [1A[2K[0m[10/22/26, 9:52:23:262 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.09 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.10 [1A[2K[0m[10/22/26, 9:52:23:274 GMT]Successfully verified the io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.esa feature.
+#12 17.10 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.10 [1A[2K[0m[10/22/26, 9:52:23:274 GMT]Verifying com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.esa ...
+#12 17.10 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.10 [1A[2K[0m[10/22/26, 9:52:23:274 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.10 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.10 [1A[2K[0m[10/22/26, 9:52:23:274 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.10 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.17 [1A[2K[0m[10/22/26, 9:52:23:344 GMT]Successfully verified the com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.esa feature.
+#12 17.17 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.17 [1A[2K[0m[10/22/26, 9:52:23:344 GMT]Verifying json-1.0-26.0.0.10.esa ...
+#12 17.17 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.17 [1A[2K[0m[10/22/26, 9:52:23:345 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.17 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.17 [1A[2K[0m[10/22/26, 9:52:23:345 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.17 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.18 [1A[2K[0m[10/22/26, 9:52:23:359 GMT]Successfully verified the json-1.0-26.0.0.10.esa feature.
+#12 17.18 [31m<[32;5m==============[0m[31m-------> 67%[0m
+#12 17.18 [1A[2K[0m[10/22/26, 9:52:23:359 GMT]Verifying io.openliberty.servlet.internal-3.1-26.0.0.10.esa ...
+#12 17.18 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.18 [1A[2K[0m[10/22/26, 9:52:23:360 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.18 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.18 [1A[2K[0m[10/22/26, 9:52:23:360 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.19 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.20 [1A[2K[0m[10/22/26, 9:52:23:372 GMT]Successfully verified the io.openliberty.servlet.internal-3.1-26.0.0.10.esa feature.
+#12 17.20 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.20 [1A[2K[0m[10/22/26, 9:52:23:372 GMT]Verifying com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.esa ...
+#12 17.20 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.20 [1A[2K[0m[10/22/26, 9:52:23:373 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.20 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.20 [1A[2K[0m[10/22/26, 9:52:23:373 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.20 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.23 [1A[2K[0m[10/22/26, 9:52:23:405 GMT]Successfully verified the com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.esa feature.
+#12 17.23 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.23 [1A[2K[0m[10/22/26, 9:52:23:406 GMT]Verifying com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.esa ...
+#12 17.23 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.23 [1A[2K[0m[10/22/26, 9:52:23:406 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.23 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.23 [1A[2K[0m[10/22/26, 9:52:23:406 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.23 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.25 [1A[2K[0m[10/22/26, 9:52:23:425 GMT]Successfully verified the com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.esa feature.
+#12 17.25 [31m<[32;5m==============[0m[31m-------> 68%[0m
+#12 17.25 [1A[2K[0m[10/22/26, 9:52:23:425 GMT]Verifying com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.esa ...
+#12 17.25 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.25 [1A[2K[0m[10/22/26, 9:52:23:426 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.25 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.25 [1A[2K[0m[10/22/26, 9:52:23:426 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.25 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.27 [1A[2K[0m[10/22/26, 9:52:23:443 GMT]Successfully verified the com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.esa feature.
+#12 17.27 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.27 [1A[2K[0m[10/22/26, 9:52:23:443 GMT]Verifying com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.esa ...
+#12 17.27 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.27 [1A[2K[0m[10/22/26, 9:52:23:443 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.27 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.27 [1A[2K[0m[10/22/26, 9:52:23:444 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.27 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.39 [1A[2K[0m[10/22/26, 9:52:23:568 GMT]Successfully verified the com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.esa feature.
+#12 17.39 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.39 [1A[2K[0m[10/22/26, 9:52:23:568 GMT]Verifying com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.esa ...
+#12 17.39 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.39 [1A[2K[0m[10/22/26, 9:52:23:569 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.39 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.39 [1A[2K[0m[10/22/26, 9:52:23:569 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.39 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.48 [1A[2K[0m[10/22/26, 9:52:23:653 GMT]Successfully verified the com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.esa feature.
+#12 17.48 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.48 [1A[2K[0m[10/22/26, 9:52:23:654 GMT]Verifying jaxrsClient-2.0-26.0.0.10.esa ...
+#12 17.48 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.48 [1A[2K[0m[10/22/26, 9:52:23:654 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.48 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.48 [1A[2K[0m[10/22/26, 9:52:23:654 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.48 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.50 [1A[2K[0m[10/22/26, 9:52:23:670 GMT]Successfully verified the jaxrsClient-2.0-26.0.0.10.esa feature.
+#12 17.50 [31m<[32;5m==============[0m[31m-------> 69%[0m
+#12 17.50 [1A[2K[0m[10/22/26, 9:52:23:670 GMT]Verifying jaxrs-2.0-26.0.0.10.esa ...
+#12 17.50 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.50 [1A[2K[0m[10/22/26, 9:52:23:670 GMT]Key ID used in signature: bd9fd5be9e68ca00
+#12 17.50 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.50 [1A[2K[0m[10/22/26, 9:52:23:671 GMT]Public key ID used: bd9fd5be9e68ca00
+#12 17.50 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.51 [1A[2K[0m[10/22/26, 9:52:23:688 GMT]Successfully verified the jaxrs-2.0-26.0.0.10.esa feature.
+#12 17.51 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.51 [1A[2K[0m[31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.51 [1A[2K[0m[10/22/26, 9:52:23:688 GMT]All features were successfully verified.
+#12 17.51 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.51 [1A[2K[0m[10/22/26, 9:52:23:688 GMT]Starting installation ...
+#12 17.51 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.51 [1A[2K[0m[10/22/26, 9:52:23:688 GMT]Installing com.ibm.websphere.appserver.eeCompatible-7.0 ...
+#12 17.51 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.51 [1A[2K[0m[10/22/26, 9:52:23:689 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/26.0.0.10/com.ibm.websphere.appserver.eeCompatible-7.0-26.0.0.10.esa.
+#12 17.52 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.52 [1A[2K[0m[10/22/26, 9:52:23:689 GMT]Starting installation ...
+#12 17.52 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.52 [1A[2K[0m[10/22/26, 9:52:23:691 GMT]Checking features ...
+#12 17.52 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.52 [1A[2K[0m[10/22/26, 9:52:23:694 GMT]Installing a dependent feature ...
+#12 17.52 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.62 [1A[2K[0m[10/22/26, 9:52:23:799 GMT]Validating installed fixes ...
+#12 17.62 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.62 [1A[2K[0m[10/22/26, 9:52:23:799 GMT]No fix is required to be reapplied.
+#12 17.62 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.62 [1A[2K[0m[10/22/26, 9:52:23:799 GMT]Cleaning up temporary files ...
+#12 17.62 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.63 [1A[2K[0m[10/22/26, 9:52:23:800 GMT]Successfully completed cleaning up temporary files.
+#12 17.63 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.63 [1A[2K[0m[10/22/26, 9:52:23:800 GMT]Installation completed
+#12 17.63 [31m<[32;5m==============[0m[31m-------> 70%[0m
+#12 17.63 [1A[2K[0m[31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.63 [1A[2K[0m[10/22/26, 9:52:23:801 GMT]Installing com.ibm.websphere.appserver.jsonpImpl-1.0.0 ...
+#12 17.63 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.63 [1A[2K[0m[10/22/26, 9:52:23:801 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/26.0.0.10/com.ibm.websphere.appserver.jsonpImpl-1.0.0-26.0.0.10.esa.
+#12 17.63 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.63 [1A[2K[0m[10/22/26, 9:52:23:802 GMT]Starting installation ...
+#12 17.63 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.63 [1A[2K[0m[10/22/26, 9:52:23:802 GMT]Checking features ...
+#12 17.63 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.63 [1A[2K[0m[10/22/26, 9:52:23:803 GMT]Installing a dependent feature ...
+#12 17.63 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.69 [1A[2K[0m[10/22/26, 9:52:23:869 GMT]Validating installed fixes ...
+#12 17.69 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.69 [1A[2K[0m[10/22/26, 9:52:23:869 GMT]No fix is required to be reapplied.
+#12 17.69 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.69 [1A[2K[0m[10/22/26, 9:52:23:869 GMT]Cleaning up temporary files ...
+#12 17.69 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:870 GMT]Successfully completed cleaning up temporary files.
+#12 17.70 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:870 GMT]Installation completed
+#12 17.70 [31m<[32;5m==============[0m[31m-------> 71%[0m
+#12 17.70 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:870 GMT]Installing jsonp-1.0 ...
+#12 17.70 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:871 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/jsonp-1.0/26.0.0.10/jsonp-1.0-26.0.0.10.esa.
+#12 17.70 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:871 GMT]Starting installation ...
+#12 17.70 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:871 GMT]Checking features ...
+#12 17.70 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:872 GMT]Installing jsonp-1.0 ...
+#12 17.70 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.70 [1A[2K[0m[10/22/26, 9:52:23:876 GMT]Successfully installed feature JavaScript Object Notation Processing 1.0.
+#12 17.70 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:915 GMT]Validating installed fixes ...
+#12 17.74 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:915 GMT]No fix is required to be reapplied.
+#12 17.74 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:915 GMT]Cleaning up temporary files ...
+#12 17.74 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:915 GMT]Successfully completed cleaning up temporary files.
+#12 17.74 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:916 GMT]Installation completed
+#12 17.74 [31m<[32;5m================[0m[31m-----> 71%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:916 GMT]Successfully installed feature jsonp-1.0.
+#12 17.74 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:916 GMT]Installing com.ibm.websphere.appserver.javax.annotation-1.2 ...
+#12 17.74 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:917 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/26.0.0.10/com.ibm.websphere.appserver.javax.annotation-1.2-26.0.0.10.esa.
+#12 17.74 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:917 GMT]Starting installation ...
+#12 17.74 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.74 [1A[2K[0m[10/22/26, 9:52:23:918 GMT]Checking features ...
+#12 17.74 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.75 [1A[2K[0m[10/22/26, 9:52:23:919 GMT]Installing a dependent feature ...
+#12 17.75 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:956 GMT]Validating installed fixes ...
+#12 17.78 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:956 GMT]No fix is required to be reapplied.
+#12 17.78 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:956 GMT]Cleaning up temporary files ...
+#12 17.78 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:956 GMT]Successfully completed cleaning up temporary files.
+#12 17.78 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:956 GMT]Installation completed
+#12 17.78 [31m<[32;5m================[0m[31m-----> 72%[0m
+#12 17.78 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:957 GMT]Installing com.ibm.websphere.appserver.artifact-1.0 ...
+#12 17.78 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:957 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/26.0.0.10/com.ibm.websphere.appserver.artifact-1.0-26.0.0.10.esa.
+#12 17.78 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:958 GMT]Starting installation ...
+#12 17.78 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:958 GMT]Checking features ...
+#12 17.78 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.78 [1A[2K[0m[10/22/26, 9:52:23:959 GMT]Installing a dependent feature ...
+#12 17.78 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.83 [1A[2K[0m[10/22/26, 9:52:24:007 GMT]Validating installed fixes ...
+#12 17.83 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.83 [1A[2K[0m[10/22/26, 9:52:24:008 GMT]No fix is required to be reapplied.
+#12 17.83 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.83 [1A[2K[0m[10/22/26, 9:52:24:008 GMT]Cleaning up temporary files ...
+#12 17.83 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.83 [1A[2K[0m[10/22/26, 9:52:24:008 GMT]Successfully completed cleaning up temporary files.
+#12 17.83 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.83 [1A[2K[0m[10/22/26, 9:52:24:009 GMT]Installation completed
+#12 17.83 [31m<[32;5m================[0m[31m-----> 73%[0m
+#12 17.83 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.83 [1A[2K[0m[10/22/26, 9:52:24:009 GMT]Installing io.openliberty.jandex.internal-3.0 ...
+#12 17.83 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.83 [1A[2K[0m[10/22/26, 9:52:24:010 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.jandex.internal-3.0/26.0.0.10/io.openliberty.jandex.internal-3.0-26.0.0.10.esa.
+#12 17.84 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.84 [1A[2K[0m[10/22/26, 9:52:24:010 GMT]Starting installation ...
+#12 17.84 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.84 [1A[2K[0m[10/22/26, 9:52:24:010 GMT]Checking features ...
+#12 17.84 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.84 [1A[2K[0m[10/22/26, 9:52:24:011 GMT]Installing a dependent feature ...
+#12 17.84 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:046 GMT]Validating installed fixes ...
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:046 GMT]No fix is required to be reapplied.
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:046 GMT]Cleaning up temporary files ...
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:047 GMT]Successfully completed cleaning up temporary files.
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:047 GMT]Installation completed
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:047 GMT]Installing com.ibm.websphere.appserver.anno-1.0 ...
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:048 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/26.0.0.10/com.ibm.websphere.appserver.anno-1.0-26.0.0.10.esa.
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:048 GMT]Starting installation ...
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.87 [1A[2K[0m[10/22/26, 9:52:24:049 GMT]Checking features ...
+#12 17.87 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.88 [1A[2K[0m[10/22/26, 9:52:24:050 GMT]Installing a dependent feature ...
+#12 17.88 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:100 GMT]Validating installed fixes ...
+#12 17.93 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:100 GMT]No fix is required to be reapplied.
+#12 17.93 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:101 GMT]Cleaning up temporary files ...
+#12 17.93 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:101 GMT]Successfully completed cleaning up temporary files.
+#12 17.93 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:101 GMT]Installation completed
+#12 17.93 [31m<[32;5m================[0m[31m-----> 74%[0m
+#12 17.93 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:102 GMT]Installing com.ibm.websphere.appserver.javaeedd-1.0 ...
+#12 17.93 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:102 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeedd-1.0-26.0.0.10.esa.
+#12 17.93 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:102 GMT]Starting installation ...
+#12 17.93 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:103 GMT]Checking features ...
+#12 17.93 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.93 [1A[2K[0m[10/22/26, 9:52:24:104 GMT]Installing a dependent feature ...
+#12 17.93 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.97 [1A[2K[0m[10/22/26, 9:52:24:149 GMT]Validating installed fixes ...
+#12 17.97 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.97 [1A[2K[0m[10/22/26, 9:52:24:149 GMT]No fix is required to be reapplied.
+#12 17.97 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.97 [1A[2K[0m[10/22/26, 9:52:24:149 GMT]Cleaning up temporary files ...
+#12 17.97 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.97 [1A[2K[0m[10/22/26, 9:52:24:150 GMT]Successfully completed cleaning up temporary files.
+#12 17.97 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.98 [1A[2K[0m[10/22/26, 9:52:24:150 GMT]Installation completed
+#12 17.98 [31m<[32;5m================[0m[31m-----> 75%[0m
+#12 17.98 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 76%[0m
+#12 17.98 [1A[2K[0m[10/22/26, 9:52:24:150 GMT]Installing com.ibm.websphere.appserver.containerServices-1.0 ...
+#12 17.98 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 17.98 [1A[2K[0m[10/22/26, 9:52:24:151 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/26.0.0.10/com.ibm.websphere.appserver.containerServices-1.0-26.0.0.10.esa.
+#12 17.98 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 17.98 [1A[2K[0m[10/22/26, 9:52:24:151 GMT]Starting installation ...
+#12 17.98 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 17.98 [1A[2K[0m[10/22/26, 9:52:24:152 GMT]Checking features ...
+#12 17.98 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 17.98 [1A[2K[0m[10/22/26, 9:52:24:153 GMT]Installing a dependent feature ...
+#12 17.98 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.02 [1A[2K[0m[10/22/26, 9:52:24:195 GMT]Validating installed fixes ...
+#12 18.02 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.02 [1A[2K[0m[10/22/26, 9:52:24:196 GMT]No fix is required to be reapplied.
+#12 18.02 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.02 [1A[2K[0m[10/22/26, 9:52:24:196 GMT]Cleaning up temporary files ...
+#12 18.02 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.02 [1A[2K[0m[10/22/26, 9:52:24:197 GMT]Successfully completed cleaning up temporary files.
+#12 18.02 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.03 [1A[2K[0m[10/22/26, 9:52:24:197 GMT]Installation completed
+#12 18.03 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.03 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.03 [1A[2K[0m[10/22/26, 9:52:24:198 GMT]Installing com.ibm.websphere.appserver.dynamicBundle-1.0 ...
+#12 18.03 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.03 [1A[2K[0m[10/22/26, 9:52:24:198 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/26.0.0.10/com.ibm.websphere.appserver.dynamicBundle-1.0-26.0.0.10.esa.
+#12 18.03 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.03 [1A[2K[0m[10/22/26, 9:52:24:198 GMT]Starting installation ...
+#12 18.03 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.03 [1A[2K[0m[10/22/26, 9:52:24:198 GMT]Checking features ...
+#12 18.03 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.03 [1A[2K[0m[10/22/26, 9:52:24:199 GMT]Installing a dependent feature ...
+#12 18.03 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.05 [1A[2K[0m[10/22/26, 9:52:24:227 GMT]Validating installed fixes ...
+#12 18.05 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.05 [1A[2K[0m[10/22/26, 9:52:24:227 GMT]No fix is required to be reapplied.
+#12 18.05 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.05 [1A[2K[0m[10/22/26, 9:52:24:227 GMT]Cleaning up temporary files ...
+#12 18.05 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.05 [1A[2K[0m[10/22/26, 9:52:24:228 GMT]Successfully completed cleaning up temporary files.
+#12 18.05 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.05 [1A[2K[0m[10/22/26, 9:52:24:228 GMT]Installation completed
+#12 18.05 [31m<[32;5m================[0m[31m-----> 76%[0m
+#12 18.05 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.05 [1A[2K[0m[10/22/26, 9:52:24:229 GMT]Installing com.ibm.websphere.appserver.classloading-1.0 ...
+#12 18.05 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.05 [1A[2K[0m[10/22/26, 9:52:24:229 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/26.0.0.10/com.ibm.websphere.appserver.classloading-1.0-26.0.0.10.esa.
+#12 18.05 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.06 [1A[2K[0m[10/22/26, 9:52:24:230 GMT]Starting installation ...
+#12 18.06 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.06 [1A[2K[0m[10/22/26, 9:52:24:230 GMT]Checking features ...
+#12 18.06 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.06 [1A[2K[0m[10/22/26, 9:52:24:231 GMT]Installing a dependent feature ...
+#12 18.06 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.09 [1A[2K[0m[10/22/26, 9:52:24:268 GMT]Validating installed fixes ...
+#12 18.09 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.09 [1A[2K[0m[10/22/26, 9:52:24:268 GMT]No fix is required to be reapplied.
+#12 18.09 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.09 [1A[2K[0m[10/22/26, 9:52:24:268 GMT]Cleaning up temporary files ...
+#12 18.09 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.09 [1A[2K[0m[10/22/26, 9:52:24:269 GMT]Successfully completed cleaning up temporary files.
+#12 18.09 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.09 [1A[2K[0m[10/22/26, 9:52:24:269 GMT]Installation completed
+#12 18.09 [31m<[32;5m================[0m[31m-----> 77%[0m
+#12 18.09 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.09 [1A[2K[0m[10/22/26, 9:52:24:269 GMT]Installing com.ibm.websphere.appserver.appLifecycle-1.0 ...
+#12 18.09 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.10 [1A[2K[0m[10/22/26, 9:52:24:270 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/26.0.0.10/com.ibm.websphere.appserver.appLifecycle-1.0-26.0.0.10.esa.
+#12 18.10 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.10 [1A[2K[0m[10/22/26, 9:52:24:270 GMT]Starting installation ...
+#12 18.10 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.10 [1A[2K[0m[10/22/26, 9:52:24:271 GMT]Checking features ...
+#12 18.10 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.10 [1A[2K[0m[10/22/26, 9:52:24:272 GMT]Installing a dependent feature ...
+#12 18.10 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:307 GMT]Validating installed fixes ...
+#12 18.13 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:307 GMT]No fix is required to be reapplied.
+#12 18.13 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:307 GMT]Cleaning up temporary files ...
+#12 18.13 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:308 GMT]Successfully completed cleaning up temporary files.
+#12 18.13 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:308 GMT]Installation completed
+#12 18.13 [31m<[32;5m================[0m[31m-----> 78%[0m
+#12 18.13 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:308 GMT]Installing com.ibm.websphere.appserver.appmanager-1.0 ...
+#12 18.13 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:309 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/26.0.0.10/com.ibm.websphere.appserver.appmanager-1.0-26.0.0.10.esa.
+#12 18.13 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.13 [1A[2K[0m[10/22/26, 9:52:24:309 GMT]Starting installation ...
+#12 18.13 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.14 [1A[2K[0m[10/22/26, 9:52:24:310 GMT]Checking features ...
+#12 18.14 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.14 [1A[2K[0m[10/22/26, 9:52:24:311 GMT]Installing a dependent feature ...
+#12 18.14 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:360 GMT]Validating installed fixes ...
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:361 GMT]No fix is required to be reapplied.
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:361 GMT]Cleaning up temporary files ...
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:361 GMT]Successfully completed cleaning up temporary files.
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:361 GMT]Installation completed
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:362 GMT]Installing com.ibm.websphere.appserver.javaeePlatform-6.0 ...
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:363 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-6.0-26.0.0.10.esa.
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:363 GMT]Starting installation ...
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:364 GMT]Checking features ...
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.19 [1A[2K[0m[10/22/26, 9:52:24:364 GMT]Installing a dependent feature ...
+#12 18.19 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:393 GMT]Validating installed fixes ...
+#12 18.22 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:393 GMT]No fix is required to be reapplied.
+#12 18.22 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:393 GMT]Cleaning up temporary files ...
+#12 18.22 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:393 GMT]Successfully completed cleaning up temporary files.
+#12 18.22 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:394 GMT]Installation completed
+#12 18.22 [31m<[32;5m================[0m[31m-----> 79%[0m
+#12 18.22 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:394 GMT]Installing io.openliberty.eePlatform.7.0.internal-1.0 ...
+#12 18.22 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:395 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.eePlatform.7.0.internal-1.0/26.0.0.10/io.openliberty.eePlatform.7.0.internal-1.0-26.0.0.10.esa.
+#12 18.22 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:395 GMT]Starting installation ...
+#12 18.22 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:396 GMT]Checking features ...
+#12 18.22 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.22 [1A[2K[0m[10/22/26, 9:52:24:397 GMT]Installing a dependent feature ...
+#12 18.22 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.26 [1A[2K[0m[10/22/26, 9:52:24:437 GMT]Validating installed fixes ...
+#12 18.26 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.26 [1A[2K[0m[10/22/26, 9:52:24:438 GMT]No fix is required to be reapplied.
+#12 18.26 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.26 [1A[2K[0m[10/22/26, 9:52:24:438 GMT]Cleaning up temporary files ...
+#12 18.26 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.26 [1A[2K[0m[10/22/26, 9:52:24:438 GMT]Successfully completed cleaning up temporary files.
+#12 18.26 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.26 [1A[2K[0m[10/22/26, 9:52:24:439 GMT]Installation completed
+#12 18.26 [31m<[32;5m================[0m[31m-----> 80%[0m
+#12 18.26 [1A[2K[0m[31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.26 [1A[2K[0m[10/22/26, 9:52:24:439 GMT]Installing com.ibm.websphere.appserver.channelfw-1.0 ...
+#12 18.26 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.27 [1A[2K[0m[10/22/26, 9:52:24:440 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/26.0.0.10/com.ibm.websphere.appserver.channelfw-1.0-26.0.0.10.esa.
+#12 18.27 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.27 [1A[2K[0m[10/22/26, 9:52:24:440 GMT]Starting installation ...
+#12 18.27 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.27 [1A[2K[0m[10/22/26, 9:52:24:440 GMT]Checking features ...
+#12 18.27 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.27 [1A[2K[0m[10/22/26, 9:52:24:441 GMT]Installing a dependent feature ...
+#12 18.27 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:493 GMT]Validating installed fixes ...
+#12 18.32 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:493 GMT]No fix is required to be reapplied.
+#12 18.32 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:493 GMT]Cleaning up temporary files ...
+#12 18.32 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:493 GMT]Successfully completed cleaning up temporary files.
+#12 18.32 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:493 GMT]Installation completed
+#12 18.32 [31m<[32;5m================[0m[31m-----> 81%[0m
+#12 18.32 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:493 GMT]Installing io.openliberty.servlet.api-3.1 ...
+#12 18.32 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:494 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/26.0.0.10/io.openliberty.servlet.api-3.1-26.0.0.10.esa.
+#12 18.32 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:494 GMT]Starting installation ...
+#12 18.32 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:494 GMT]Checking features ...
+#12 18.32 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.32 [1A[2K[0m[10/22/26, 9:52:24:495 GMT]Installing a dependent feature ...
+#12 18.32 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:524 GMT]Validating installed fixes ...
+#12 18.35 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:525 GMT]No fix is required to be reapplied.
+#12 18.35 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:525 GMT]Cleaning up temporary files ...
+#12 18.35 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:526 GMT]Successfully completed cleaning up temporary files.
+#12 18.35 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:526 GMT]Installation completed
+#12 18.35 [31m<[32;5m==================[0m[31m---> 81%[0m
+#12 18.35 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:527 GMT]Installing com.ibm.websphere.appserver.injection-1.0 ...
+#12 18.35 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:527 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/26.0.0.10/com.ibm.websphere.appserver.injection-1.0-26.0.0.10.esa.
+#12 18.35 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:528 GMT]Starting installation ...
+#12 18.35 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:528 GMT]Checking features ...
+#12 18.35 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.35 [1A[2K[0m[10/22/26, 9:52:24:529 GMT]Installing a dependent feature ...
+#12 18.35 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:560 GMT]Validating installed fixes ...
+#12 18.39 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:560 GMT]No fix is required to be reapplied.
+#12 18.39 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:560 GMT]Cleaning up temporary files ...
+#12 18.39 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:560 GMT]Successfully completed cleaning up temporary files.
+#12 18.39 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:560 GMT]Installation completed
+#12 18.39 [31m<[32;5m==================[0m[31m---> 82%[0m
+#12 18.39 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:561 GMT]Installing com.ibm.websphere.appserver.javaeePlatform-7.0 ...
+#12 18.39 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:561 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/26.0.0.10/com.ibm.websphere.appserver.javaeePlatform-7.0-26.0.0.10.esa.
+#12 18.39 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:561 GMT]Starting installation ...
+#12 18.39 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:562 GMT]Checking features ...
+#12 18.39 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.39 [1A[2K[0m[10/22/26, 9:52:24:562 GMT]Installing a dependent feature ...
+#12 18.39 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:584 GMT]Validating installed fixes ...
+#12 18.41 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:584 GMT]No fix is required to be reapplied.
+#12 18.41 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:584 GMT]Cleaning up temporary files ...
+#12 18.41 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:585 GMT]Successfully completed cleaning up temporary files.
+#12 18.41 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:585 GMT]Installation completed
+#12 18.41 [31m<[32;5m==================[0m[31m---> 83%[0m
+#12 18.41 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:585 GMT]Installing com.ibm.websphere.appserver.javaeeddSchema-1.0 ...
+#12 18.41 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:585 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/26.0.0.10/com.ibm.websphere.appserver.javaeeddSchema-1.0-26.0.0.10.esa.
+#12 18.41 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:585 GMT]Starting installation ...
+#12 18.41 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:586 GMT]Checking features ...
+#12 18.41 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.41 [1A[2K[0m[10/22/26, 9:52:24:586 GMT]Installing a dependent feature ...
+#12 18.41 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:613 GMT]Validating installed fixes ...
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:613 GMT]No fix is required to be reapplied.
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:613 GMT]Cleaning up temporary files ...
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:614 GMT]Successfully completed cleaning up temporary files.
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:614 GMT]Installation completed
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:614 GMT]Installing com.ibm.websphere.appserver.requestProbes-1.0 ...
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:614 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/26.0.0.10/com.ibm.websphere.appserver.requestProbes-1.0-26.0.0.10.esa.
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:614 GMT]Starting installation ...
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:614 GMT]Checking features ...
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.44 [1A[2K[0m[10/22/26, 9:52:24:615 GMT]Installing a dependent feature ...
+#12 18.44 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:640 GMT]Validating installed fixes ...
+#12 18.47 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:640 GMT]No fix is required to be reapplied.
+#12 18.47 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:640 GMT]Cleaning up temporary files ...
+#12 18.47 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:640 GMT]Successfully completed cleaning up temporary files.
+#12 18.47 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:640 GMT]Installation completed
+#12 18.47 [31m<[32;5m==================[0m[31m---> 84%[0m
+#12 18.47 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:640 GMT]Installing com.ibm.websphere.appserver.servlet-servletSpi1.0 ...
+#12 18.47 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:641 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/26.0.0.10/com.ibm.websphere.appserver.servlet-servletSpi1.0-26.0.0.10.esa.
+#12 18.47 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:641 GMT]Starting installation ...
+#12 18.47 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:641 GMT]Checking features ...
+#12 18.47 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.47 [1A[2K[0m[10/22/26, 9:52:24:642 GMT]Installing a dependent feature ...
+#12 18.47 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:668 GMT]Validating installed fixes ...
+#12 18.49 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:668 GMT]No fix is required to be reapplied.
+#12 18.49 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:668 GMT]Cleaning up temporary files ...
+#12 18.49 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:669 GMT]Successfully completed cleaning up temporary files.
+#12 18.49 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:669 GMT]Installation completed
+#12 18.49 [31m<[32;5m==================[0m[31m---> 85%[0m
+#12 18.49 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:669 GMT]Installing com.ibm.websphere.appserver.httptransport-1.0 ...
+#12 18.49 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:669 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/26.0.0.10/com.ibm.websphere.appserver.httptransport-1.0-26.0.0.10.esa.
+#12 18.49 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:669 GMT]Starting installation ...
+#12 18.49 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.49 [1A[2K[0m[10/22/26, 9:52:24:670 GMT]Checking features ...
+#12 18.49 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.50 [1A[2K[0m[10/22/26, 9:52:24:670 GMT]Installing a dependent feature ...
+#12 18.50 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:725 GMT]Validating installed fixes ...
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:725 GMT]No fix is required to be reapplied.
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:726 GMT]Cleaning up temporary files ...
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:726 GMT]Successfully completed cleaning up temporary files.
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:726 GMT]Installation completed
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:726 GMT]Installing servlet-3.1 ...
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:726 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/servlet-3.1/26.0.0.10/servlet-3.1-26.0.0.10.esa.
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:727 GMT]Starting installation ...
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:727 GMT]Checking features ...
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.55 [1A[2K[0m[10/22/26, 9:52:24:728 GMT]Installing servlet-3.1 ...
+#12 18.55 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.60 [1A[2K[0m[10/22/26, 9:52:24:777 GMT]Successfully installed feature Java Servlets 3.1.
+#12 18.60 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.64 [1A[2K[0m[10/22/26, 9:52:24:816 GMT]Validating installed fixes ...
+#12 18.64 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.64 [1A[2K[0m[10/22/26, 9:52:24:816 GMT]No fix is required to be reapplied.
+#12 18.64 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.64 [1A[2K[0m[10/22/26, 9:52:24:816 GMT]Setting scripts permission ...
+#12 18.64 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.66 [1A[2K[0m[10/22/26, 9:52:24:838 GMT]Cleaning up temporary files ...
+#12 18.66 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.66 [1A[2K[0m[10/22/26, 9:52:24:838 GMT]Successfully completed cleaning up temporary files.
+#12 18.66 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.66 [1A[2K[0m[10/22/26, 9:52:24:838 GMT]Installation completed
+#12 18.66 [31m<[32;5m==================[0m[31m---> 86%[0m
+#12 18.66 [1A[2K[0m[10/22/26, 9:52:24:839 GMT]Successfully installed feature servlet-3.1.
+#12 18.66 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.66 [1A[2K[0m[10/22/26, 9:52:24:839 GMT]Installing io.openliberty.globalhandler1.0.internal.ee-6.0 ...
+#12 18.66 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.66 [1A[2K[0m[10/22/26, 9:52:24:840 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/26.0.0.10/io.openliberty.globalhandler1.0.internal.ee-6.0-26.0.0.10.esa.
+#12 18.67 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.67 [1A[2K[0m[10/22/26, 9:52:24:840 GMT]Starting installation ...
+#12 18.67 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.67 [1A[2K[0m[10/22/26, 9:52:24:841 GMT]Checking features ...
+#12 18.67 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.67 [1A[2K[0m[10/22/26, 9:52:24:841 GMT]Installing a dependent feature ...
+#12 18.67 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:868 GMT]Validating installed fixes ...
+#12 18.69 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:868 GMT]No fix is required to be reapplied.
+#12 18.69 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:868 GMT]Cleaning up temporary files ...
+#12 18.69 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:868 GMT]Successfully completed cleaning up temporary files.
+#12 18.69 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:868 GMT]Installation completed
+#12 18.69 [31m<[32;5m==================[0m[31m---> 87%[0m
+#12 18.69 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:869 GMT]Installing com.ibm.websphere.appserver.internal.optional.jaxb-2.2 ...
+#12 18.69 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:869 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-26.0.0.10.esa.
+#12 18.69 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.69 [1A[2K[0m[10/22/26, 9:52:24:869 GMT]Starting installation ...
+#12 18.70 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.70 [1A[2K[0m[10/22/26, 9:52:24:870 GMT]Checking features ...
+#12 18.70 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.70 [1A[2K[0m[10/22/26, 9:52:24:870 GMT]Installing a dependent feature ...
+#12 18.70 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:913 GMT]Validating installed fixes ...
+#12 18.74 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:914 GMT]No fix is required to be reapplied.
+#12 18.74 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:914 GMT]Cleaning up temporary files ...
+#12 18.74 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:914 GMT]Successfully completed cleaning up temporary files.
+#12 18.74 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:915 GMT]Installation completed
+#12 18.74 [31m<[32;5m==================[0m[31m---> 88%[0m
+#12 18.74 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:915 GMT]Installing json-1.0 ...
+#12 18.74 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:916 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/json-1.0/26.0.0.10/json-1.0-26.0.0.10.esa.
+#12 18.74 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:916 GMT]Starting installation ...
+#12 18.74 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:917 GMT]Checking features ...
+#12 18.74 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.74 [1A[2K[0m[10/22/26, 9:52:24:918 GMT]Installing json-1.0 ...
+#12 18.74 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.75 [1A[2K[0m[10/22/26, 9:52:24:924 GMT]Successfully installed feature JavaScript Object Notation for Java 1.0.
+#12 18.75 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.77 [1A[2K[0m[10/22/26, 9:52:24:948 GMT]Validating installed fixes ...
+#12 18.77 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.77 [1A[2K[0m[10/22/26, 9:52:24:949 GMT]No fix is required to be reapplied.
+#12 18.77 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.77 [1A[2K[0m[10/22/26, 9:52:24:949 GMT]Cleaning up temporary files ...
+#12 18.77 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.77 [1A[2K[0m[10/22/26, 9:52:24:949 GMT]Successfully completed cleaning up temporary files.
+#12 18.77 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.77 [1A[2K[0m[10/22/26, 9:52:24:949 GMT]Installation completed
+#12 18.77 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.77 [1A[2K[0m[10/22/26, 9:52:24:949 GMT]Successfully installed feature json-1.0.
+#12 18.77 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.77 [1A[2K[0m[10/22/26, 9:52:24:950 GMT]Installing io.openliberty.servlet.internal-3.1 ...
+#12 18.77 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.78 [1A[2K[0m[10/22/26, 9:52:24:950 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/26.0.0.10/io.openliberty.servlet.internal-3.1-26.0.0.10.esa.
+#12 18.78 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.78 [1A[2K[0m[10/22/26, 9:52:24:950 GMT]Starting installation ...
+#12 18.78 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.78 [1A[2K[0m[10/22/26, 9:52:24:950 GMT]Checking features ...
+#12 18.78 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.78 [1A[2K[0m[10/22/26, 9:52:24:951 GMT]Installing a dependent feature ...
+#12 18.78 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:977 GMT]Validating installed fixes ...
+#12 18.80 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:978 GMT]No fix is required to be reapplied.
+#12 18.80 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:978 GMT]Cleaning up temporary files ...
+#12 18.80 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:978 GMT]Successfully completed cleaning up temporary files.
+#12 18.80 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:978 GMT]Installation completed
+#12 18.80 [31m<[32;5m==================[0m[31m---> 89%[0m
+#12 18.80 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:978 GMT]Installing com.ibm.websphere.appserver.globalhandler-1.0 ...
+#12 18.80 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:978 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/26.0.0.10/com.ibm.websphere.appserver.globalhandler-1.0-26.0.0.10.esa.
+#12 18.80 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:979 GMT]Starting installation ...
+#12 18.80 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:979 GMT]Checking features ...
+#12 18.80 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.80 [1A[2K[0m[10/22/26, 9:52:24:979 GMT]Installing a dependent feature ...
+#12 18.80 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:010 GMT]Validating installed fixes ...
+#12 18.84 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:010 GMT]No fix is required to be reapplied.
+#12 18.84 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:010 GMT]Cleaning up temporary files ...
+#12 18.84 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:010 GMT]Successfully completed cleaning up temporary files.
+#12 18.84 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:010 GMT]Installation completed
+#12 18.84 [31m<[32;5m==================[0m[31m---> 90%[0m
+#12 18.84 [1A[2K[0m[31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:011 GMT]Installing com.ibm.websphere.appserver.javax.jaxrs-2.0 ...
+#12 18.84 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:011 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.javax.jaxrs-2.0-26.0.0.10.esa.
+#12 18.84 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:011 GMT]Starting installation ...
+#12 18.84 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:011 GMT]Checking features ...
+#12 18.84 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.84 [1A[2K[0m[10/22/26, 9:52:25:012 GMT]Installing a dependent feature ...
+#12 18.84 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:046 GMT]Validating installed fixes ...
+#12 18.87 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:046 GMT]No fix is required to be reapplied.
+#12 18.87 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:046 GMT]Cleaning up temporary files ...
+#12 18.87 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:046 GMT]Successfully completed cleaning up temporary files.
+#12 18.87 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:047 GMT]Installation completed
+#12 18.87 [31m<[32;5m==================[0m[31m---> 91%[0m
+#12 18.87 [1A[2K[0m[31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:047 GMT]Installing com.ibm.websphere.appserver.optional.jaxb-2.2 ...
+#12 18.87 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:047 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/26.0.0.10/com.ibm.websphere.appserver.optional.jaxb-2.2-26.0.0.10.esa.
+#12 18.87 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:047 GMT]Starting installation ...
+#12 18.87 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:048 GMT]Checking features ...
+#12 18.87 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.87 [1A[2K[0m[10/22/26, 9:52:25:048 GMT]Installing a dependent feature ...
+#12 18.87 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.90 [1A[2K[0m[10/22/26, 9:52:25:078 GMT]Validating installed fixes ...
+#12 18.90 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.90 [1A[2K[0m[10/22/26, 9:52:25:078 GMT]No fix is required to be reapplied.
+#12 18.90 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.90 [1A[2K[0m[10/22/26, 9:52:25:078 GMT]Cleaning up temporary files ...
+#12 18.90 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.90 [1A[2K[0m[10/22/26, 9:52:25:078 GMT]Successfully completed cleaning up temporary files.
+#12 18.90 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.90 [1A[2K[0m[10/22/26, 9:52:25:079 GMT]Installation completed
+#12 18.90 [31m<[32;5m====================[0m[31m-> 91%[0m
+#12 18.90 [1A[2K[0m[31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.90 [1A[2K[0m[10/22/26, 9:52:25:079 GMT]Installing com.ibm.websphere.appserver.jaxrs.common-2.0 ...
+#12 18.90 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.90 [1A[2K[0m[10/22/26, 9:52:25:079 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/26.0.0.10/com.ibm.websphere.appserver.jaxrs.common-2.0-26.0.0.10.esa.
+#12 18.90 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.91 [1A[2K[0m[10/22/26, 9:52:25:080 GMT]Starting installation ...
+#12 18.91 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.91 [1A[2K[0m[10/22/26, 9:52:25:080 GMT]Checking features ...
+#12 18.91 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.91 [1A[2K[0m[10/22/26, 9:52:25:080 GMT]Installing a dependent feature ...
+#12 18.91 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.97 [1A[2K[0m[10/22/26, 9:52:25:149 GMT]Validating installed fixes ...
+#12 18.97 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.97 [1A[2K[0m[10/22/26, 9:52:25:149 GMT]No fix is required to be reapplied.
+#12 18.97 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.97 [1A[2K[0m[10/22/26, 9:52:25:149 GMT]Setting scripts permission ...
+#12 18.97 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:153 GMT]Cleaning up temporary files ...
+#12 18.98 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:153 GMT]Successfully completed cleaning up temporary files.
+#12 18.98 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:153 GMT]Installation completed
+#12 18.98 [31m<[32;5m====================[0m[31m-> 92%[0m
+#12 18.98 [1A[2K[0m[31m<[32;5m====================[0m[31m-> 93%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:153 GMT]Installing com.ibm.websphere.appserver.internal.jaxrs-2.0 ...
+#12 18.98 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:154 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/26.0.0.10/com.ibm.websphere.appserver.internal.jaxrs-2.0-26.0.0.10.esa.
+#12 18.98 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:154 GMT]Starting installation ...
+#12 18.98 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:154 GMT]Checking features ...
+#12 18.98 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 18.98 [1A[2K[0m[10/22/26, 9:52:25:155 GMT]Installing a dependent feature ...
+#12 18.98 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 19.04 [1A[2K[0m[10/22/26, 9:52:25:217 GMT]Validating installed fixes ...
+#12 19.04 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 19.04 [1A[2K[0m[10/22/26, 9:52:25:217 GMT]No fix is required to be reapplied.
+#12 19.04 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 19.04 [1A[2K[0m[10/22/26, 9:52:25:217 GMT]Setting scripts permission ...
+#12 19.04 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:221 GMT]Cleaning up temporary files ...
+#12 19.05 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:221 GMT]Successfully completed cleaning up temporary files.
+#12 19.05 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:221 GMT]Installation completed
+#12 19.05 [31m<[32;5m====================[0m[31m-> 93%[0m
+#12 19.05 [1A[2K[0m[31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:222 GMT]Installing jaxrsClient-2.0 ...
+#12 19.05 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:222 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/26.0.0.10/jaxrsClient-2.0-26.0.0.10.esa.
+#12 19.05 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:222 GMT]Starting installation ...
+#12 19.05 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:223 GMT]Checking features ...
+#12 19.05 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.05 [1A[2K[0m[10/22/26, 9:52:25:223 GMT]Installing jaxrsClient-2.0 ...
+#12 19.05 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.06 [1A[2K[0m[10/22/26, 9:52:25:232 GMT]Successfully installed feature Java RESTful Services Client 2.0.
+#12 19.06 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:255 GMT]Validating installed fixes ...
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:255 GMT]No fix is required to be reapplied.
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:255 GMT]Cleaning up temporary files ...
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:255 GMT]Successfully completed cleaning up temporary files.
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:255 GMT]Installation completed
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:255 GMT]Successfully installed feature jaxrsClient-2.0.
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:256 GMT]Installing jaxrs-2.0 ...
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:256 GMT]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/jaxrs-2.0/26.0.0.10/jaxrs-2.0-26.0.0.10.esa.
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:256 GMT]Starting installation ...
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:256 GMT]Checking features ...
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.08 [1A[2K[0m[10/22/26, 9:52:25:257 GMT]Installing jaxrs-2.0 ...
+#12 19.08 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.09 [1A[2K[0m[10/22/26, 9:52:25:261 GMT]Successfully installed feature Java RESTful Services 2.0.
+#12 19.09 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:282 GMT]Validating installed fixes ...
+#12 19.11 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:282 GMT]No fix is required to be reapplied.
+#12 19.11 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:282 GMT]Cleaning up temporary files ...
+#12 19.11 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:282 GMT]Successfully completed cleaning up temporary files.
+#12 19.11 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:282 GMT]Installation completed
+#12 19.11 [31m<[32;5m====================[0m[31m-> 94%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:283 GMT]Successfully installed feature jaxrs-2.0.
+#12 19.11 [31m<[32;5m====================[0m[31m-> 95%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:283 GMT]All features were successfully installed.
+#12 19.11 [31m<[32;5m====================[0m[31m-> 95%[0m
+#12 19.11 [1A[2K[0m[31m<[32;5m====================[0m[31m-> 100%[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:283 GMT]Successfully completed cleaning up temporary files.
+#12 19.11 [31m<[32;5m====================[0m[31m-> 100%[0m
+#12 19.11 [1A[2K[0m
+#12 19.11 [1A[2K[0m[10/22/26, 9:52:25:288 GMT]Start product validation...
+#12 19.29 [10/22/26, 9:52:25:468 GMT]Product validation completed successfully.
+#12 DONE 19.4s
+
+#13 exporting to image
+#13 exporting layers
+#13 exporting layers 2.3s done
+#13 exporting manifest sha256:059c0c5886d4800300a42e56b731d2c918fc660ef3c80f3eafa84a559571e78a 0.0s done
+#13 exporting config sha256:7333e98a241584fa4ec2f8fd4eec6efc5ba177e9ed4f0f4801ba7161456a6465 0.0s done
+#13 exporting attestation manifest sha256:57cf75df8c76c8d8708fba2006662f58f6db19a0f5b47af206822b8df6147d39 0.0s done
+#13 exporting manifest list sha256:7f8ff003b021a10ce6c870cfd2b6062577a227354fd3608cfd9bb9b4378d304a 0.0s done
+#13 naming to docker.io/library/bookinfo-reviews:optimized done
+#13 unpacking to docker.io/library/bookinfo-reviews:optimized
+#13 unpacking to docker.io/library/bookinfo-reviews:optimized 0.3s done
+#13 DONE 2.8s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7wak5n5e13cq1xuadx2lgwef7
+Total Build Time: 48.09 seconds

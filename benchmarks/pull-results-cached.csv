@@ -1,0 +1,13 @@
+service,version,pull_time_seconds
+productpage,original,3.259
+productpage,updated,3.138
+productpage,optimized,3.096
+details,original,2.928
+details,updated,3.041
+details,optimized,3.106
+ratings,original,3.096
+ratings,updated,3.136
+ratings,optimized,2.998
+reviews,original,2.894
+reviews,updated,3.347
+reviews,optimized,3.032

@@ -1,0 +1,50 @@
+# syntax=docker/dockerfile:1
+
+# ==========================================
+# Stage 1: Install Dependencies
+# ==========================================
+FROM node:24-slim AS builder
+
+WORKDIR /opt/microservices
+
+ENV NODE_ENV=production
+
+COPY package.json package-lock.json ./
+
+RUN npm ci --omit=dev && \
+    npm cache clean --force
+
+
+# ==========================================
+# Stage 2: Production Runtime
+# ==========================================
+FROM node:24-slim AS runtime
+
+WORKDIR /opt/microservices
+
+ENV NODE_ENV=production
+
+# Preserve certificates used by the application
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       curl \
+       ca-certificates \
+    && update-ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy installed production dependencies
+COPY --from=builder \
+    /opt/microservices/node_modules \
+    ./node_modules
+
+COPY package.json package-lock.json ./
+COPY ratings.js ./
+
+ARG service_version
+ENV SERVICE_VERSION=${service_version:-v1}
+
+EXPOSE 9080
+
+USER 1000
+
+CMD ["node", "/opt/microservices/ratings.js", "9080"]

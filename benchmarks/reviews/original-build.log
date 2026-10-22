@@ -1,0 +1,2510 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.64kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9
+#2 ...
+
+#3 [auth] library/open-liberty:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [auth] library/gradle:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/gradle:8.13.0-jdk8
+#5 DONE 4.1s
+
+#2 [internal] load metadata for docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9
+#2 DONE 4.1s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [builder 1/3] FROM docker.io/library/gradle:8.13.0-jdk8@sha256:d13a660f62f35e5d2a9f950947274849919666d1278b22cc4c8270e64337b4ba
+#7 resolve docker.io/library/gradle:8.13.0-jdk8@sha256:d13a660f62f35e5d2a9f950947274849919666d1278b22cc4c8270e64337b4ba 0.0s done
+#7 ...
+
+#8 [internal] load build context
+#8 transferring context: 222.78kB 0.0s done
+#8 DONE 0.1s
+
+#7 [builder 1/3] FROM docker.io/library/gradle:8.13.0-jdk8@sha256:d13a660f62f35e5d2a9f950947274849919666d1278b22cc4c8270e64337b4ba
+#7 DONE 0.3s
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 resolve docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c 0.0s done
+#9 sha256:21b81b4376248f28663c9d807f4e7255b3046c17d7353ee1bd82efe65896fe9b 0B / 2.74MB 0.2s
+#9 ...
+
+#7 [builder 1/3] FROM docker.io/library/gradle:8.13.0-jdk8@sha256:d13a660f62f35e5d2a9f950947274849919666d1278b22cc4c8270e64337b4ba
+#7 sha256:a301937f5361f292b9e4c15ef8c8412f4907100b8590c18cbdc3ba7c7d316880 54.91kB / 54.91kB 1.4s done
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 40.89MB / 136.99MB 5.3s
+#7 sha256:e7bba2dbaf26eb177b11586515156a17d54cc3a9fc45b18fdccbeb69fe50af4b 50.65MB / 50.65MB 2.0s done
+#7 sha256:9f88570ddc92d20b38726c55dacabe76581273605497413610d6a6bfba8deddd 4.31kB / 4.31kB 1.7s done
+#7 sha256:eb3312fe5e2d98b72c44de539ce5d3f3a3a889fb8ef296cc56d72c71122af1ac 2.31kB / 2.31kB 1.1s done
+#7 sha256:24fd8c9e1ef939110387b25c5b6d067491c800cc750c32bd653de9ea5f3cb606 128B / 128B 1.0s done
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 13.63MB / 54.72MB 3.2s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 0B / 16.15MB 2.7s
+#7 sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3 29.53MB / 29.53MB 1.3s done
+#7 extracting sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3 0.6s done
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 17.83MB / 54.72MB 3.3s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 48.23MB / 136.99MB 5.7s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 22.02MB / 54.72MB 3.6s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 1.05MB / 16.15MB 3.2s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 25.17MB / 54.72MB 3.8s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 3.15MB / 16.15MB 3.5s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 55.57MB / 136.99MB 6.2s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 30.41MB / 54.72MB 4.1s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 5.24MB / 16.15MB 3.6s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 6.29MB / 16.15MB 3.8s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 35.65MB / 54.72MB 4.4s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 9.44MB / 16.15MB 3.9s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 62.91MB / 136.99MB 6.6s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 11.53MB / 16.15MB 4.1s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 39.85MB / 54.72MB 4.7s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 13.63MB / 16.15MB 4.2s
+#7 sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 16.15MB / 16.15MB 4.3s done
+#7 extracting sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 44.04MB / 54.72MB 5.0s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 72.35MB / 136.99MB 7.1s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 48.23MB / 54.72MB 5.1s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 51.38MB / 54.72MB 5.3s
+#7 extracting sha256:6e0156160da922d955ae1ea21e97a60a82b24e286e0f123df3680b57e8f939f2 0.5s done
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 54.72MB / 54.72MB 5.4s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 80.74MB / 136.99MB 7.5s
+#7 sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 54.72MB / 54.72MB 5.4s done
+#7 extracting sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 89.13MB / 136.99MB 8.0s
+#7 extracting sha256:eeba8f90c1e5953fc2274fda4573ac9fa02be642536c20693d7eb34ed1572820 0.9s done
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 97.52MB / 136.99MB 8.4s
+#7 extracting sha256:24fd8c9e1ef939110387b25c5b6d067491c800cc750c32bd653de9ea5f3cb606 0.0s done
+#7 extracting sha256:eb3312fe5e2d98b72c44de539ce5d3f3a3a889fb8ef296cc56d72c71122af1ac 0.0s done
+#7 extracting sha256:9f88570ddc92d20b38726c55dacabe76581273605497413610d6a6bfba8deddd 0.0s done
+#7 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.0s done
+#7 extracting sha256:e7bba2dbaf26eb177b11586515156a17d54cc3a9fc45b18fdccbeb69fe50af4b
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 105.91MB / 136.99MB 9.0s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 114.29MB / 136.99MB 9.5s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 122.68MB / 136.99MB 9.9s
+#7 extracting sha256:e7bba2dbaf26eb177b11586515156a17d54cc3a9fc45b18fdccbeb69fe50af4b 1.6s done
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 130.02MB / 136.99MB 10.4s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 136.99MB / 136.99MB 10.8s
+#7 sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 136.99MB / 136.99MB 11.0s done
+#7 extracting sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345
+#7 extracting sha256:2f78a6319c6693d3e4f3d6a7aa88578368aa86d55046aed61fe6779f09351345 0.7s done
+#7 DONE 12.1s
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 sha256:21b81b4376248f28663c9d807f4e7255b3046c17d7353ee1bd82efe65896fe9b 2.74MB / 2.74MB 2.7s done
+#9 sha256:aca59925453e0ee76ea07e46c2ed1d6cee422aa1484218f9c22cf2577dc78437 10.62kB / 10.62kB 0.3s done
+#9 sha256:23f8784f10b7c1ce0ca4098ec65d610533be8cb22e0692a086d519d0b24a1d24 737B / 737B 0.6s done
+#9 sha256:b3d78383a3eeaaa5a59fa5721ca80b9e4fa466ab53b1d2b96ec26e595a349fcc 14.62MB / 14.62MB 2.5s done
+#9 sha256:7b6736c15b7910e30abf7faaf18ceaba7f30a8e351087d1fd2659af237ed5c1b 31.75kB / 31.75kB 0.5s done
+#9 sha256:3b542203cdef0d6646e275e7531eeb0e525b067554ec2a273a0107c29cc3c5ca 243B / 243B 0.5s done
+#9 sha256:c66e44297c18b75e0a554147721a801fca21b31d94c12b45e5663f7fca15ac76 9.61kB / 9.61kB 0.3s done
+#9 sha256:3e42e1635d653ed91fee6957d038ef7a815bc91bd62aeebabb97b6f9cd129de4 0B / 1.05kB 0.2s
+#9 sha256:ac736981419aba48890e57917cf88e9ccc539a4c3858ae03fd6c2d790e925db9 5.02MB / 5.02MB 0.6s done
+#9 sha256:4fe200c80616675d621c20320c6bbb63824ebb52e7f77cafc18893533d2fb4fe 12.17MB / 12.17MB 1.1s done
+#9 sha256:3082e23860276aa9c4c2d43b942c9e25dd1e69cce4d58c23a39cb9f13dae081f 51.75MB / 51.75MB 2.6s done
+#9 sha256:89dc6ea4eae2b38a3550534ece4983005a7d2e90e4fa503ed04dcfc58ee71159 24.12MB / 29.53MB 2.3s
+#9 ...
+
+#7 [builder 1/3] FROM docker.io/library/gradle:8.13.0-jdk8@sha256:d13a660f62f35e5d2a9f950947274849919666d1278b22cc4c8270e64337b4ba
+#7 extracting sha256:a301937f5361f292b9e4c15ef8c8412f4907100b8590c18cbdc3ba7c7d316880 0.0s done
+#7 DONE 12.1s
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 sha256:89dc6ea4eae2b38a3550534ece4983005a7d2e90e4fa503ed04dcfc58ee71159 29.53MB / 29.53MB 2.4s done
+#9 extracting sha256:89dc6ea4eae2b38a3550534ece4983005a7d2e90e4fa503ed04dcfc58ee71159
+#9 ...
+
+#10 [builder 2/3] COPY . /home/gradle
+#10 DONE 0.2s
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 ...
+
+#11 [builder 3/3] RUN gradle build
+#11 ...
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 extracting sha256:89dc6ea4eae2b38a3550534ece4983005a7d2e90e4fa503ed04dcfc58ee71159 0.7s done
+#9 DONE 12.9s
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 extracting sha256:4fe200c80616675d621c20320c6bbb63824ebb52e7f77cafc18893533d2fb4fe
+#9 extracting sha256:4fe200c80616675d621c20320c6bbb63824ebb52e7f77cafc18893533d2fb4fe 0.5s done
+#9 DONE 13.3s
+
+#11 [builder 3/3] RUN gradle build
+#11 1.426 Starting a Gradle Daemon (subsequent builds will be faster)
+#11 ...
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 extracting sha256:3082e23860276aa9c4c2d43b942c9e25dd1e69cce4d58c23a39cb9f13dae081f 1.0s done
+#9 DONE 14.3s
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 extracting sha256:ac736981419aba48890e57917cf88e9ccc539a4c3858ae03fd6c2d790e925db9 0.1s done
+#9 extracting sha256:3e42e1635d653ed91fee6957d038ef7a815bc91bd62aeebabb97b6f9cd129de4 0.0s done
+#9 DONE 14.4s
+
+#11 [builder 3/3] RUN gradle build
+#11 ...
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 extracting sha256:c66e44297c18b75e0a554147721a801fca21b31d94c12b45e5663f7fca15ac76 0.0s done
+#9 extracting sha256:3b542203cdef0d6646e275e7531eeb0e525b067554ec2a273a0107c29cc3c5ca 0.0s done
+#9 extracting sha256:7b6736c15b7910e30abf7faaf18ceaba7f30a8e351087d1fd2659af237ed5c1b 0.0s done
+#9 extracting sha256:b3d78383a3eeaaa5a59fa5721ca80b9e4fa466ab53b1d2b96ec26e595a349fcc 0.1s done
+#9 DONE 14.6s
+
+#9 [stage-1 1/3] FROM docker.io/library/open-liberty:24.0.0.12-kernel-slim-java17-openj9@sha256:5558c7dc05064eeed3403ad229d95e1f345ff248454d2e8f18bb1bb70063d80c
+#9 extracting sha256:23f8784f10b7c1ce0ca4098ec65d610533be8cb22e0692a086d519d0b24a1d24 0.0s done
+#9 extracting sha256:aca59925453e0ee76ea07e46c2ed1d6cee422aa1484218f9c22cf2577dc78437 0.0s done
+#9 extracting sha256:21b81b4376248f28663c9d807f4e7255b3046c17d7353ee1bd82efe65896fe9b 0.1s done
+#9 DONE 14.7s
+
+#11 [builder 3/3] RUN gradle build
+#11 12.22 > Task :reviews-application:compileJava
+#11 12.22 > Task :reviews-application:processResources NO-SOURCE
+#11 12.22 > Task :reviews-application:classes
+#11 12.32 > Task :reviews-application:war
+#11 12.32 > Task :reviews-application:assemble
+#11 12.42 > Task :reviews-application:compileTestJava
+#11 12.42 > Task :reviews-application:processTestResources NO-SOURCE
+#11 12.42 > Task :reviews-application:testClasses
+#11 12.72 > Task :reviews-application:test
+#11 12.72 > Task :reviews-application:check
+#11 12.72 > Task :reviews-application:build
+#11 12.72 > Task :reviews-wlpcfg:copyApplication
+#11 12.72 > Task :reviews-wlpcfg:build
+#11 12.81 
+#11 12.81 [Incubating] Problems report is available at: file:///home/gradle/build/reports/problems/problems-report.html
+#11 12.81 
+#11 12.81 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+#11 12.81 
+#11 12.81 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+#11 12.81 
+#11 12.81 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+#11 12.81 
+#11 12.81 BUILD SUCCESSFUL in 12s
+#11 12.81 5 actionable tasks: 5 executed
+#11 DONE 13.3s
+
+#12 [stage-1 2/3] COPY --from=builder /home/gradle/reviews-wlpcfg/servers/LibertyProjectServer/ /opt/ol/wlp/usr/servers/defaultServer/
+#12 DONE 0.0s
+
+#13 [stage-1 3/3] RUN /opt/ol/wlp/bin/featureUtility installServerFeatures  --acceptLicense /opt/ol/wlp/usr/servers/defaultServer/server.xml --verbose &&     chmod -R g=rwx /opt/ol/wlp/output/defaultServer/
+#13 0.597 
+#13 0.694 [10/22/26, 9:45:16:068 UTC]Checking for missing features required by the server ...
+#13 0.704 <---------------------> 0.00%
+#13 0.775 [10/22/26, 9:45:16:169 UTC]file not found for bootstrap.properties under server: defaultServer
+#13 0.777 <---------------------> 0.00%
+#13 0.782 [10/22/26, 9:45:16:176 UTC]Processing /opt/ol/wlp/usr/servers/defaultServer/configDropins/defaults
+#13 0.783 <---------------------> 0.00%
+#13 0.790 [10/22/26, 9:45:16:184 UTC]file not found for bootstrap.properties under server: defaults
+#13 0.792 <---------------------> 0.00%
+#13 0.793 [10/22/26, 9:45:16:187 UTC]Processing /opt/ol/wlp/usr/servers/defaultServer/configDropins/overrides
+#13 0.795 <---------------------> 0.00%
+#13 0.798 [10/22/26, 9:45:16:191 UTC]The defaultServer server requires the following features: jsonp-1.0 jaxrs-2.0
+#13 0.799 <---------------------> 0.00%
+#13 0.801 [10/22/26, 9:45:16:195 UTC]all server features: [jsonp-1.0, jaxrs-2.0]
+#13 0.803 <---------------------> 0.00%
+#13 0.813 [10/22/26, 9:45:16:208 UTC]Initializing ...
+#13 0.814 <---------------------> 0.00%
+#13 0.819 [10/22/26, 9:45:16:213 UTC]http.proxyHost null
+#13 0.820 <---------------------> 0.00%
+#13 0.821 [10/22/26, 9:45:16:215 UTC]https.proxyHost null
+#13 0.822 <---------------------> 0.00%
+#13 0.826 [10/22/26, 9:45:16:217 UTC]proxy exclusion list: null
+#13 0.826 <---------------------> 0.00%
+#13 0.827 [10/22/26, 9:45:16:221 UTC]Environment variables: 
+#13 0.829 <---------------------> 0.00%
+#13 0.829 [10/22/26, 9:45:16:224 UTC]FEATURE_REPO_URL: null
+#13 0.831 <---------------------> 0.00%
+#13 0.832 [10/22/26, 9:45:16:226 UTC]http.nonProxyHosts: null
+#13 0.833 <---------------------> 0.00%
+#13 0.834 [10/22/26, 9:45:16:228 UTC]FEATURE_REPO_USER: null
+#13 0.838 <---------------------> 0.00%
+#13 0.839 [10/22/26, 9:45:16:232 UTC]FEATURE_UTILITY_MAVEN_REPOSITORIES: []
+#13 0.839 <---------------------> 0.00%
+#13 0.840 [10/22/26, 9:45:16:234 UTC]FEATURE_REPO_PASSWORD: *********
+#13 0.843 <---------------------> 0.00%
+#13 0.843 [10/22/26, 9:45:16:236 UTC]FEATURE_VERIFY: null
+#13 0.843 <---------------------> 0.00%
+#13 0.844 [10/22/26, 9:45:16:238 UTC]FEATURE_LOCAL_REPO: null
+#13 0.844 <---------------------> 0.00%
+#13 0.848 [10/22/26, 9:45:16:242 UTC]No featureUtility.properties detected.
+#13 0.849 <---------------------> 0.00%
+#13 0.850 [10/22/26, 9:45:16:244 UTC]additional jsons: []
+#13 0.851 <---------------------> 0.00%
+#13 0.858 [10/22/26, 9:45:16:252 UTC]JSONs required: [io.openliberty.features:features:24.0.0.12]
+#13 0.860 <---------------------> 0.00%
+#13 0.864 [10/22/26, 9:45:16:258 UTC]Found the following jsons locally: []
+#13 0.865 <---------------------> 0.00%
+#13 0.865 [10/22/26, 9:45:16:260 UTC]Could not find all json files from local directories, now downloading from Maven..
+#13 0.867 <---------------------> 0.00%
+#13 0.872 [10/22/26, 9:45:16:266 UTC]Using 8 threads to download artifacts.
+#13 0.873 <---------------------> 0.00%
+#13 1.564 [10/22/26, 9:45:16:958 UTC]Response code - https://repo.maven.apache.org/maven2/:200
+#13 1.564 <---------------------> 0.00%
+#13 1.738 [10/22/26, 9:45:17:132 UTC]non Proxy Hosts: null
+#13 1.739 <---------------------> 0.00%
+#13 1.739 [10/22/26, 9:45:17:133 UTC]downloadInternal url host: repo.maven.apache.org
+#13 1.739 <---------------------> 0.00%
+#13 2.174 [10/22/26, 9:45:17:568 UTC]Successfully validated MD5 checksum for file: features-24.0.0.12.json
+#13 2.174 <---------------------> 0.00%
+#13 2.174 [10/22/26, 9:45:17:568 UTC]Downloaded the following json files from remote: [/root/.m2/repository/io/openliberty/features/features/24.0.0.12/features-24.0.0.12.json]
+#13 2.174 <---------------------> 0.00%
+#13 2.174 [10/22/26, 9:45:17:569 UTC]Finished finding jsons
+#13 2.176 <==-------------------> 10.00%
+#13 2.176 <==-------------------> 10.00%
+#13 2.180 [10/22/26, 9:45:17:574 UTC]Initialized install kernel map
+#13 2.180 <====-----------------> 15.00%
+#13 2.219 [10/22/26, 9:45:17:613 UTC]Downloading key... file:/opt/ol/wlp/lib/versions/public_key/libertyKey.asc
+#13 2.219 <====-----------------> 15.00%
+#13 2.245 <====-----------------> 15.00%
+#13 2.246 [10/22/26, 9:45:17:640 UTC]Resolving remote features. This process might take several minutes to complete.
+#13 2.246 <====-----------------> 15.00%
+#13 3.622 [10/22/26, 9:45:19:016 UTC]Preparing assets for installation. This process might take several minutes to complete.
+#13 3.623 <======---------------> 25.00%
+#13 3.623 [10/22/26, 9:45:19:017 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:24.0.0.12
+#13 3.624 <======---------------> 25.00%
+#13 3.626 [10/22/26, 9:45:19:020 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:24.0.0.12
+#13 3.626 <======---------------> 25.00%
+#13 3.627 [10/22/26, 9:45:19:021 UTC]Processing artifact: io.openliberty.features:jsonp-1.0:24.0.0.12
+#13 3.628 <======---------------> 25.00%
+#13 3.628 [10/22/26, 9:45:19:022 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:24.0.0.12
+#13 3.628 <======---------------> 25.00%
+#13 3.629 [10/22/26, 9:45:19:023 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:24.0.0.12
+#13 3.629 <======---------------> 25.00%
+#13 3.630 [10/22/26, 9:45:19:024 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:24.0.0.12
+#13 3.633 <======---------------> 25.00%
+#13 3.633 [10/22/26, 9:45:19:025 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:24.0.0.12
+#13 3.633 <======---------------> 25.00%
+#13 3.633 [10/22/26, 9:45:19:025 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:026 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:027 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:028 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:029 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:030 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:030 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:031 UTC]Processing artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:033 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:033 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:034 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:035 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.642 [10/22/26, 9:45:19:036 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:24.0.0.12
+#13 3.642 <======---------------> 25.00%
+#13 3.644 [10/22/26, 9:45:19:037 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:24.0.0.12
+#13 3.644 <======---------------> 25.00%
+#13 3.644 [10/22/26, 9:45:19:038 UTC]Processing artifact: io.openliberty.features:servlet-3.1:24.0.0.12
+#13 3.645 <======---------------> 25.00%
+#13 3.645 [10/22/26, 9:45:19:039 UTC]Processing artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:24.0.0.12
+#13 3.645 <======---------------> 25.00%
+#13 3.646 [10/22/26, 9:45:19:040 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:24.0.0.12
+#13 3.646 <======---------------> 25.00%
+#13 3.647 [10/22/26, 9:45:19:041 UTC]Processing artifact: io.openliberty.features:json-1.0:24.0.0.12
+#13 3.647 <======---------------> 25.00%
+#13 3.649 [10/22/26, 9:45:19:042 UTC]Processing artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:24.0.0.12
+#13 3.650 <======---------------> 25.00%
+#13 3.652 [10/22/26, 9:45:19:045 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:24.0.0.12
+#13 3.652 <======---------------> 25.00%
+#13 3.652 [10/22/26, 9:45:19:046 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:24.0.0.12
+#13 3.654 <======---------------> 25.00%
+#13 3.654 [10/22/26, 9:45:19:048 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:24.0.0.12
+#13 3.655 <======---------------> 25.00%
+#13 3.658 [10/22/26, 9:45:19:050 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:24.0.0.12
+#13 3.660 <======---------------> 25.00%
+#13 3.660 [10/22/26, 9:45:19:053 UTC]Processing artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:24.0.0.12
+#13 3.660 <======---------------> 25.00%
+#13 3.660 [10/22/26, 9:45:19:054 UTC]Processing artifact: io.openliberty.features:jaxrsClient-2.0:24.0.0.12
+#13 3.660 <======---------------> 25.00%
+#13 3.661 [10/22/26, 9:45:19:055 UTC]Processing artifact: io.openliberty.features:jaxrs-2.0:24.0.0.12
+#13 3.661 <======---------------> 25.00%
+#13 3.662 [10/22/26, 9:45:19:056 UTC]Establishing a connection to the configured Maven repository ...
+#13 3.662 This process might take several minutes to complete.
+#13 3.662 <======---------------> 25.00%
+#13 3.699 [10/22/26, 9:45:19:093 UTC]Response code - https://repo.maven.apache.org/maven2/:200
+#13 3.699 <======---------------> 25.00%
+#13 3.699 [10/22/26, 9:45:19:093 UTC]Successfully connected to the configured repository.
+#13 3.699 <======---------------> 25.00%
+#13 3.700 [10/22/26, 9:45:19:094 UTC]number of missing features: 132
+#13 3.700 <======---------------> 25.00%
+#13 3.708 [10/22/26, 9:45:19:102 UTC]Finding 132 maven artifacts.. 
+#13 3.708 <======---------------> 25.00%
+#13 4.010 [10/22/26, 9:45:19:404 UTC]Finding 128 maven artifacts.. 
+#13 4.010 <======---------------> 25.00%
+#13 4.312 [10/22/26, 9:45:19:706 UTC]Finding 122 maven artifacts.. 
+#13 4.313 <======---------------> 25.00%
+#13 4.614 [10/22/26, 9:45:20:008 UTC]Finding 114 maven artifacts.. 
+#13 4.614 <======---------------> 25.00%
+#13 4.916 [10/22/26, 9:45:20:310 UTC]Finding 106 maven artifacts.. 
+#13 4.916 <======---------------> 25.00%
+#13 5.217 [10/22/26, 9:45:20:611 UTC]Finding 100 maven artifacts.. 
+#13 5.218 <======---------------> 25.00%
+#13 5.519 [10/22/26, 9:45:20:913 UTC]Finding 90 maven artifacts.. 
+#13 5.519 <======---------------> 25.00%
+#13 5.820 [10/22/26, 9:45:21:214 UTC]Finding 83 maven artifacts.. 
+#13 5.820 <======---------------> 25.00%
+#13 6.121 [10/22/26, 9:45:21:515 UTC]Finding 75 maven artifacts.. 
+#13 6.121 <======---------------> 25.00%
+#13 6.423 [10/22/26, 9:45:21:817 UTC]Finding 69 maven artifacts.. 
+#13 6.424 <======---------------> 25.00%
+#13 6.725 [10/22/26, 9:45:22:119 UTC]Finding 65 maven artifacts.. 
+#13 6.725 <======---------------> 25.00%
+#13 7.026 [10/22/26, 9:45:22:420 UTC]Finding 55 maven artifacts.. 
+#13 7.026 <======---------------> 25.00%
+#13 7.328 [10/22/26, 9:45:22:722 UTC]Finding 47 maven artifacts.. 
+#13 7.328 <======---------------> 25.00%
+#13 7.630 [10/22/26, 9:45:23:024 UTC]Finding 38 maven artifacts.. 
+#13 7.630 <======---------------> 25.00%
+#13 7.931 [10/22/26, 9:45:23:325 UTC]Finding 30 maven artifacts.. 
+#13 7.931 <======---------------> 25.00%
+#13 8.233 [10/22/26, 9:45:23:627 UTC]Finding 19 maven artifacts.. 
+#13 8.233 <======---------------> 25.00%
+#13 8.535 [10/22/26, 9:45:23:929 UTC]Finding 12 maven artifacts.. 
+#13 8.535 <======---------------> 25.00%
+#13 8.837 [10/22/26, 9:45:24:231 UTC]Finding 5 maven artifacts.. 
+#13 8.838 <======---------------> 25.00%
+#13 9.139 [10/22/26, 9:45:24:533 UTC]Finding 0 maven artifacts.. 
+#13 9.139 <======---------------> 25.00%
+#13 9.440 [10/22/26, 9:45:24:834 UTC]Downloading required features ...
+#13 9.441 <======---------------> 25.00%
+#13 9.444 [10/22/26, 9:45:24:838 UTC]non Proxy Hosts: null
+#13 9.444 <======---------------> 25.00%
+#13 9.444 [10/22/26, 9:45:24:838 UTC]non Proxy Hosts: null
+#13 9.444 <======---------------> 25.00%
+#13 9.445 [10/22/26, 9:45:24:839 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.446 <======---------------> 25.00%
+#13 9.446 [10/22/26, 9:45:24:839 UTC]Remaining artifacts: 132
+#13 9.446 <======---------------> 25.00%
+#13 9.446 [10/22/26, 9:45:24:840 UTC]non Proxy Hosts: null
+#13 9.446 <======---------------> 25.00%
+#13 9.447 [10/22/26, 9:45:24:841 UTC]non Proxy Hosts: null
+#13 9.447 <======---------------> 25.00%
+#13 9.447 [10/22/26, 9:45:24:841 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.448 <======---------------> 25.00%
+#13 9.448 [10/22/26, 9:45:24:842 UTC]non Proxy Hosts: null
+#13 9.450 <======---------------> 25.00%
+#13 9.450 [10/22/26, 9:45:24:843 UTC]non Proxy Hosts: null
+#13 9.450 <======---------------> 25.00%
+#13 9.450 [10/22/26, 9:45:24:844 UTC]non Proxy Hosts: null
+#13 9.450 <======---------------> 25.00%
+#13 9.450 [10/22/26, 9:45:24:845 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.452 <======---------------> 25.00%
+#13 9.452 [10/22/26, 9:45:24:846 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.453 <======---------------> 25.00%
+#13 9.453 [10/22/26, 9:45:24:847 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.454 <======---------------> 25.00%
+#13 9.454 [10/22/26, 9:45:24:848 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.455 <======---------------> 25.00%
+#13 9.456 [10/22/26, 9:45:24:850 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.456 <======---------------> 25.00%
+#13 9.457 [10/22/26, 9:45:24:851 UTC]non Proxy Hosts: null
+#13 9.457 <======---------------> 25.00%
+#13 9.458 [10/22/26, 9:45:24:852 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.458 <======---------------> 25.00%
+#13 9.747 [10/22/26, 9:45:25:141 UTC]Remaining artifacts: 132
+#13 9.747 <======---------------> 25.00%
+#13 9.830 [10/22/26, 9:45:25:224 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.pom.asc
+#13 9.830 <======---------------> 25.00%
+#13 9.831 [10/22/26, 9:45:25:225 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.esa.asc
+#13 9.831 <======---------------> 25.00%
+#13 9.831 [10/22/26, 9:45:25:225 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.esa
+#13 9.831 <======---------------> 25.00%
+#13 9.832 [10/22/26, 9:45:25:226 UTC]non Proxy Hosts: null
+#13 9.832 <======---------------> 25.00%
+#13 9.832 [10/22/26, 9:45:25:226 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.832 <======---------------> 25.00%
+#13 9.832 [10/22/26, 9:45:25:226 UTC]non Proxy Hosts: null
+#13 9.833 <======---------------> 25.00%
+#13 9.833 [10/22/26, 9:45:25:227 UTC]non Proxy Hosts: null
+#13 9.833 <======---------------> 25.00%
+#13 9.834 [10/22/26, 9:45:25:227 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.834 <======---------------> 25.00%
+#13 9.834 [10/22/26, 9:45:25:227 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.834 <======---------------> 25.00%
+#13 9.853 [10/22/26, 9:45:25:247 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.pom.asc
+#13 9.854 <======---------------> 25.00%
+#13 9.854 [10/22/26, 9:45:25:249 UTC]non Proxy Hosts: null
+#13 9.855 <======---------------> 25.00%
+#13 9.855 [10/22/26, 9:45:25:249 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.855 <======---------------> 25.00%
+#13 9.860 [10/22/26, 9:45:25:254 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.esa.asc
+#13 9.860 <======---------------> 25.00%
+#13 9.861 [10/22/26, 9:45:25:255 UTC]non Proxy Hosts: null
+#13 9.861 <======---------------> 25.00%
+#13 9.862 [10/22/26, 9:45:25:256 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.862 <======---------------> 25.00%
+#13 9.868 [10/22/26, 9:45:25:262 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.pom
+#13 9.868 <======---------------> 25.00%
+#13 9.869 [10/22/26, 9:45:25:263 UTC]non Proxy Hosts: null
+#13 9.869 <======---------------> 25.00%
+#13 9.869 [10/22/26, 9:45:25:263 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.870 <======---------------> 25.00%
+#13 9.913 [10/22/26, 9:45:25:307 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.esa
+#13 9.913 <======---------------> 25.00%
+#13 9.913 [10/22/26, 9:45:25:307 UTC]non Proxy Hosts: null
+#13 9.913 <======---------------> 25.00%
+#13 9.914 [10/22/26, 9:45:25:308 UTC]downloadInternal url host: repo.maven.apache.org
+#13 9.915 <======---------------> 25.00%
+#13 10.03 [10/22/26, 9:45:25:428 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.pom
+#13 10.03 <======---------------> 25.00%
+#13 10.03 [10/22/26, 9:45:25:429 UTC]non Proxy Hosts: null
+#13 10.04 <======---------------> 25.00%
+#13 10.04 [10/22/26, 9:45:25:430 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.04 <======---------------> 25.00%
+#13 10.05 [10/22/26, 9:45:25:442 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:24.0.0.12.esa
+#13 10.05 <======---------------> 25.00%
+#13 10.05 [10/22/26, 9:45:25:443 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:24.0.0.12.pom
+#13 10.05 <======---------------> 25.00%
+#13 10.05 [10/22/26, 9:45:25:443 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:24.0.0.12.esa.asc
+#13 10.05 <======---------------> 26.00%
+#13 10.05 [10/22/26, 9:45:25:444 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.eeCompatible-7.0:24.0.0.12.pom.asc
+#13 10.05 <======---------------> 26.00%
+#13 10.05 [10/22/26, 9:45:25:444 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:24.0.0.12.esa
+#13 10.05 <======---------------> 26.00%
+#13 10.05 [10/22/26, 9:45:25:445 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:24.0.0.12.pom
+#13 10.05 <======---------------> 26.00%
+#13 10.05 [10/22/26, 9:45:25:445 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:24.0.0.12.esa.asc
+#13 10.05 <======---------------> 26.00%
+#13 10.05 [10/22/26, 9:45:25:446 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jsonpImpl-1.0.0:24.0.0.12.pom.asc
+#13 10.05 <======---------------> 27.00%
+#13 10.05 [10/22/26, 9:45:25:447 UTC]Remaining artifacts: 124
+#13 10.05 <======---------------> 27.00%
+#13 10.16 [10/22/26, 9:45:25:553 UTC]Successfully validated MD5 checksum for file: jsonp-1.0-24.0.0.12.pom
+#13 10.16 <======---------------> 27.00%
+#13 10.16 [10/22/26, 9:45:25:553 UTC]non Proxy Hosts: null
+#13 10.16 <======---------------> 27.00%
+#13 10.16 [10/22/26, 9:45:25:554 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.16 <======---------------> 27.00%
+#13 10.24 [10/22/26, 9:45:25:633 UTC]Successfully validated MD5 checksum for file: jsonp-1.0-24.0.0.12.esa.asc
+#13 10.24 <======---------------> 27.00%
+#13 10.24 [10/22/26, 9:45:25:633 UTC]non Proxy Hosts: null
+#13 10.24 <======---------------> 27.00%
+#13 10.24 [10/22/26, 9:45:25:634 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.24 <======---------------> 27.00%
+#13 10.24 [10/22/26, 9:45:25:635 UTC]Successfully validated MD5 checksum for file: jsonp-1.0-24.0.0.12.esa
+#13 10.24 <======---------------> 27.00%
+#13 10.24 [10/22/26, 9:45:25:636 UTC]non Proxy Hosts: null
+#13 10.24 <======---------------> 27.00%
+#13 10.24 [10/22/26, 9:45:25:636 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.24 <======---------------> 27.00%
+#13 10.25 [10/22/26, 9:45:25:642 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.esa
+#13 10.25 <======---------------> 27.00%
+#13 10.25 [10/22/26, 9:45:25:643 UTC]non Proxy Hosts: null
+#13 10.25 <======---------------> 27.00%
+#13 10.25 [10/22/26, 9:45:25:643 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.25 <======---------------> 27.00%
+#13 10.27 [10/22/26, 9:45:25:668 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.pom
+#13 10.27 <======---------------> 27.00%
+#13 10.28 [10/22/26, 9:45:25:669 UTC]non Proxy Hosts: null
+#13 10.28 <======---------------> 27.00%
+#13 10.28 [10/22/26, 9:45:25:670 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.28 <======---------------> 27.00%
+#13 10.34 [10/22/26, 9:45:25:732 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.esa.asc
+#13 10.34 <======---------------> 27.00%
+#13 10.34 [10/22/26, 9:45:25:732 UTC]non Proxy Hosts: null
+#13 10.34 <======---------------> 27.00%
+#13 10.34 [10/22/26, 9:45:25:733 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.34 <======---------------> 27.00%
+#13 10.35 [10/22/26, 9:45:25:748 UTC]Finished downloading artifact: io.openliberty.features:jsonp-1.0:24.0.0.12.esa
+#13 10.36 <======---------------> 27.00%
+#13 10.36 [10/22/26, 9:45:25:749 UTC]Finished downloading artifact: io.openliberty.features:jsonp-1.0:24.0.0.12.pom
+#13 10.36 <======---------------> 27.00%
+#13 10.36 [10/22/26, 9:45:25:750 UTC]Finished downloading artifact: io.openliberty.features:jsonp-1.0:24.0.0.12.esa.asc
+#13 10.36 <======---------------> 27.00%
+#13 10.36 [10/22/26, 9:45:25:751 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:24.0.0.12.esa
+#13 10.36 <======---------------> 27.00%
+#13 10.36 [10/22/26, 9:45:25:751 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:24.0.0.12.pom
+#13 10.36 <======---------------> 27.00%
+#13 10.36 [10/22/26, 9:45:25:752 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:24.0.0.12.esa.asc
+#13 10.36 <======---------------> 28.00%
+#13 10.36 [10/22/26, 9:45:25:752 UTC]Remaining artifacts: 118
+#13 10.36 <======---------------> 28.00%
+#13 10.38 [10/22/26, 9:45:25:773 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.pom.asc
+#13 10.38 <======---------------> 28.00%
+#13 10.38 [10/22/26, 9:45:25:774 UTC]non Proxy Hosts: null
+#13 10.38 <======---------------> 28.00%
+#13 10.38 [10/22/26, 9:45:25:774 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.38 <======---------------> 28.00%
+#13 10.41 [10/22/26, 9:45:25:807 UTC]Successfully validated MD5 checksum for file: jsonp-1.0-24.0.0.12.pom.asc
+#13 10.41 <======---------------> 28.00%
+#13 10.41 [10/22/26, 9:45:25:807 UTC]non Proxy Hosts: null
+#13 10.41 <======---------------> 28.00%
+#13 10.41 [10/22/26, 9:45:25:808 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.41 <======---------------> 28.00%
+#13 10.55 [10/22/26, 9:45:25:940 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.pom.asc
+#13 10.55 <======---------------> 28.00%
+#13 10.55 [10/22/26, 9:45:25:941 UTC]non Proxy Hosts: null
+#13 10.55 <======---------------> 28.00%
+#13 10.55 [10/22/26, 9:45:25:942 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.55 <======---------------> 28.00%
+#13 10.58 [10/22/26, 9:45:25:976 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.esa.asc
+#13 10.58 <======---------------> 28.00%
+#13 10.58 [10/22/26, 9:45:25:977 UTC]non Proxy Hosts: null
+#13 10.58 <======---------------> 28.00%
+#13 10.58 [10/22/26, 9:45:25:977 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.58 <======---------------> 28.00%
+#13 10.60 [10/22/26, 9:45:25:994 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.pom
+#13 10.60 <======---------------> 28.00%
+#13 10.60 [10/22/26, 9:45:25:994 UTC]non Proxy Hosts: null
+#13 10.60 <======---------------> 28.00%
+#13 10.60 [10/22/26, 9:45:25:995 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.60 <======---------------> 28.00%
+#13 10.64 [10/22/26, 9:45:26:035 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.esa
+#13 10.64 <======---------------> 28.00%
+#13 10.64 [10/22/26, 9:45:26:035 UTC]non Proxy Hosts: null
+#13 10.64 <======---------------> 28.00%
+#13 10.64 [10/22/26, 9:45:26:036 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.64 <======---------------> 28.00%
+#13 10.66 [10/22/26, 9:45:26:054 UTC]Finished downloading artifact: io.openliberty.features:jsonp-1.0:24.0.0.12.pom.asc
+#13 10.66 <======---------------> 28.00%
+#13 10.66 [10/22/26, 9:45:26:055 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.annotation-1.2:24.0.0.12.pom.asc
+#13 10.66 <======---------------> 28.00%
+#13 10.66 [10/22/26, 9:45:26:056 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:24.0.0.12.esa
+#13 10.66 <======---------------> 28.00%
+#13 10.66 [10/22/26, 9:45:26:056 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:24.0.0.12.pom
+#13 10.66 <======---------------> 28.00%
+#13 10.66 [10/22/26, 9:45:26:057 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:24.0.0.12.esa.asc
+#13 10.66 <======---------------> 29.00%
+#13 10.66 [10/22/26, 9:45:26:057 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.artifact-1.0:24.0.0.12.pom.asc
+#13 10.66 <======---------------> 29.00%
+#13 10.66 [10/22/26, 9:45:26:058 UTC]Remaining artifacts: 112
+#13 10.66 <======---------------> 29.00%
+#13 10.72 [10/22/26, 9:45:26:110 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.anno-1.0-24.0.0.12.pom
+#13 10.72 <======---------------> 29.00%
+#13 10.72 [10/22/26, 9:45:26:110 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.anno-1.0-24.0.0.12.esa
+#13 10.72 <======---------------> 29.00%
+#13 10.72 [10/22/26, 9:45:26:111 UTC]non Proxy Hosts: null
+#13 10.72 <======---------------> 29.00%
+#13 10.72 [10/22/26, 9:45:26:112 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.72 <======---------------> 29.00%
+#13 10.72 [10/22/26, 9:45:26:112 UTC]non Proxy Hosts: null
+#13 10.72 <======---------------> 29.00%
+#13 10.72 [10/22/26, 9:45:26:113 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.72 <======---------------> 29.00%
+#13 10.85 [10/22/26, 9:45:26:247 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.anno-1.0-24.0.0.12.pom.asc
+#13 10.85 <======---------------> 29.00%
+#13 10.85 [10/22/26, 9:45:26:247 UTC]non Proxy Hosts: null
+#13 10.85 <======---------------> 29.00%
+#13 10.85 [10/22/26, 9:45:26:248 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.85 <======---------------> 29.00%
+#13 10.87 [10/22/26, 9:45:26:268 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.esa
+#13 10.87 <======---------------> 29.00%
+#13 10.87 [10/22/26, 9:45:26:268 UTC]non Proxy Hosts: null
+#13 10.87 <======---------------> 29.00%
+#13 10.87 [10/22/26, 9:45:26:269 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.87 <======---------------> 29.00%
+#13 10.88 [10/22/26, 9:45:26:273 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.esa.asc
+#13 10.88 <======---------------> 29.00%
+#13 10.88 [10/22/26, 9:45:26:273 UTC]non Proxy Hosts: null
+#13 10.88 <======---------------> 29.00%
+#13 10.88 [10/22/26, 9:45:26:273 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.88 <======---------------> 29.00%
+#13 10.89 [10/22/26, 9:45:26:285 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.pom.asc
+#13 10.89 <======---------------> 29.00%
+#13 10.89 [10/22/26, 9:45:26:286 UTC]non Proxy Hosts: null
+#13 10.89 <======---------------> 29.00%
+#13 10.89 [10/22/26, 9:45:26:286 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.89 <======---------------> 29.00%
+#13 10.90 [10/22/26, 9:45:26:297 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.anno-1.0-24.0.0.12.esa.asc
+#13 10.90 <======---------------> 29.00%
+#13 10.90 [10/22/26, 9:45:26:298 UTC]non Proxy Hosts: null
+#13 10.90 <======---------------> 29.00%
+#13 10.90 [10/22/26, 9:45:26:299 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.90 <======---------------> 29.00%
+#13 10.96 [10/22/26, 9:45:26:359 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:24.0.0.12.esa
+#13 10.97 <======---------------> 29.00%
+#13 10.97 [10/22/26, 9:45:26:360 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:24.0.0.12.pom
+#13 10.97 <======---------------> 29.00%
+#13 10.97 [10/22/26, 9:45:26:360 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:24.0.0.12.esa.asc
+#13 10.97 <======---------------> 29.00%
+#13 10.97 [10/22/26, 9:45:26:361 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.anno-1.0:24.0.0.12.pom.asc
+#13 10.97 <======---------------> 30.00%
+#13 10.97 [10/22/26, 9:45:26:361 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:24.0.0.12.esa
+#13 10.97 <======---------------> 30.00%
+#13 10.97 [10/22/26, 9:45:26:362 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:24.0.0.12.esa.asc
+#13 10.97 <======---------------> 30.00%
+#13 10.97 [10/22/26, 9:45:26:362 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:24.0.0.12.pom.asc
+#13 10.97 <======---------------> 30.00%
+#13 10.97 [10/22/26, 9:45:26:363 UTC]Remaining artifacts: 105
+#13 10.97 <======---------------> 30.00%
+#13 10.97 [10/22/26, 9:45:26:367 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.esa
+#13 10.97 <======---------------> 30.00%
+#13 10.97 [10/22/26, 9:45:26:367 UTC]non Proxy Hosts: null
+#13 10.97 <======---------------> 30.00%
+#13 10.97 [10/22/26, 9:45:26:368 UTC]downloadInternal url host: repo.maven.apache.org
+#13 10.97 <======---------------> 30.00%
+#13 11.10 [10/22/26, 9:45:26:497 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.esa.asc
+#13 11.10 <======---------------> 30.00%
+#13 11.10 [10/22/26, 9:45:26:498 UTC]non Proxy Hosts: null
+#13 11.10 <======---------------> 30.00%
+#13 11.10 [10/22/26, 9:45:26:499 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.10 <======---------------> 30.00%
+#13 11.11 [10/22/26, 9:45:26:503 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.pom.asc
+#13 11.11 <======---------------> 30.00%
+#13 11.11 [10/22/26, 9:45:26:504 UTC]non Proxy Hosts: null
+#13 11.11 <======---------------> 30.00%
+#13 11.11 [10/22/26, 9:45:26:505 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.11 <======---------------> 30.00%
+#13 11.12 [10/22/26, 9:45:26:519 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.esa
+#13 11.13 <======---------------> 30.00%
+#13 11.13 [10/22/26, 9:45:26:520 UTC]non Proxy Hosts: null
+#13 11.13 <======---------------> 30.00%
+#13 11.13 [10/22/26, 9:45:26:520 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.13 <======---------------> 30.00%
+#13 11.13 [10/22/26, 9:45:26:523 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.pom
+#13 11.13 <======---------------> 30.00%
+#13 11.13 [10/22/26, 9:45:26:523 UTC]non Proxy Hosts: null
+#13 11.13 <======---------------> 30.00%
+#13 11.13 [10/22/26, 9:45:26:524 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.13 <======---------------> 30.00%
+#13 11.26 [10/22/26, 9:45:26:655 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.pom
+#13 11.26 <======---------------> 30.00%
+#13 11.26 [10/22/26, 9:45:26:656 UTC]non Proxy Hosts: null
+#13 11.26 <======---------------> 30.00%
+#13 11.26 [10/22/26, 9:45:26:657 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.26 <======---------------> 30.00%
+#13 11.27 [10/22/26, 9:45:26:665 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:24.0.0.12.esa
+#13 11.27 <======---------------> 30.00%
+#13 11.27 [10/22/26, 9:45:26:665 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:24.0.0.12.pom
+#13 11.27 <======---------------> 30.00%
+#13 11.27 [10/22/26, 9:45:26:666 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.pom
+#13 11.27 <======---------------> 31.00%
+#13 11.27 [10/22/26, 9:45:26:666 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:24.0.0.12.esa.asc
+#13 11.27 <======---------------> 31.00%
+#13 11.27 [10/22/26, 9:45:26:666 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.containerServices-1.0:24.0.0.12.pom.asc
+#13 11.27 <======---------------> 31.00%
+#13 11.27 [10/22/26, 9:45:26:667 UTC]non Proxy Hosts: null
+#13 11.27 <========-------------> 31.00%
+#13 11.27 [10/22/26, 9:45:26:668 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.27 <========-------------> 31.00%
+#13 11.27 [10/22/26, 9:45:26:668 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:24.0.0.12.esa
+#13 11.27 <========-------------> 31.00%
+#13 11.27 [10/22/26, 9:45:26:669 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:24.0.0.12.pom
+#13 11.28 <========-------------> 31.00%
+#13 11.28 [10/22/26, 9:45:26:670 UTC]Remaining artifacts: 99
+#13 11.28 <========-------------> 31.00%
+#13 11.28 [10/22/26, 9:45:26:671 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.pom.asc
+#13 11.28 <========-------------> 31.00%
+#13 11.28 [10/22/26, 9:45:26:672 UTC]non Proxy Hosts: null
+#13 11.28 <========-------------> 31.00%
+#13 11.28 [10/22/26, 9:45:26:673 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.28 <========-------------> 31.00%
+#13 11.30 [10/22/26, 9:45:26:698 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.esa.asc
+#13 11.30 <========-------------> 31.00%
+#13 11.30 [10/22/26, 9:45:26:699 UTC]non Proxy Hosts: null
+#13 11.31 <========-------------> 31.00%
+#13 11.31 [10/22/26, 9:45:26:699 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.31 <========-------------> 31.00%
+#13 11.40 [10/22/26, 9:45:26:795 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.pom
+#13 11.40 <========-------------> 31.00%
+#13 11.40 [10/22/26, 9:45:26:796 UTC]non Proxy Hosts: null
+#13 11.40 <========-------------> 31.00%
+#13 11.40 [10/22/26, 9:45:26:797 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.40 <========-------------> 31.00%
+#13 11.40 [10/22/26, 9:45:26:798 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.esa
+#13 11.40 <========-------------> 31.00%
+#13 11.40 [10/22/26, 9:45:26:799 UTC]non Proxy Hosts: null
+#13 11.40 <========-------------> 31.00%
+#13 11.41 [10/22/26, 9:45:26:799 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.41 <========-------------> 31.00%
+#13 11.57 [10/22/26, 9:45:26:964 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.esa.asc
+#13 11.57 <========-------------> 31.00%
+#13 11.57 [10/22/26, 9:45:26:965 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.esa
+#13 11.57 <========-------------> 31.00%
+#13 11.57 [10/22/26, 9:45:26:967 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.esa.asc
+#13 11.57 <========-------------> 31.00%
+#13 11.57 [10/22/26, 9:45:26:968 UTC]non Proxy Hosts: null
+#13 11.57 <========-------------> 31.00%
+#13 11.57 [10/22/26, 9:45:26:968 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.58 <========-------------> 31.00%
+#13 11.58 [10/22/26, 9:45:26:970 UTC]non Proxy Hosts: null
+#13 11.58 <========-------------> 31.00%
+#13 11.58 [10/22/26, 9:45:26:970 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.58 <========-------------> 31.00%
+#13 11.58 [10/22/26, 9:45:26:971 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.pom.asc
+#13 11.58 <========-------------> 31.00%
+#13 11.58 [10/22/26, 9:45:26:972 UTC]non Proxy Hosts: null
+#13 11.58 <========-------------> 31.00%
+#13 11.58 [10/22/26, 9:45:26:973 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeedd-1.0:24.0.0.12.pom
+#13 11.58 <========-------------> 31.00%
+#13 11.58 [10/22/26, 9:45:26:974 UTC]non Proxy Hosts: null
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:974 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:975 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:24.0.0.12.esa.asc
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:975 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:976 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.dynamicBundle-1.0:24.0.0.12.pom.asc
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:977 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:24.0.0.12.esa
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:977 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:24.0.0.12.pom
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:978 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:24.0.0.12.esa.asc
+#13 11.58 <========-------------> 32.00%
+#13 11.58 [10/22/26, 9:45:26:979 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.classloading-1.0:24.0.0.12.pom.asc
+#13 11.59 <========-------------> 33.00%
+#13 11.59 [10/22/26, 9:45:26:980 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:24.0.0.12.esa
+#13 11.59 <========-------------> 33.00%
+#13 11.59 [10/22/26, 9:45:26:980 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:24.0.0.12.esa.asc
+#13 11.59 <========-------------> 33.00%
+#13 11.59 [10/22/26, 9:45:26:981 UTC]Remaining artifacts: 90
+#13 11.59 <========-------------> 33.00%
+#13 11.59 [10/22/26, 9:45:26:987 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.pom.asc
+#13 11.59 <========-------------> 33.00%
+#13 11.59 [10/22/26, 9:45:26:989 UTC]non Proxy Hosts: null
+#13 11.59 <========-------------> 33.00%
+#13 11.60 [10/22/26, 9:45:26:989 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.60 <========-------------> 33.00%
+#13 11.67 [10/22/26, 9:45:27:067 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.pom
+#13 11.67 <========-------------> 33.00%
+#13 11.67 [10/22/26, 9:45:27:068 UTC]non Proxy Hosts: null
+#13 11.67 <========-------------> 33.00%
+#13 11.67 [10/22/26, 9:45:27:068 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.67 <========-------------> 33.00%
+#13 11.71 [10/22/26, 9:45:27:099 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.esa
+#13 11.71 <========-------------> 33.00%
+#13 11.71 [10/22/26, 9:45:27:100 UTC]non Proxy Hosts: null
+#13 11.71 <========-------------> 33.00%
+#13 11.71 [10/22/26, 9:45:27:101 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.71 <========-------------> 33.00%
+#13 11.82 [10/22/26, 9:45:27:215 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.pom.asc
+#13 11.82 <========-------------> 33.00%
+#13 11.82 [10/22/26, 9:45:27:216 UTC]non Proxy Hosts: null
+#13 11.82 <========-------------> 33.00%
+#13 11.82 [10/22/26, 9:45:27:216 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.82 <========-------------> 33.00%
+#13 11.83 [10/22/26, 9:45:27:221 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.esa.asc
+#13 11.83 <========-------------> 33.00%
+#13 11.83 [10/22/26, 9:45:27:222 UTC]non Proxy Hosts: null
+#13 11.83 <========-------------> 33.00%
+#13 11.83 [10/22/26, 9:45:27:222 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.83 <========-------------> 33.00%
+#13 11.83 [10/22/26, 9:45:27:223 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.esa
+#13 11.83 <========-------------> 33.00%
+#13 11.83 [10/22/26, 9:45:27:223 UTC]non Proxy Hosts: null
+#13 11.83 <========-------------> 33.00%
+#13 11.83 [10/22/26, 9:45:27:224 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.83 <========-------------> 33.00%
+#13 11.89 [10/22/26, 9:45:27:280 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.pom
+#13 11.89 <========-------------> 33.00%
+#13 11.89 [10/22/26, 9:45:27:281 UTC]non Proxy Hosts: null
+#13 11.89 <========-------------> 33.00%
+#13 11.89 [10/22/26, 9:45:27:281 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.89 <========-------------> 33.00%
+#13 11.89 [10/22/26, 9:45:27:282 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:24.0.0.12.pom.asc
+#13 11.89 <========-------------> 33.00%
+#13 11.89 [10/22/26, 9:45:27:282 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:24.0.0.12.esa
+#13 11.89 <========-------------> 33.00%
+#13 11.89 [10/22/26, 9:45:27:283 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:24.0.0.12.pom
+#13 11.89 <========-------------> 34.00%
+#13 11.89 [10/22/26, 9:45:27:283 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:24.0.0.12.esa.asc
+#13 11.89 <========-------------> 34.00%
+#13 11.89 [10/22/26, 9:45:27:284 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appmanager-1.0:24.0.0.12.pom.asc
+#13 11.89 <========-------------> 34.00%
+#13 11.89 [10/22/26, 9:45:27:284 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:24.0.0.12.esa
+#13 11.89 <========-------------> 34.00%
+#13 11.89 [10/22/26, 9:45:27:285 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:24.0.0.12.pom
+#13 11.89 <========-------------> 34.00%
+#13 11.89 [10/22/26, 9:45:27:285 UTC]Remaining artifacts: 83
+#13 11.89 <========-------------> 34.00%
+#13 11.92 [10/22/26, 9:45:27:313 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.esa.asc
+#13 11.92 <========-------------> 34.00%
+#13 11.92 [10/22/26, 9:45:27:313 UTC]non Proxy Hosts: null
+#13 11.92 <========-------------> 34.00%
+#13 11.92 [10/22/26, 9:45:27:314 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.92 <========-------------> 34.00%
+#13 11.92 [10/22/26, 9:45:27:314 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.pom
+#13 11.92 <========-------------> 34.00%
+#13 11.92 [10/22/26, 9:45:27:315 UTC]non Proxy Hosts: null
+#13 11.92 <========-------------> 34.00%
+#13 11.92 [10/22/26, 9:45:27:315 UTC]downloadInternal url host: repo.maven.apache.org
+#13 11.92 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:474 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.pom.asc
+#13 12.08 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:475 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.pom.asc
+#13 12.08 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:475 UTC]non Proxy Hosts: null
+#13 12.08 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:476 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.08 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:476 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.esa
+#13 12.08 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:477 UTC]non Proxy Hosts: null
+#13 12.08 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:478 UTC]non Proxy Hosts: null
+#13 12.08 <========-------------> 34.00%
+#13 12.08 [10/22/26, 9:45:27:478 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.08 <========-------------> 34.00%
+#13 12.09 [10/22/26, 9:45:27:479 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.09 <========-------------> 34.00%
+#13 12.09 [10/22/26, 9:45:27:486 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.esa.asc
+#13 12.09 <========-------------> 34.00%
+#13 12.09 [10/22/26, 9:45:27:487 UTC]non Proxy Hosts: null
+#13 12.09 <========-------------> 34.00%
+#13 12.09 [10/22/26, 9:45:27:488 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.09 <========-------------> 34.00%
+#13 12.16 [10/22/26, 9:45:27:551 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.pom
+#13 12.16 <========-------------> 34.00%
+#13 12.16 [10/22/26, 9:45:27:552 UTC]non Proxy Hosts: null
+#13 12.16 <========-------------> 34.00%
+#13 12.16 [10/22/26, 9:45:27:552 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.16 <========-------------> 34.00%
+#13 12.19 [10/22/26, 9:45:27:587 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.appLifecycle-1.0:24.0.0.12.pom
+#13 12.19 <========-------------> 34.00%
+#13 12.19 [10/22/26, 9:45:27:587 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:24.0.0.12.esa.asc
+#13 12.19 <========-------------> 35.00%
+#13 12.19 [10/22/26, 9:45:27:588 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-6.0:24.0.0.12.pom.asc
+#13 12.19 <========-------------> 35.00%
+#13 12.19 [10/22/26, 9:45:27:588 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:24.0.0.12.esa
+#13 12.19 <========-------------> 35.00%
+#13 12.20 [10/22/26, 9:45:27:589 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:24.0.0.12.pom
+#13 12.20 <========-------------> 35.00%
+#13 12.20 [10/22/26, 9:45:27:590 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:24.0.0.12.esa.asc
+#13 12.20 <========-------------> 35.00%
+#13 12.20 [10/22/26, 9:45:27:590 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.channelfw-1.0:24.0.0.12.pom.asc
+#13 12.20 <========-------------> 36.00%
+#13 12.20 [10/22/26, 9:45:27:591 UTC]Remaining artifacts: 76
+#13 12.20 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:783 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.api-3.1-24.0.0.12.esa.asc
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:784 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.api-3.1-24.0.0.12.pom
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:784 UTC]non Proxy Hosts: null
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:785 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:785 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.injection-1.0-24.0.0.12.esa
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:786 UTC]non Proxy Hosts: null
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:786 UTC]non Proxy Hosts: null
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:786 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.39 <========-------------> 36.00%
+#13 12.39 [10/22/26, 9:45:27:787 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.39 <========-------------> 36.00%
+#13 12.42 [10/22/26, 9:45:27:813 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.injection-1.0-24.0.0.12.esa.asc
+#13 12.42 <========-------------> 36.00%
+#13 12.42 [10/22/26, 9:45:27:813 UTC]non Proxy Hosts: null
+#13 12.42 <========-------------> 36.00%
+#13 12.42 [10/22/26, 9:45:27:814 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.42 <========-------------> 36.00%
+#13 12.45 [10/22/26, 9:45:27:848 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.api-3.1-24.0.0.12.esa
+#13 12.45 <========-------------> 36.00%
+#13 12.45 [10/22/26, 9:45:27:849 UTC]non Proxy Hosts: null
+#13 12.45 <========-------------> 36.00%
+#13 12.45 [10/22/26, 9:45:27:849 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.46 <========-------------> 36.00%
+#13 12.49 [10/22/26, 9:45:27:880 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.api-3.1-24.0.0.12.pom.asc
+#13 12.49 <========-------------> 36.00%
+#13 12.49 [10/22/26, 9:45:27:880 UTC]non Proxy Hosts: null
+#13 12.49 <========-------------> 36.00%
+#13 12.49 [10/22/26, 9:45:27:880 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.49 <========-------------> 36.00%
+#13 12.50 [10/22/26, 9:45:27:892 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:24.0.0.12.esa
+#13 12.50 <========-------------> 36.00%
+#13 12.50 [10/22/26, 9:45:27:892 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:24.0.0.12.pom
+#13 12.50 <========-------------> 36.00%
+#13 12.50 [10/22/26, 9:45:27:893 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:24.0.0.12.esa.asc
+#13 12.50 <========-------------> 36.00%
+#13 12.50 [10/22/26, 9:45:27:894 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.api-3.1:24.0.0.12.pom.asc
+#13 12.50 <========-------------> 36.00%
+#13 12.50 [10/22/26, 9:45:27:894 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:24.0.0.12.esa
+#13 12.50 <========-------------> 37.00%
+#13 12.50 [10/22/26, 9:45:27:894 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:24.0.0.12.esa.asc
+#13 12.50 <========-------------> 37.00%
+#13 12.50 [10/22/26, 9:45:27:895 UTC]Remaining artifacts: 70
+#13 12.50 <========-------------> 37.00%
+#13 12.60 [10/22/26, 9:45:27:992 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.injection-1.0-24.0.0.12.pom
+#13 12.60 <========-------------> 37.00%
+#13 12.60 [10/22/26, 9:45:27:993 UTC]non Proxy Hosts: null
+#13 12.60 <========-------------> 37.00%
+#13 12.60 [10/22/26, 9:45:27:993 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.60 <========-------------> 37.00%
+#13 12.69 [10/22/26, 9:45:28:089 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.pom
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:094 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.esa.asc
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:095 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.esa
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:096 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.pom.asc
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:097 UTC]non Proxy Hosts: null
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:097 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:098 UTC]non Proxy Hosts: null
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:098 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.70 <========-------------> 37.00%
+#13 12.70 [10/22/26, 9:45:28:099 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.injection-1.0-24.0.0.12.pom.asc
+#13 12.70 <========-------------> 37.00%
+#13 12.71 [10/22/26, 9:45:28:099 UTC]non Proxy Hosts: null
+#13 12.71 <========-------------> 37.00%
+#13 12.71 [10/22/26, 9:45:28:100 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.71 <========-------------> 37.00%
+#13 12.71 [10/22/26, 9:45:28:100 UTC]non Proxy Hosts: null
+#13 12.71 <========-------------> 37.00%
+#13 12.71 [10/22/26, 9:45:28:101 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.71 <========-------------> 37.00%
+#13 12.71 [10/22/26, 9:45:28:101 UTC]non Proxy Hosts: null
+#13 12.71 <========-------------> 37.00%
+#13 12.71 [10/22/26, 9:45:28:102 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.71 <========-------------> 37.00%
+#13 12.77 [10/22/26, 9:45:28:160 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.pom
+#13 12.77 <========-------------> 37.00%
+#13 12.77 [10/22/26, 9:45:28:161 UTC]non Proxy Hosts: null
+#13 12.77 <========-------------> 37.00%
+#13 12.77 [10/22/26, 9:45:28:161 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.77 <========-------------> 37.00%
+#13 12.80 [10/22/26, 9:45:28:196 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:24.0.0.12.pom
+#13 12.80 <========-------------> 37.00%
+#13 12.80 [10/22/26, 9:45:28:197 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.injection-1.0:24.0.0.12.pom.asc
+#13 12.80 <========-------------> 37.00%
+#13 12.80 [10/22/26, 9:45:28:197 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:24.0.0.12.esa
+#13 12.80 <========-------------> 37.00%
+#13 12.80 [10/22/26, 9:45:28:198 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:24.0.0.12.pom
+#13 12.80 <========-------------> 37.00%
+#13 12.80 [10/22/26, 9:45:28:199 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:24.0.0.12.esa.asc
+#13 12.80 <========-------------> 38.00%
+#13 12.80 [10/22/26, 9:45:28:199 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeePlatform-7.0:24.0.0.12.pom.asc
+#13 12.80 <========-------------> 38.00%
+#13 12.81 [10/22/26, 9:45:28:199 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:24.0.0.12.pom
+#13 12.81 <========-------------> 38.00%
+#13 12.81 [10/22/26, 9:45:28:200 UTC]Remaining artifacts: 63
+#13 12.81 <========-------------> 38.00%
+#13 12.83 [10/22/26, 9:45:28:222 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.esa
+#13 12.83 <========-------------> 38.00%
+#13 12.83 [10/22/26, 9:45:28:223 UTC]non Proxy Hosts: null
+#13 12.83 <========-------------> 38.00%
+#13 12.83 [10/22/26, 9:45:28:223 UTC]downloadInternal url host: repo.maven.apache.org
+#13 12.83 <========-------------> 38.00%
+#13 12.99 [10/22/26, 9:45:28:387 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.esa.asc
+#13 12.99 <========-------------> 38.00%
+#13 12.99 [10/22/26, 9:45:28:388 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.esa.asc
+#13 12.99 <========-------------> 38.00%
+#13 12.99 [10/22/26, 9:45:28:389 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.pom
+#13 12.99 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:390 UTC]non Proxy Hosts: null
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:390 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:391 UTC]non Proxy Hosts: null
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:392 UTC]non Proxy Hosts: null
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:392 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:393 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:394 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.esa
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:394 UTC]non Proxy Hosts: null
+#13 13.00 <========-------------> 38.00%
+#13 13.00 [10/22/26, 9:45:28:395 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.00 <========-------------> 38.00%
+#13 13.01 [10/22/26, 9:45:28:404 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.pom.asc
+#13 13.01 <========-------------> 38.00%
+#13 13.01 [10/22/26, 9:45:28:404 UTC]non Proxy Hosts: null
+#13 13.01 <========-------------> 38.00%
+#13 13.01 [10/22/26, 9:45:28:405 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.01 <========-------------> 38.00%
+#13 13.03 [10/22/26, 9:45:28:429 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.pom.asc
+#13 13.03 <========-------------> 38.00%
+#13 13.04 [10/22/26, 9:45:28:429 UTC]non Proxy Hosts: null
+#13 13.04 <========-------------> 38.00%
+#13 13.04 [10/22/26, 9:45:28:430 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.04 <========-------------> 38.00%
+#13 13.11 [10/22/26, 9:45:28:501 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:24.0.0.12.esa
+#13 13.11 <========-------------> 38.00%
+#13 13.11 [10/22/26, 9:45:28:502 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:24.0.0.12.esa.asc
+#13 13.11 <========-------------> 38.00%
+#13 13.11 [10/22/26, 9:45:28:502 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javaeeddSchema-1.0:24.0.0.12.pom.asc
+#13 13.11 <========-------------> 39.00%
+#13 13.11 [10/22/26, 9:45:28:502 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:24.0.0.12.esa
+#13 13.11 <========-------------> 39.00%
+#13 13.11 [10/22/26, 9:45:28:502 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:24.0.0.12.pom
+#13 13.11 <========-------------> 39.00%
+#13 13.11 [10/22/26, 9:45:28:503 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:24.0.0.12.esa.asc
+#13 13.11 <========-------------> 39.00%
+#13 13.11 [10/22/26, 9:45:28:503 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.requestProbes-1.0:24.0.0.12.pom.asc
+#13 13.11 <========-------------> 39.00%
+#13 13.11 [10/22/26, 9:45:28:504 UTC]Remaining artifacts: 56
+#13 13.11 <========-------------> 39.00%
+#13 13.21 [10/22/26, 9:45:28:605 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.esa
+#13 13.21 <========-------------> 39.00%
+#13 13.21 [10/22/26, 9:45:28:605 UTC]non Proxy Hosts: null
+#13 13.21 <========-------------> 39.00%
+#13 13.21 [10/22/26, 9:45:28:605 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.21 <========-------------> 39.00%
+#13 13.31 [10/22/26, 9:45:28:706 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.pom
+#13 13.31 <========-------------> 39.00%
+#13 13.31 [10/22/26, 9:45:28:707 UTC]non Proxy Hosts: null
+#13 13.31 <========-------------> 39.00%
+#13 13.31 [10/22/26, 9:45:28:707 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.31 <========-------------> 39.00%
+#13 13.31 [10/22/26, 9:45:28:708 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.pom.asc
+#13 13.31 <========-------------> 39.00%
+#13 13.31 [10/22/26, 9:45:28:709 UTC]non Proxy Hosts: null
+#13 13.31 <========-------------> 39.00%
+#13 13.31 [10/22/26, 9:45:28:709 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.32 <========-------------> 39.00%
+#13 13.32 [10/22/26, 9:45:28:711 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.pom
+#13 13.32 <========-------------> 39.00%
+#13 13.32 [10/22/26, 9:45:28:712 UTC]non Proxy Hosts: null
+#13 13.32 <========-------------> 39.00%
+#13 13.32 [10/22/26, 9:45:28:712 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.32 <========-------------> 39.00%
+#13 13.34 [10/22/26, 9:45:28:729 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.esa.asc
+#13 13.34 <========-------------> 39.00%
+#13 13.34 [10/22/26, 9:45:28:730 UTC]non Proxy Hosts: null
+#13 13.34 <========-------------> 39.00%
+#13 13.34 [10/22/26, 9:45:28:731 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.34 <========-------------> 39.00%
+#13 13.41 [10/22/26, 9:45:28:805 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:24.0.0.12.esa
+#13 13.41 <========-------------> 40.00%
+#13 13.41 [10/22/26, 9:45:28:805 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:24.0.0.12.pom
+#13 13.41 <========-------------> 40.00%
+#13 13.41 [10/22/26, 9:45:28:805 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:24.0.0.12.pom
+#13 13.41 <========-------------> 40.00%
+#13 13.41 [10/22/26, 9:45:28:806 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:24.0.0.12.esa.asc
+#13 13.41 <========-------------> 40.00%
+#13 13.41 [10/22/26, 9:45:28:806 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:24.0.0.12.pom.asc
+#13 13.41 <========-------------> 40.00%
+#13 13.41 [10/22/26, 9:45:28:806 UTC]Remaining artifacts: 51
+#13 13.41 <========-------------> 40.00%
+#13 13.52 [10/22/26, 9:45:28:910 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.pom.asc
+#13 13.52 <========-------------> 40.00%
+#13 13.52 [10/22/26, 9:45:28:911 UTC]non Proxy Hosts: null
+#13 13.52 <========-------------> 40.00%
+#13 13.52 [10/22/26, 9:45:28:911 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.52 <========-------------> 40.00%
+#13 13.54 [10/22/26, 9:45:28:929 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.esa
+#13 13.54 <========-------------> 40.00%
+#13 13.54 [10/22/26, 9:45:28:930 UTC]non Proxy Hosts: null
+#13 13.54 <========-------------> 40.00%
+#13 13.54 [10/22/26, 9:45:28:930 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.54 <========-------------> 40.00%
+#13 13.62 [10/22/26, 9:45:29:013 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.esa.asc
+#13 13.62 <========-------------> 40.00%
+#13 13.62 [10/22/26, 9:45:29:013 UTC]non Proxy Hosts: null
+#13 13.62 <========-------------> 40.00%
+#13 13.62 [10/22/26, 9:45:29:014 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.62 <========-------------> 40.00%
+#13 13.64 [10/22/26, 9:45:29:038 UTC]Successfully validated MD5 checksum for file: servlet-3.1-24.0.0.12.pom
+#13 13.64 <========-------------> 40.00%
+#13 13.64 [10/22/26, 9:45:29:039 UTC]non Proxy Hosts: null
+#13 13.64 <========-------------> 40.00%
+#13 13.65 [10/22/26, 9:45:29:039 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.65 <========-------------> 40.00%
+#13 13.68 [10/22/26, 9:45:29:072 UTC]Successfully validated MD5 checksum for file: servlet-3.1-24.0.0.12.pom.asc
+#13 13.68 <========-------------> 40.00%
+#13 13.68 [10/22/26, 9:45:29:073 UTC]non Proxy Hosts: null
+#13 13.68 <========-------------> 40.00%
+#13 13.68 [10/22/26, 9:45:29:073 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.68 <========-------------> 40.00%
+#13 13.71 [10/22/26, 9:45:29:107 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:24.0.0.12.esa.asc
+#13 13.71 <========-------------> 41.00%
+#13 13.71 [10/22/26, 9:45:29:107 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.servlet-servletSpi1.0:24.0.0.12.pom.asc
+#13 13.71 <========-------------> 41.00%
+#13 13.71 [10/22/26, 9:45:29:108 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.httptransport-1.0:24.0.0.12.esa
+#13 13.71 <========-------------> 41.00%
+#13 13.71 [10/22/26, 9:45:29:108 UTC]Finished downloading artifact: io.openliberty.features:servlet-3.1:24.0.0.12.pom
+#13 13.71 <==========-----------> 41.00%
+#13 13.71 [10/22/26, 9:45:29:108 UTC]Finished downloading artifact: io.openliberty.features:servlet-3.1:24.0.0.12.pom.asc
+#13 13.71 <==========-----------> 41.00%
+#13 13.71 [10/22/26, 9:45:29:109 UTC]Remaining artifacts: 46
+#13 13.71 <==========-----------> 41.00%
+#13 13.77 [10/22/26, 9:45:29:159 UTC]Successfully validated MD5 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.esa
+#13 13.77 <==========-----------> 41.00%
+#13 13.77 [10/22/26, 9:45:29:160 UTC]non Proxy Hosts: null
+#13 13.77 <==========-----------> 41.00%
+#13 13.77 [10/22/26, 9:45:29:161 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.77 <==========-----------> 41.00%
+#13 13.80 [10/22/26, 9:45:29:192 UTC]Successfully validated MD5 checksum for file: servlet-3.1-24.0.0.12.esa.asc
+#13 13.80 <==========-----------> 41.00%
+#13 13.80 [10/22/26, 9:45:29:193 UTC]non Proxy Hosts: null
+#13 13.80 <==========-----------> 41.00%
+#13 13.80 [10/22/26, 9:45:29:194 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.80 <==========-----------> 41.00%
+#13 13.85 [10/22/26, 9:45:29:246 UTC]Successfully validated MD5 checksum for file: servlet-3.1-24.0.0.12.esa
+#13 13.85 <==========-----------> 41.00%
+#13 13.85 [10/22/26, 9:45:29:246 UTC]non Proxy Hosts: null
+#13 13.85 <==========-----------> 41.00%
+#13 13.85 [10/22/26, 9:45:29:247 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.85 <==========-----------> 41.00%
+#13 13.89 [10/22/26, 9:45:29:284 UTC]Successfully validated MD5 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.pom
+#13 13.89 <==========-----------> 41.00%
+#13 13.89 [10/22/26, 9:45:29:285 UTC]non Proxy Hosts: null
+#13 13.89 <==========-----------> 41.00%
+#13 13.89 [10/22/26, 9:45:29:286 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.89 <==========-----------> 41.00%
+#13 13.92 [10/22/26, 9:45:29:316 UTC]Successfully validated MD5 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.esa.asc
+#13 13.92 <==========-----------> 41.00%
+#13 13.92 [10/22/26, 9:45:29:316 UTC]non Proxy Hosts: null
+#13 13.92 <==========-----------> 41.00%
+#13 13.92 [10/22/26, 9:45:29:317 UTC]downloadInternal url host: repo.maven.apache.org
+#13 13.92 <==========-----------> 41.00%
+#13 14.02 [10/22/26, 9:45:29:410 UTC]Finished downloading artifact: io.openliberty.features:servlet-3.1:24.0.0.12.esa
+#13 14.02 <==========-----------> 41.00%
+#13 14.02 [10/22/26, 9:45:29:411 UTC]Finished downloading artifact: io.openliberty.features:servlet-3.1:24.0.0.12.esa.asc
+#13 14.02 <==========-----------> 42.00%
+#13 14.02 [10/22/26, 9:45:29:411 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:24.0.0.12.esa
+#13 14.02 <==========-----------> 42.00%
+#13 14.02 [10/22/26, 9:45:29:411 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:24.0.0.12.pom
+#13 14.02 <==========-----------> 42.00%
+#13 14.02 [10/22/26, 9:45:29:412 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:24.0.0.12.esa.asc
+#13 14.02 <==========-----------> 42.00%
+#13 14.02 [10/22/26, 9:45:29:412 UTC]Remaining artifacts: 41
+#13 14.02 <==========-----------> 42.00%
+#13 14.03 [10/22/26, 9:45:29:422 UTC]Successfully validated MD5 checksum for file: io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.pom.asc
+#13 14.03 <==========-----------> 42.00%
+#13 14.03 [10/22/26, 9:45:29:422 UTC]non Proxy Hosts: null
+#13 14.03 <==========-----------> 42.00%
+#13 14.03 [10/22/26, 9:45:29:423 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.03 <==========-----------> 42.00%
+#13 14.23 [10/22/26, 9:45:29:627 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.pom
+#13 14.23 <==========-----------> 42.00%
+#13 14.23 [10/22/26, 9:45:29:628 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.pom.asc
+#13 14.23 <==========-----------> 42.00%
+#13 14.23 [10/22/26, 9:45:29:629 UTC]Successfully validated MD5 checksum for file: json-1.0-24.0.0.12.esa.asc
+#13 14.23 <==========-----------> 42.00%
+#13 14.23 [10/22/26, 9:45:29:629 UTC]Successfully validated MD5 checksum for file: json-1.0-24.0.0.12.esa
+#13 14.23 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:630 UTC]non Proxy Hosts: null
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:630 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:631 UTC]non Proxy Hosts: null
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:631 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:632 UTC]non Proxy Hosts: null
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:632 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:633 UTC]non Proxy Hosts: null
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:633 UTC]Successfully validated MD5 checksum for file: json-1.0-24.0.0.12.pom
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:634 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:635 UTC]non Proxy Hosts: null
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:636 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:637 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.esa
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:638 UTC]non Proxy Hosts: null
+#13 14.24 <==========-----------> 42.00%
+#13 14.24 [10/22/26, 9:45:29:638 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.24 <==========-----------> 42.00%
+#13 14.27 [10/22/26, 9:45:29:665 UTC]Successfully validated MD5 checksum for file: json-1.0-24.0.0.12.pom.asc
+#13 14.27 <==========-----------> 42.00%
+#13 14.27 [10/22/26, 9:45:29:665 UTC]non Proxy Hosts: null
+#13 14.27 <==========-----------> 42.00%
+#13 14.27 [10/22/26, 9:45:29:665 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.27 <==========-----------> 42.00%
+#13 14.32 [10/22/26, 9:45:29:713 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.globalhandler1.0.internal.ee-6.0:24.0.0.12.pom.asc
+#13 14.32 <==========-----------> 42.00%
+#13 14.32 [10/22/26, 9:45:29:713 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:24.0.0.12.esa
+#13 14.32 <==========-----------> 43.00%
+#13 14.32 [10/22/26, 9:45:29:714 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:24.0.0.12.pom
+#13 14.32 <==========-----------> 43.00%
+#13 14.32 [10/22/26, 9:45:29:715 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:24.0.0.12.pom.asc
+#13 14.32 <==========-----------> 43.00%
+#13 14.32 [10/22/26, 9:45:29:716 UTC]Finished downloading artifact: io.openliberty.features:json-1.0:24.0.0.12.esa
+#13 14.32 <==========-----------> 43.00%
+#13 14.32 [10/22/26, 9:45:29:716 UTC]Finished downloading artifact: io.openliberty.features:json-1.0:24.0.0.12.pom
+#13 14.32 <==========-----------> 43.00%
+#13 14.32 [10/22/26, 9:45:29:717 UTC]Finished downloading artifact: io.openliberty.features:json-1.0:24.0.0.12.esa.asc
+#13 14.32 <==========-----------> 44.00%
+#13 14.32 [10/22/26, 9:45:29:717 UTC]Finished downloading artifact: io.openliberty.features:json-1.0:24.0.0.12.pom.asc
+#13 14.32 <==========-----------> 44.00%
+#13 14.32 [10/22/26, 9:45:29:718 UTC]Remaining artifacts: 33
+#13 14.32 <==========-----------> 44.00%
+#13 14.38 [10/22/26, 9:45:29:772 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.esa.asc
+#13 14.38 <==========-----------> 44.00%
+#13 14.38 [10/22/26, 9:45:29:773 UTC]non Proxy Hosts: null
+#13 14.38 <==========-----------> 44.00%
+#13 14.38 [10/22/26, 9:45:29:773 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.38 <==========-----------> 44.00%
+#13 14.56 [10/22/26, 9:45:29:957 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.internal-3.1-24.0.0.12.esa.asc
+#13 14.56 <==========-----------> 44.00%
+#13 14.56 [10/22/26, 9:45:29:957 UTC]non Proxy Hosts: null
+#13 14.56 <==========-----------> 44.00%
+#13 14.56 [10/22/26, 9:45:29:958 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.56 <==========-----------> 44.00%
+#13 14.59 [10/22/26, 9:45:29:988 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.internal-3.1-24.0.0.12.esa
+#13 14.59 <==========-----------> 44.00%
+#13 14.59 [10/22/26, 9:45:29:988 UTC]non Proxy Hosts: null
+#13 14.59 <==========-----------> 44.00%
+#13 14.59 [10/22/26, 9:45:29:989 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.59 <==========-----------> 44.00%
+#13 14.62 [10/22/26, 9:45:30:019 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.optional.jaxb-2.2:24.0.0.12.esa.asc
+#13 14.62 <==========-----------> 44.00%
+#13 14.63 [10/22/26, 9:45:30:019 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:24.0.0.12.esa
+#13 14.63 <==========-----------> 44.00%
+#13 14.63 [10/22/26, 9:45:30:019 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:24.0.0.12.esa.asc
+#13 14.63 <==========-----------> 44.00%
+#13 14.63 [10/22/26, 9:45:30:020 UTC]Remaining artifacts: 30
+#13 14.63 <==========-----------> 44.00%
+#13 14.63 [10/22/26, 9:45:30:025 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.esa
+#13 14.63 <==========-----------> 44.00%
+#13 14.63 [10/22/26, 9:45:30:026 UTC]non Proxy Hosts: null
+#13 14.63 <==========-----------> 44.00%
+#13 14.63 [10/22/26, 9:45:30:026 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.63 <==========-----------> 44.00%
+#13 14.67 [10/22/26, 9:45:30:061 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.esa.asc
+#13 14.67 <==========-----------> 44.00%
+#13 14.67 [10/22/26, 9:45:30:062 UTC]non Proxy Hosts: null
+#13 14.67 <==========-----------> 44.00%
+#13 14.67 [10/22/26, 9:45:30:063 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.67 <==========-----------> 44.00%
+#13 14.69 [10/22/26, 9:45:30:080 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.pom
+#13 14.69 <==========-----------> 44.00%
+#13 14.69 [10/22/26, 9:45:30:080 UTC]non Proxy Hosts: null
+#13 14.69 <==========-----------> 44.00%
+#13 14.69 [10/22/26, 9:45:30:081 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.69 <==========-----------> 44.00%
+#13 14.69 [10/22/26, 9:45:30:086 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.internal-3.1-24.0.0.12.pom
+#13 14.69 <==========-----------> 44.00%
+#13 14.69 [10/22/26, 9:45:30:087 UTC]non Proxy Hosts: null
+#13 14.69 <==========-----------> 44.00%
+#13 14.69 [10/22/26, 9:45:30:087 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.69 <==========-----------> 44.00%
+#13 14.71 [10/22/26, 9:45:30:103 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.pom.asc
+#13 14.71 <==========-----------> 44.00%
+#13 14.71 [10/22/26, 9:45:30:104 UTC]non Proxy Hosts: null
+#13 14.71 <==========-----------> 44.00%
+#13 14.71 [10/22/26, 9:45:30:104 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.71 <==========-----------> 44.00%
+#13 14.85 [10/22/26, 9:45:30:241 UTC]Successfully validated MD5 checksum for file: io.openliberty.servlet.internal-3.1-24.0.0.12.pom.asc
+#13 14.85 <==========-----------> 44.00%
+#13 14.85 [10/22/26, 9:45:30:242 UTC]non Proxy Hosts: null
+#13 14.85 <==========-----------> 44.00%
+#13 14.85 [10/22/26, 9:45:30:242 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.85 <==========-----------> 44.00%
+#13 14.93 [10/22/26, 9:45:30:321 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:24.0.0.12.pom
+#13 14.93 <==========-----------> 45.00%
+#13 14.93 [10/22/26, 9:45:30:321 UTC]Finished downloading artifact: io.openliberty.features:io.openliberty.servlet.internal-3.1:24.0.0.12.pom.asc
+#13 14.93 <==========-----------> 45.00%
+#13 14.93 [10/22/26, 9:45:30:322 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:24.0.0.12.esa
+#13 14.93 <==========-----------> 45.00%
+#13 14.93 [10/22/26, 9:45:30:322 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:24.0.0.12.pom
+#13 14.93 <==========-----------> 45.00%
+#13 14.93 [10/22/26, 9:45:30:322 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:24.0.0.12.esa.asc
+#13 14.93 <==========-----------> 45.00%
+#13 14.93 [10/22/26, 9:45:30:322 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.globalhandler-1.0:24.0.0.12.pom.asc
+#13 14.93 <==========-----------> 45.00%
+#13 14.93 [10/22/26, 9:45:30:322 UTC]Remaining artifacts: 24
+#13 14.93 <==========-----------> 45.00%
+#13 14.96 [10/22/26, 9:45:30:355 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.pom
+#13 14.96 <==========-----------> 45.00%
+#13 14.96 [10/22/26, 9:45:30:356 UTC]non Proxy Hosts: null
+#13 14.96 <==========-----------> 45.00%
+#13 14.96 [10/22/26, 9:45:30:356 UTC]downloadInternal url host: repo.maven.apache.org
+#13 14.96 <==========-----------> 45.00%
+#13 15.20 [10/22/26, 9:45:30:597 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.esa.asc
+#13 15.20 <==========-----------> 45.00%
+#13 15.20 [10/22/26, 9:45:30:597 UTC]non Proxy Hosts: null
+#13 15.20 <==========-----------> 45.00%
+#13 15.20 [10/22/26, 9:45:30:598 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.20 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:602 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.pom.asc
+#13 15.21 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:603 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.pom
+#13 15.21 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:604 UTC]non Proxy Hosts: null
+#13 15.21 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:604 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.21 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:605 UTC]non Proxy Hosts: null
+#13 15.21 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:605 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.21 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:609 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.esa
+#13 15.21 <==========-----------> 45.00%
+#13 15.21 [10/22/26, 9:45:30:609 UTC]non Proxy Hosts: null
+#13 15.22 <==========-----------> 45.00%
+#13 15.22 [10/22/26, 9:45:30:610 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.22 <==========-----------> 45.00%
+#13 15.23 [10/22/26, 9:45:30:620 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.esa.asc
+#13 15.23 <==========-----------> 45.00%
+#13 15.23 [10/22/26, 9:45:30:620 UTC]non Proxy Hosts: null
+#13 15.23 <==========-----------> 45.00%
+#13 15.23 [10/22/26, 9:45:30:621 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.23 <==========-----------> 45.00%
+#13 15.23 [10/22/26, 9:45:30:623 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:24.0.0.12.esa
+#13 15.23 <==========-----------> 46.00%
+#13 15.23 [10/22/26, 9:45:30:623 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:24.0.0.12.pom
+#13 15.23 <==========-----------> 46.00%
+#13 15.23 [10/22/26, 9:45:30:623 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:24.0.0.12.esa.asc
+#13 15.23 <==========-----------> 46.00%
+#13 15.23 [10/22/26, 9:45:30:624 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.javax.jaxrs-2.0:24.0.0.12.pom.asc
+#13 15.23 <==========-----------> 46.00%
+#13 15.23 [10/22/26, 9:45:30:624 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:24.0.0.12.pom
+#13 15.23 <==========-----------> 46.00%
+#13 15.23 [10/22/26, 9:45:30:624 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:24.0.0.12.esa.asc
+#13 15.23 <==========-----------> 47.00%
+#13 15.23 [10/22/26, 9:45:30:625 UTC]Remaining artifacts: 18
+#13 15.23 <==========-----------> 47.00%
+#13 15.29 [10/22/26, 9:45:30:687 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.pom.asc
+#13 15.29 <==========-----------> 47.00%
+#13 15.29 [10/22/26, 9:45:30:688 UTC]non Proxy Hosts: null
+#13 15.30 <==========-----------> 47.00%
+#13 15.30 [10/22/26, 9:45:30:689 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.30 <==========-----------> 47.00%
+#13 15.53 [10/22/26, 9:45:30:926 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:24.0.0.12.pom.asc
+#13 15.53 <==========-----------> 47.00%
+#13 15.53 [10/22/26, 9:45:30:927 UTC]Remaining artifacts: 17
+#13 15.53 <==========-----------> 47.00%
+#13 15.56 [10/22/26, 9:45:30:958 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.esa
+#13 15.56 <==========-----------> 47.00%
+#13 15.56 [10/22/26, 9:45:30:959 UTC]non Proxy Hosts: null
+#13 15.56 <==========-----------> 47.00%
+#13 15.56 [10/22/26, 9:45:30:959 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.56 <==========-----------> 47.00%
+#13 15.58 [10/22/26, 9:45:30:973 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.pom
+#13 15.58 <==========-----------> 47.00%
+#13 15.58 [10/22/26, 9:45:30:974 UTC]non Proxy Hosts: null
+#13 15.58 <==========-----------> 47.00%
+#13 15.58 [10/22/26, 9:45:30:974 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.58 <==========-----------> 47.00%
+#13 15.59 [10/22/26, 9:45:30:985 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.pom.asc
+#13 15.59 <==========-----------> 47.00%
+#13 15.59 [10/22/26, 9:45:30:985 UTC]non Proxy Hosts: null
+#13 15.59 <==========-----------> 47.00%
+#13 15.59 [10/22/26, 9:45:30:985 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.59 <==========-----------> 47.00%
+#13 15.60 [10/22/26, 9:45:30:991 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.pom
+#13 15.60 <==========-----------> 47.00%
+#13 15.60 [10/22/26, 9:45:30:991 UTC]non Proxy Hosts: null
+#13 15.60 <==========-----------> 47.00%
+#13 15.60 [10/22/26, 9:45:30:992 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.60 <==========-----------> 47.00%
+#13 15.67 [10/22/26, 9:45:31:060 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.esa.asc
+#13 15.67 <==========-----------> 47.00%
+#13 15.67 [10/22/26, 9:45:31:060 UTC]non Proxy Hosts: null
+#13 15.67 <==========-----------> 47.00%
+#13 15.67 [10/22/26, 9:45:31:061 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.67 <==========-----------> 47.00%
+#13 15.68 [10/22/26, 9:45:31:078 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.esa
+#13 15.68 <==========-----------> 47.00%
+#13 15.68 [10/22/26, 9:45:31:078 UTC]non Proxy Hosts: null
+#13 15.68 <==========-----------> 47.00%
+#13 15.68 [10/22/26, 9:45:31:079 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.68 <==========-----------> 47.00%
+#13 15.77 [10/22/26, 9:45:31:160 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.esa.asc
+#13 15.77 <==========-----------> 47.00%
+#13 15.77 [10/22/26, 9:45:31:160 UTC]non Proxy Hosts: null
+#13 15.77 <==========-----------> 47.00%
+#13 15.77 [10/22/26, 9:45:31:161 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.77 <==========-----------> 47.00%
+#13 15.83 [10/22/26, 9:45:31:228 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.optional.jaxb-2.2:24.0.0.12.esa
+#13 15.83 <==========-----------> 47.00%
+#13 15.83 [10/22/26, 9:45:31:228 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:24.0.0.12.esa
+#13 15.83 <==========-----------> 47.00%
+#13 15.83 [10/22/26, 9:45:31:229 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:24.0.0.12.pom
+#13 15.84 <==========-----------> 47.00%
+#13 15.84 [10/22/26, 9:45:31:229 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:24.0.0.12.esa.asc
+#13 15.84 <==========-----------> 48.00%
+#13 15.84 [10/22/26, 9:45:31:230 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.jaxrs.common-2.0:24.0.0.12.pom.asc
+#13 15.84 <==========-----------> 48.00%
+#13 15.84 [10/22/26, 9:45:31:231 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:24.0.0.12.pom
+#13 15.84 <==========-----------> 48.00%
+#13 15.84 [10/22/26, 9:45:31:231 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:24.0.0.12.esa.asc
+#13 15.84 <==========-----------> 48.00%
+#13 15.84 [10/22/26, 9:45:31:232 UTC]Remaining artifacts: 10
+#13 15.84 <==========-----------> 48.00%
+#13 15.88 [10/22/26, 9:45:31:273 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.esa
+#13 15.88 <==========-----------> 48.00%
+#13 15.88 [10/22/26, 9:45:31:273 UTC]non Proxy Hosts: null
+#13 15.88 <==========-----------> 48.00%
+#13 15.88 [10/22/26, 9:45:31:274 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.88 <==========-----------> 48.00%
+#13 15.97 [10/22/26, 9:45:31:367 UTC]Successfully validated MD5 checksum for file: jaxrsClient-2.0-24.0.0.12.pom
+#13 15.97 <==========-----------> 48.00%
+#13 15.97 [10/22/26, 9:45:31:368 UTC]non Proxy Hosts: null
+#13 15.97 <==========-----------> 48.00%
+#13 15.97 [10/22/26, 9:45:31:368 UTC]downloadInternal url host: repo.maven.apache.org
+#13 15.97 <==========-----------> 48.00%
+#13 15.99 [10/22/26, 9:45:31:385 UTC]Successfully validated MD5 checksum for file: jaxrsClient-2.0-24.0.0.12.pom.asc
+#13 15.99 <==========-----------> 48.00%
+#13 16.07 [10/22/26, 9:45:31:468 UTC]Successfully validated MD5 checksum for file: jaxrs-2.0-24.0.0.12.esa
+#13 16.07 <==========-----------> 48.00%
+#13 16.08 [10/22/26, 9:45:31:474 UTC]Successfully validated MD5 checksum for file: jaxrsClient-2.0-24.0.0.12.esa
+#13 16.08 <==========-----------> 48.00%
+#13 16.09 [10/22/26, 9:45:31:482 UTC]Successfully validated MD5 checksum for file: jaxrsClient-2.0-24.0.0.12.esa.asc
+#13 16.09 <==========-----------> 48.00%
+#13 16.14 [10/22/26, 9:45:31:533 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:24.0.0.12.esa
+#13 16.14 <==========-----------> 48.00%
+#13 16.14 [10/22/26, 9:45:31:534 UTC]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:24.0.0.12.esa
+#13 16.14 <==========-----------> 48.00%
+#13 16.14 [10/22/26, 9:45:31:534 UTC]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:24.0.0.12.pom
+#13 16.14 <==========-----------> 49.00%
+#13 16.14 [10/22/26, 9:45:31:535 UTC]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:24.0.0.12.esa.asc
+#13 16.14 <==========-----------> 49.00%
+#13 16.14 [10/22/26, 9:45:31:535 UTC]Finished downloading artifact: io.openliberty.features:jaxrsClient-2.0:24.0.0.12.pom.asc
+#13 16.14 <==========-----------> 49.00%
+#13 16.14 [10/22/26, 9:45:31:536 UTC]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:24.0.0.12.esa
+#13 16.14 <==========-----------> 49.00%
+#13 16.14 [10/22/26, 9:45:31:536 UTC]Remaining artifacts: 4
+#13 16.14 <==========-----------> 49.00%
+#13 16.28 [10/22/26, 9:45:31:674 UTC]Successfully validated MD5 checksum for file: com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.pom.asc
+#13 16.28 <==========-----------> 49.00%
+#13 16.28 [10/22/26, 9:45:31:676 UTC]Successfully validated MD5 checksum for file: jaxrs-2.0-24.0.0.12.pom
+#13 16.28 <==========-----------> 49.00%
+#13 16.28 [10/22/26, 9:45:31:677 UTC]Successfully validated MD5 checksum for file: jaxrs-2.0-24.0.0.12.esa.asc
+#13 16.28 <==========-----------> 49.00%
+#13 16.44 [10/22/26, 9:45:31:837 UTC]Finished downloading artifact: io.openliberty.features:com.ibm.websphere.appserver.internal.jaxrs-2.0:24.0.0.12.pom.asc
+#13 16.44 <==========-----------> 49.00%
+#13 16.44 [10/22/26, 9:45:31:837 UTC]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:24.0.0.12.pom
+#13 16.44 <==========-----------> 50.00%
+#13 16.44 [10/22/26, 9:45:31:838 UTC]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:24.0.0.12.esa.asc
+#13 16.44 <==========-----------> 50.00%
+#13 16.44 [10/22/26, 9:45:31:838 UTC]Remaining artifacts: 1
+#13 16.44 <==========-----------> 50.00%
+#13 16.49 [10/22/26, 9:45:31:882 UTC]Successfully validated MD5 checksum for file: jaxrs-2.0-24.0.0.12.pom.asc
+#13 16.49 <==========-----------> 50.00%
+#13 16.74 [10/22/26, 9:45:32:139 UTC]Finished downloading artifact: io.openliberty.features:jaxrs-2.0:24.0.0.12.pom.asc
+#13 16.74 <==========-----------> 50.00%
+#13 16.75 [10/22/26, 9:45:32:139 UTC]Remaining artifacts: 0
+#13 16.75 <==========-----------> 50.00%
+#13 17.05 <==========-----------> 50.00%
+#13 17.05 [10/22/26, 9:45:32:447 UTC]Downloaded the following feature signautres from the remote maven repository:[/root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/24.0.0.12/com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/24.0.0.12/com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/24.0.0.12/com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/24.0.0.12/com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/jsonp-1.0/24.0.0.12/jsonp-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/24.0.0.12/com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/jsonp-1.0/24.0.0.12/jsonp-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/24.0.0.12/com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/24.0.0.12/com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/24.0.0.12/com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/24.0.0.12/com.ibm.websphere.appserver.anno-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/24.0.0.12/com.ibm.websphere.appserver.anno-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/24.0.0.12/com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/24.0.0.12/com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/24.0.0.12/com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/24.0.0.12/com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/24.0.0.12/com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/24.0.0.12/com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/24.0.0.12/com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/24.0.0.12/com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/24.0.0.12/com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/24.0.0.12/com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/24.0.0.12/com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/24.0.0.12/com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/24.0.0.12/io.openliberty.servlet.api-3.1-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/24.0.0.12/com.ibm.websphere.appserver.injection-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/24.0.0.12/io.openliberty.servlet.api-3.1-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/24.0.0.12/com.ibm.websphere.appserver.injection-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/24.0.0.12/com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/24.0.0.12/com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/24.0.0.12/com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/24.0.0.12/com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/24.0.0.12/com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/24.0.0.12/com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/servlet-3.1/24.0.0.12/servlet-3.1-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/servlet-3.1/24.0.0.12/servlet-3.1-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/24.0.0.12/io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/24.0.0.12/io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/json-1.0/24.0.0.12/json-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/json-1.0/24.0.0.12/json-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/24.0.0.12/io.openliberty.servlet.internal-3.1-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/24.0.0.12/com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/24.0.0.12/io.openliberty.servlet.internal-3.1-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/24.0.0.12/com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/24.0.0.12/com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/24.0.0.12/com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/24.0.0.12/jaxrsClient-2.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/24.0.0.12/jaxrsClient-2.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.pom.asc, /root/.m2/repository/io/openliberty/features/jaxrs-2.0/24.0.0.12/jaxrs-2.0-24.0.0.12.esa.asc, /root/.m2/repository/io/openliberty/features/jaxrs-2.0/24.0.0.12/jaxrs-2.0-24.0.0.12.pom.asc]
+#13 17.06 <==========-----------> 50.00%
+#13 17.06 [10/22/26, 9:45:32:457 UTC]Downloaded the following features from the remote maven repository:[/root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/24.0.0.12/com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/24.0.0.12/com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/jsonp-1.0/24.0.0.12/jsonp-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/24.0.0.12/com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/24.0.0.12/com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/24.0.0.12/com.ibm.websphere.appserver.anno-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/24.0.0.12/com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/24.0.0.12/com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/24.0.0.12/com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/24.0.0.12/com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/24.0.0.12/com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/24.0.0.12/com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/24.0.0.12/io.openliberty.servlet.api-3.1-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/24.0.0.12/com.ibm.websphere.appserver.injection-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/24.0.0.12/com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/24.0.0.12/com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/24.0.0.12/com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/servlet-3.1/24.0.0.12/servlet-3.1-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/24.0.0.12/io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/json-1.0/24.0.0.12/json-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/24.0.0.12/io.openliberty.servlet.internal-3.1-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/24.0.0.12/com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/24.0.0.12/com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/24.0.0.12/jaxrsClient-2.0-24.0.0.12.esa, /root/.m2/repository/io/openliberty/features/jaxrs-2.0/24.0.0.12/jaxrs-2.0-24.0.0.12.esa]
+#13 17.07 <============---------> 60.00%
+#13 17.07 [10/22/26, 9:45:32:463 UTC]Verifying signatures ...
+#13 17.07 <============---------> 60.00%
+#13 17.07 [10/22/26, 9:45:32:466 UTC]Available public keyIDs: bd9fd5be9e68ca00	
+#13 17.07 <============---------> 60.00%
+#13 17.07 [10/22/26, 9:45:32:466 UTC]Verifying com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.esa ...
+#13 17.07 <============---------> 60.00%
+#13 17.07 [10/22/26, 9:45:32:469 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.07 <============---------> 60.00%
+#13 17.08 [10/22/26, 9:45:32:469 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.08 <============---------> 60.00%
+#13 17.54 [10/22/26, 9:45:32:936 UTC]Successfully verified the com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.esa feature.
+#13 17.54 <============---------> 60.00%
+#13 17.54 [10/22/26, 9:45:32:936 UTC]Verifying com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.esa ...
+#13 17.54 <============---------> 60.00%
+#13 17.54 [10/22/26, 9:45:32:937 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.54 <============---------> 60.00%
+#13 17.54 [10/22/26, 9:45:32:937 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.54 <============---------> 60.00%
+#13 17.60 [10/22/26, 9:45:32:997 UTC]Successfully verified the com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.esa feature.
+#13 17.60 <============---------> 60.00%
+#13 17.60 [10/22/26, 9:45:32:997 UTC]Verifying jsonp-1.0-24.0.0.12.esa ...
+#13 17.60 <============---------> 61.00%
+#13 17.60 [10/22/26, 9:45:32:997 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.60 <============---------> 61.00%
+#13 17.60 [10/22/26, 9:45:32:998 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.60 <============---------> 61.00%
+#13 17.62 [10/22/26, 9:45:33:011 UTC]Successfully verified the jsonp-1.0-24.0.0.12.esa feature.
+#13 17.62 <============---------> 61.00%
+#13 17.62 [10/22/26, 9:45:33:012 UTC]Verifying com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.esa ...
+#13 17.62 <============---------> 61.00%
+#13 17.62 [10/22/26, 9:45:33:012 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.62 <============---------> 61.00%
+#13 17.62 [10/22/26, 9:45:33:013 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.62 <============---------> 61.00%
+#13 17.63 [10/22/26, 9:45:33:026 UTC]Successfully verified the com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.esa feature.
+#13 17.63 <============---------> 61.00%
+#13 17.63 [10/22/26, 9:45:33:026 UTC]Verifying com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.esa ...
+#13 17.63 <==============-------> 61.00%
+#13 17.63 [10/22/26, 9:45:33:027 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.63 <==============-------> 61.00%
+#13 17.63 [10/22/26, 9:45:33:027 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.63 <==============-------> 61.00%
+#13 17.66 [10/22/26, 9:45:33:052 UTC]Successfully verified the com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.esa feature.
+#13 17.66 <==============-------> 61.00%
+#13 17.66 [10/22/26, 9:45:33:052 UTC]Verifying com.ibm.websphere.appserver.anno-1.0-24.0.0.12.esa ...
+#13 17.66 <==============-------> 62.00%
+#13 17.66 [10/22/26, 9:45:33:053 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.66 <==============-------> 62.00%
+#13 17.66 [10/22/26, 9:45:33:053 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.66 <==============-------> 62.00%
+#13 17.70 [10/22/26, 9:45:33:096 UTC]Successfully verified the com.ibm.websphere.appserver.anno-1.0-24.0.0.12.esa feature.
+#13 17.70 <==============-------> 62.00%
+#13 17.70 [10/22/26, 9:45:33:097 UTC]Verifying com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.esa ...
+#13 17.70 <==============-------> 62.00%
+#13 17.70 [10/22/26, 9:45:33:097 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.70 <==============-------> 62.00%
+#13 17.70 [10/22/26, 9:45:33:098 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.70 <==============-------> 62.00%
+#13 17.75 [10/22/26, 9:45:33:147 UTC]Successfully verified the com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.esa feature.
+#13 17.75 <==============-------> 62.00%
+#13 17.75 [10/22/26, 9:45:33:147 UTC]Verifying com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.esa ...
+#13 17.75 <==============-------> 62.00%
+#13 17.75 [10/22/26, 9:45:33:148 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.75 <==============-------> 62.00%
+#13 17.75 [10/22/26, 9:45:33:148 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.75 <==============-------> 62.00%
+#13 17.78 [10/22/26, 9:45:33:175 UTC]Successfully verified the com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.esa feature.
+#13 17.78 <==============-------> 62.00%
+#13 17.78 [10/22/26, 9:45:33:175 UTC]Verifying com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.esa ...
+#13 17.78 <==============-------> 62.00%
+#13 17.78 [10/22/26, 9:45:33:176 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.78 <==============-------> 62.00%
+#13 17.78 [10/22/26, 9:45:33:176 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.78 <==============-------> 62.00%
+#13 17.79 [10/22/26, 9:45:33:189 UTC]Successfully verified the com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.esa feature.
+#13 17.79 <==============-------> 62.00%
+#13 17.79 [10/22/26, 9:45:33:189 UTC]Verifying com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.esa ...
+#13 17.79 <==============-------> 63.00%
+#13 17.80 [10/22/26, 9:45:33:190 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.80 <==============-------> 63.00%
+#13 17.80 [10/22/26, 9:45:33:190 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.80 <==============-------> 63.00%
+#13 17.83 [10/22/26, 9:45:33:222 UTC]Successfully verified the com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.esa feature.
+#13 17.83 <==============-------> 63.00%
+#13 17.83 [10/22/26, 9:45:33:222 UTC]Verifying com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.esa ...
+#13 17.83 <==============-------> 63.00%
+#13 17.83 [10/22/26, 9:45:33:223 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.83 <==============-------> 63.00%
+#13 17.83 [10/22/26, 9:45:33:223 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.83 <==============-------> 63.00%
+#13 17.84 [10/22/26, 9:45:33:234 UTC]Successfully verified the com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.esa feature.
+#13 17.84 <==============-------> 63.00%
+#13 17.84 [10/22/26, 9:45:33:235 UTC]Verifying com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.esa ...
+#13 17.84 <==============-------> 63.00%
+#13 17.84 [10/22/26, 9:45:33:235 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.84 <==============-------> 63.00%
+#13 17.84 [10/22/26, 9:45:33:235 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.84 <==============-------> 63.00%
+#13 17.87 [10/22/26, 9:45:33:260 UTC]Successfully verified the com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.esa feature.
+#13 17.87 <==============-------> 63.00%
+#13 17.87 [10/22/26, 9:45:33:260 UTC]Verifying com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.esa ...
+#13 17.87 <==============-------> 64.00%
+#13 17.87 [10/22/26, 9:45:33:261 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.87 <==============-------> 64.00%
+#13 17.87 [10/22/26, 9:45:33:261 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.87 <==============-------> 64.00%
+#13 17.88 [10/22/26, 9:45:33:276 UTC]Successfully verified the com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.esa feature.
+#13 17.88 <==============-------> 64.00%
+#13 17.88 [10/22/26, 9:45:33:277 UTC]Verifying com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.esa ...
+#13 17.88 <==============-------> 64.00%
+#13 17.88 [10/22/26, 9:45:33:277 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.88 <==============-------> 64.00%
+#13 17.88 [10/22/26, 9:45:33:277 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.88 <==============-------> 64.00%
+#13 17.91 [10/22/26, 9:45:33:308 UTC]Successfully verified the com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.esa feature.
+#13 17.91 <==============-------> 64.00%
+#13 17.91 [10/22/26, 9:45:33:308 UTC]Verifying io.openliberty.servlet.api-3.1-24.0.0.12.esa ...
+#13 17.91 <==============-------> 64.00%
+#13 17.91 [10/22/26, 9:45:33:309 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.91 <==============-------> 64.00%
+#13 17.91 [10/22/26, 9:45:33:309 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.91 <==============-------> 64.00%
+#13 17.93 [10/22/26, 9:45:33:321 UTC]Successfully verified the io.openliberty.servlet.api-3.1-24.0.0.12.esa feature.
+#13 17.93 <==============-------> 64.00%
+#13 17.93 [10/22/26, 9:45:33:321 UTC]Verifying com.ibm.websphere.appserver.injection-1.0-24.0.0.12.esa ...
+#13 17.93 <==============-------> 65.00%
+#13 17.93 [10/22/26, 9:45:33:322 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.93 <==============-------> 65.00%
+#13 17.93 [10/22/26, 9:45:33:322 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.93 <==============-------> 65.00%
+#13 17.97 [10/22/26, 9:45:33:360 UTC]Successfully verified the com.ibm.websphere.appserver.injection-1.0-24.0.0.12.esa feature.
+#13 17.97 <==============-------> 65.00%
+#13 17.97 [10/22/26, 9:45:33:360 UTC]Verifying com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.esa ...
+#13 17.97 <==============-------> 65.00%
+#13 17.97 [10/22/26, 9:45:33:361 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.97 <==============-------> 65.00%
+#13 17.97 [10/22/26, 9:45:33:361 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.97 <==============-------> 65.00%
+#13 17.98 [10/22/26, 9:45:33:372 UTC]Successfully verified the com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.esa feature.
+#13 17.98 <==============-------> 65.00%
+#13 17.98 [10/22/26, 9:45:33:373 UTC]Verifying com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.esa ...
+#13 17.98 <==============-------> 65.00%
+#13 17.98 [10/22/26, 9:45:33:373 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.98 <==============-------> 65.00%
+#13 17.98 [10/22/26, 9:45:33:374 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.98 <==============-------> 65.00%
+#13 17.99 [10/22/26, 9:45:33:387 UTC]Successfully verified the com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.esa feature.
+#13 17.99 <==============-------> 65.00%
+#13 17.99 [10/22/26, 9:45:33:388 UTC]Verifying com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.esa ...
+#13 17.99 <==============-------> 65.00%
+#13 17.99 [10/22/26, 9:45:33:388 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 17.99 <==============-------> 65.00%
+#13 17.99 [10/22/26, 9:45:33:389 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 17.99 <==============-------> 65.00%
+#13 18.01 [10/22/26, 9:45:33:401 UTC]Successfully verified the com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.esa feature.
+#13 18.01 <==============-------> 65.00%
+#13 18.01 [10/22/26, 9:45:33:402 UTC]Verifying com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.esa ...
+#13 18.01 <==============-------> 66.00%
+#13 18.01 [10/22/26, 9:45:33:402 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.01 <==============-------> 66.00%
+#13 18.01 [10/22/26, 9:45:33:403 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.01 <==============-------> 66.00%
+#13 18.04 [10/22/26, 9:45:33:432 UTC]Successfully verified the com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.esa feature.
+#13 18.04 <==============-------> 66.00%
+#13 18.04 [10/22/26, 9:45:33:432 UTC]Verifying com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.esa ...
+#13 18.04 <==============-------> 66.00%
+#13 18.04 [10/22/26, 9:45:33:433 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.04 <==============-------> 66.00%
+#13 18.04 [10/22/26, 9:45:33:433 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.04 <==============-------> 66.00%
+#13 18.09 [10/22/26, 9:45:33:484 UTC]Successfully verified the com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.esa feature.
+#13 18.09 <==============-------> 66.00%
+#13 18.09 [10/22/26, 9:45:33:484 UTC]Verifying servlet-3.1-24.0.0.12.esa ...
+#13 18.09 <==============-------> 66.00%
+#13 18.09 [10/22/26, 9:45:33:485 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.09 <==============-------> 66.00%
+#13 18.09 [10/22/26, 9:45:33:485 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.09 <==============-------> 66.00%
+#13 18.16 [10/22/26, 9:45:33:556 UTC]Successfully verified the servlet-3.1-24.0.0.12.esa feature.
+#13 18.16 <==============-------> 66.00%
+#13 18.16 [10/22/26, 9:45:33:556 UTC]Verifying io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.esa ...
+#13 18.16 <==============-------> 67.00%
+#13 18.16 [10/22/26, 9:45:33:557 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.16 <==============-------> 67.00%
+#13 18.16 [10/22/26, 9:45:33:557 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.16 <==============-------> 67.00%
+#13 18.17 [10/22/26, 9:45:33:569 UTC]Successfully verified the io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.esa feature.
+#13 18.18 <==============-------> 67.00%
+#13 18.18 [10/22/26, 9:45:33:569 UTC]Verifying com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.esa ...
+#13 18.18 <==============-------> 67.00%
+#13 18.18 [10/22/26, 9:45:33:570 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.18 <==============-------> 67.00%
+#13 18.18 [10/22/26, 9:45:33:570 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.18 <==============-------> 67.00%
+#13 18.24 [10/22/26, 9:45:33:630 UTC]Successfully verified the com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.esa feature.
+#13 18.24 <==============-------> 67.00%
+#13 18.24 [10/22/26, 9:45:33:630 UTC]Verifying json-1.0-24.0.0.12.esa ...
+#13 18.24 <==============-------> 67.00%
+#13 18.24 [10/22/26, 9:45:33:630 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.24 <==============-------> 67.00%
+#13 18.24 [10/22/26, 9:45:33:631 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.24 <==============-------> 67.00%
+#13 18.25 [10/22/26, 9:45:33:641 UTC]Successfully verified the json-1.0-24.0.0.12.esa feature.
+#13 18.25 <==============-------> 67.00%
+#13 18.25 [10/22/26, 9:45:33:642 UTC]Verifying io.openliberty.servlet.internal-3.1-24.0.0.12.esa ...
+#13 18.25 <==============-------> 68.00%
+#13 18.25 [10/22/26, 9:45:33:642 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.25 <==============-------> 68.00%
+#13 18.25 [10/22/26, 9:45:33:642 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.25 <==============-------> 68.00%
+#13 18.26 [10/22/26, 9:45:33:651 UTC]Successfully verified the io.openliberty.servlet.internal-3.1-24.0.0.12.esa feature.
+#13 18.26 <==============-------> 68.00%
+#13 18.26 [10/22/26, 9:45:33:652 UTC]Verifying com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.esa ...
+#13 18.26 <==============-------> 68.00%
+#13 18.26 [10/22/26, 9:45:33:652 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.26 <==============-------> 68.00%
+#13 18.26 [10/22/26, 9:45:33:652 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.26 <==============-------> 68.00%
+#13 18.27 [10/22/26, 9:45:33:662 UTC]Successfully verified the com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.esa feature.
+#13 18.27 <==============-------> 68.00%
+#13 18.27 [10/22/26, 9:45:33:662 UTC]Verifying com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.esa ...
+#13 18.27 <==============-------> 68.00%
+#13 18.27 [10/22/26, 9:45:33:662 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.27 <==============-------> 68.00%
+#13 18.27 [10/22/26, 9:45:33:663 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.27 <==============-------> 68.00%
+#13 18.28 [10/22/26, 9:45:33:679 UTC]Successfully verified the com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.esa feature.
+#13 18.28 <==============-------> 68.00%
+#13 18.28 [10/22/26, 9:45:33:679 UTC]Verifying com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.esa ...
+#13 18.28 <==============-------> 68.00%
+#13 18.29 [10/22/26, 9:45:33:680 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.29 <==============-------> 68.00%
+#13 18.29 [10/22/26, 9:45:33:680 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.29 <==============-------> 68.00%
+#13 18.30 [10/22/26, 9:45:33:690 UTC]Successfully verified the com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.esa feature.
+#13 18.30 <==============-------> 68.00%
+#13 18.30 [10/22/26, 9:45:33:691 UTC]Verifying com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.esa ...
+#13 18.30 <==============-------> 69.00%
+#13 18.30 [10/22/26, 9:45:33:691 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.30 <==============-------> 69.00%
+#13 18.30 [10/22/26, 9:45:33:692 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.30 <==============-------> 69.00%
+#13 18.41 [10/22/26, 9:45:33:809 UTC]Successfully verified the com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.esa feature.
+#13 18.41 <==============-------> 69.00%
+#13 18.41 [10/22/26, 9:45:33:809 UTC]Verifying com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.esa ...
+#13 18.41 <==============-------> 69.00%
+#13 18.42 [10/22/26, 9:45:33:810 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.42 <==============-------> 69.00%
+#13 18.42 [10/22/26, 9:45:33:810 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.42 <==============-------> 69.00%
+#13 18.49 [10/22/26, 9:45:33:888 UTC]Successfully verified the com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.esa feature.
+#13 18.49 <==============-------> 69.00%
+#13 18.49 [10/22/26, 9:45:33:888 UTC]Verifying jaxrsClient-2.0-24.0.0.12.esa ...
+#13 18.49 <==============-------> 69.00%
+#13 18.49 [10/22/26, 9:45:33:889 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.49 <==============-------> 69.00%
+#13 18.49 [10/22/26, 9:45:33:889 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.49 <==============-------> 69.00%
+#13 18.51 [10/22/26, 9:45:33:899 UTC]Successfully verified the jaxrsClient-2.0-24.0.0.12.esa feature.
+#13 18.51 <==============-------> 69.00%
+#13 18.51 [10/22/26, 9:45:33:900 UTC]Verifying jaxrs-2.0-24.0.0.12.esa ...
+#13 18.51 <==============-------> 70.00%
+#13 18.51 [10/22/26, 9:45:33:900 UTC]Key ID used in signature: bd9fd5be9e68ca00
+#13 18.51 <==============-------> 70.00%
+#13 18.51 [10/22/26, 9:45:33:901 UTC]Public key ID used: bd9fd5be9e68ca00
+#13 18.51 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:909 UTC]Successfully verified the jaxrs-2.0-24.0.0.12.esa feature.
+#13 18.52 <==============-------> 70.00%
+#13 18.52 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:910 UTC]All features were successfully verified.
+#13 18.52 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:910 UTC]Starting installation ...
+#13 18.52 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:910 UTC]Installing com.ibm.websphere.appserver.eeCompatible-7.0 ...
+#13 18.52 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:912 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.eeCompatible-7.0/24.0.0.12/com.ibm.websphere.appserver.eeCompatible-7.0-24.0.0.12.esa.
+#13 18.52 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:912 UTC]Starting installation ...
+#13 18.52 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:914 UTC]Checking features ...
+#13 18.52 <==============-------> 70.00%
+#13 18.52 [10/22/26, 9:45:33:917 UTC]Installing a dependent feature ...
+#13 18.52 <==============-------> 70.00%
+#13 18.62 [10/22/26, 9:45:34:013 UTC]Validating installed fixes ...
+#13 18.62 <==============-------> 70.00%
+#13 18.62 [10/22/26, 9:45:34:013 UTC]No fix is required to be reapplied.
+#13 18.62 <==============-------> 70.00%
+#13 18.62 [10/22/26, 9:45:34:014 UTC]Cleaning up temporary files ...
+#13 18.62 <==============-------> 70.00%
+#13 18.62 [10/22/26, 9:45:34:014 UTC]Successfully completed cleaning up temporary files.
+#13 18.62 <==============-------> 70.00%
+#13 18.62 [10/22/26, 9:45:34:015 UTC]Installation completed
+#13 18.62 <==============-------> 70.00%
+#13 18.62 <==============-------> 71.00%
+#13 18.62 [10/22/26, 9:45:34:015 UTC]Installing com.ibm.websphere.appserver.jsonpImpl-1.0.0 ...
+#13 18.62 <==============-------> 71.00%
+#13 18.62 [10/22/26, 9:45:34:016 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jsonpImpl-1.0.0/24.0.0.12/com.ibm.websphere.appserver.jsonpImpl-1.0.0-24.0.0.12.esa.
+#13 18.62 <==============-------> 71.00%
+#13 18.62 [10/22/26, 9:45:34:016 UTC]Starting installation ...
+#13 18.62 <==============-------> 71.00%
+#13 18.62 [10/22/26, 9:45:34:017 UTC]Checking features ...
+#13 18.62 <==============-------> 71.00%
+#13 18.62 [10/22/26, 9:45:34:018 UTC]Installing a dependent feature ...
+#13 18.62 <==============-------> 71.00%
+#13 18.69 [10/22/26, 9:45:34:089 UTC]Validating installed fixes ...
+#13 18.69 <==============-------> 71.00%
+#13 18.70 [10/22/26, 9:45:34:089 UTC]No fix is required to be reapplied.
+#13 18.70 <==============-------> 71.00%
+#13 18.70 [10/22/26, 9:45:34:090 UTC]Cleaning up temporary files ...
+#13 18.70 <==============-------> 71.00%
+#13 18.70 [10/22/26, 9:45:34:092 UTC]Successfully completed cleaning up temporary files.
+#13 18.70 <==============-------> 71.00%
+#13 18.70 [10/22/26, 9:45:34:092 UTC]Installation completed
+#13 18.70 <==============-------> 71.00%
+#13 18.70 <================-----> 72.00%
+#13 18.70 [10/22/26, 9:45:34:093 UTC]Installing jsonp-1.0 ...
+#13 18.70 <================-----> 72.00%
+#13 18.70 [10/22/26, 9:45:34:093 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/jsonp-1.0/24.0.0.12/jsonp-1.0-24.0.0.12.esa.
+#13 18.70 <================-----> 72.00%
+#13 18.70 [10/22/26, 9:45:34:094 UTC]Starting installation ...
+#13 18.70 <================-----> 72.00%
+#13 18.70 [10/22/26, 9:45:34:095 UTC]Checking features ...
+#13 18.70 <================-----> 72.00%
+#13 18.70 [10/22/26, 9:45:34:096 UTC]Installing jsonp-1.0 ...
+#13 18.70 <================-----> 72.00%
+#13 18.71 [10/22/26, 9:45:34:102 UTC]Successfully installed feature JavaScript Object Notation Processing 1.0.
+#13 18.71 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:134 UTC]Validating installed fixes ...
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:134 UTC]No fix is required to be reapplied.
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:135 UTC]Cleaning up temporary files ...
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:135 UTC]Successfully completed cleaning up temporary files.
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:135 UTC]Installation completed
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:136 UTC]Successfully installed feature jsonp-1.0.
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:137 UTC]Installing com.ibm.websphere.appserver.javax.annotation-1.2 ...
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:137 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.annotation-1.2/24.0.0.12/com.ibm.websphere.appserver.javax.annotation-1.2-24.0.0.12.esa.
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:138 UTC]Starting installation ...
+#13 18.74 <================-----> 72.00%
+#13 18.74 [10/22/26, 9:45:34:138 UTC]Checking features ...
+#13 18.74 <================-----> 72.00%
+#13 18.75 [10/22/26, 9:45:34:140 UTC]Installing a dependent feature ...
+#13 18.75 <================-----> 72.00%
+#13 18.78 [10/22/26, 9:45:34:176 UTC]Validating installed fixes ...
+#13 18.78 <================-----> 72.00%
+#13 18.78 [10/22/26, 9:45:34:176 UTC]No fix is required to be reapplied.
+#13 18.78 <================-----> 72.00%
+#13 18.78 [10/22/26, 9:45:34:177 UTC]Cleaning up temporary files ...
+#13 18.78 <================-----> 72.00%
+#13 18.78 [10/22/26, 9:45:34:177 UTC]Successfully completed cleaning up temporary files.
+#13 18.78 <================-----> 72.00%
+#13 18.78 [10/22/26, 9:45:34:177 UTC]Installation completed
+#13 18.78 <================-----> 72.00%
+#13 18.78 <================-----> 73.00%
+#13 18.78 [10/22/26, 9:45:34:178 UTC]Installing com.ibm.websphere.appserver.artifact-1.0 ...
+#13 18.78 <================-----> 73.00%
+#13 18.78 [10/22/26, 9:45:34:179 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.artifact-1.0/24.0.0.12/com.ibm.websphere.appserver.artifact-1.0-24.0.0.12.esa.
+#13 18.79 <================-----> 73.00%
+#13 18.79 [10/22/26, 9:45:34:179 UTC]Starting installation ...
+#13 18.79 <================-----> 73.00%
+#13 18.79 [10/22/26, 9:45:34:180 UTC]Checking features ...
+#13 18.79 <================-----> 73.00%
+#13 18.79 [10/22/26, 9:45:34:181 UTC]Installing a dependent feature ...
+#13 18.79 <================-----> 73.00%
+#13 18.83 [10/22/26, 9:45:34:222 UTC]Validating installed fixes ...
+#13 18.83 <================-----> 73.00%
+#13 18.83 [10/22/26, 9:45:34:222 UTC]No fix is required to be reapplied.
+#13 18.83 <================-----> 73.00%
+#13 18.83 [10/22/26, 9:45:34:222 UTC]Cleaning up temporary files ...
+#13 18.83 <================-----> 73.00%
+#13 18.83 [10/22/26, 9:45:34:223 UTC]Successfully completed cleaning up temporary files.
+#13 18.83 <================-----> 73.00%
+#13 18.83 [10/22/26, 9:45:34:223 UTC]Installation completed
+#13 18.83 <================-----> 73.00%
+#13 18.83 <================-----> 74.00%
+#13 18.83 [10/22/26, 9:45:34:224 UTC]Installing com.ibm.websphere.appserver.anno-1.0 ...
+#13 18.83 <================-----> 74.00%
+#13 18.83 [10/22/26, 9:45:34:224 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.anno-1.0/24.0.0.12/com.ibm.websphere.appserver.anno-1.0-24.0.0.12.esa.
+#13 18.83 <================-----> 74.00%
+#13 18.83 [10/22/26, 9:45:34:225 UTC]Starting installation ...
+#13 18.83 <================-----> 74.00%
+#13 18.83 [10/22/26, 9:45:34:225 UTC]Checking features ...
+#13 18.83 <================-----> 74.00%
+#13 18.83 [10/22/26, 9:45:34:226 UTC]Installing a dependent feature ...
+#13 18.83 <================-----> 74.00%
+#13 18.87 [10/22/26, 9:45:34:263 UTC]Validating installed fixes ...
+#13 18.87 <================-----> 74.00%
+#13 18.87 [10/22/26, 9:45:34:264 UTC]No fix is required to be reapplied.
+#13 18.87 <================-----> 74.00%
+#13 18.87 [10/22/26, 9:45:34:264 UTC]Cleaning up temporary files ...
+#13 18.87 <================-----> 74.00%
+#13 18.87 [10/22/26, 9:45:34:264 UTC]Successfully completed cleaning up temporary files.
+#13 18.87 <================-----> 74.00%
+#13 18.87 [10/22/26, 9:45:34:265 UTC]Installation completed
+#13 18.87 <================-----> 74.00%
+#13 18.87 <================-----> 75.00%
+#13 18.87 [10/22/26, 9:45:34:265 UTC]Installing com.ibm.websphere.appserver.javaeedd-1.0 ...
+#13 18.87 <================-----> 75.00%
+#13 18.87 [10/22/26, 9:45:34:266 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeedd-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeedd-1.0-24.0.0.12.esa.
+#13 18.87 <================-----> 75.00%
+#13 18.87 [10/22/26, 9:45:34:266 UTC]Starting installation ...
+#13 18.87 <================-----> 75.00%
+#13 18.87 [10/22/26, 9:45:34:267 UTC]Checking features ...
+#13 18.87 <================-----> 75.00%
+#13 18.87 [10/22/26, 9:45:34:267 UTC]Installing a dependent feature ...
+#13 18.87 <================-----> 75.00%
+#13 18.92 [10/22/26, 9:45:34:316 UTC]Validating installed fixes ...
+#13 18.92 <================-----> 75.00%
+#13 18.92 [10/22/26, 9:45:34:316 UTC]No fix is required to be reapplied.
+#13 18.92 <================-----> 75.00%
+#13 18.92 [10/22/26, 9:45:34:317 UTC]Cleaning up temporary files ...
+#13 18.92 <================-----> 75.00%
+#13 18.92 [10/22/26, 9:45:34:317 UTC]Successfully completed cleaning up temporary files.
+#13 18.92 <================-----> 75.00%
+#13 18.92 [10/22/26, 9:45:34:317 UTC]Installation completed
+#13 18.92 <================-----> 75.00%
+#13 18.92 <================-----> 75.00%
+#13 18.92 [10/22/26, 9:45:34:318 UTC]Installing com.ibm.websphere.appserver.containerServices-1.0 ...
+#13 18.92 <================-----> 75.00%
+#13 18.92 [10/22/26, 9:45:34:319 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.containerServices-1.0/24.0.0.12/com.ibm.websphere.appserver.containerServices-1.0-24.0.0.12.esa.
+#13 18.93 <================-----> 75.00%
+#13 18.93 [10/22/26, 9:45:34:320 UTC]Starting installation ...
+#13 18.93 <================-----> 75.00%
+#13 18.93 [10/22/26, 9:45:34:322 UTC]Checking features ...
+#13 18.93 <================-----> 75.00%
+#13 18.93 [10/22/26, 9:45:34:322 UTC]Installing a dependent feature ...
+#13 18.93 <================-----> 75.00%
+#13 18.97 [10/22/26, 9:45:34:365 UTC]Validating installed fixes ...
+#13 18.97 <================-----> 75.00%
+#13 18.97 [10/22/26, 9:45:34:366 UTC]No fix is required to be reapplied.
+#13 18.97 <================-----> 75.00%
+#13 18.97 [10/22/26, 9:45:34:366 UTC]Cleaning up temporary files ...
+#13 18.97 <================-----> 75.00%
+#13 18.97 [10/22/26, 9:45:34:366 UTC]Successfully completed cleaning up temporary files.
+#13 18.97 <================-----> 75.00%
+#13 18.97 [10/22/26, 9:45:34:367 UTC]Installation completed
+#13 18.97 <================-----> 75.00%
+#13 18.97 <================-----> 76.00%
+#13 18.97 [10/22/26, 9:45:34:367 UTC]Installing com.ibm.websphere.appserver.dynamicBundle-1.0 ...
+#13 18.97 <================-----> 76.00%
+#13 18.97 [10/22/26, 9:45:34:368 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.dynamicBundle-1.0/24.0.0.12/com.ibm.websphere.appserver.dynamicBundle-1.0-24.0.0.12.esa.
+#13 18.97 <================-----> 76.00%
+#13 18.97 [10/22/26, 9:45:34:368 UTC]Starting installation ...
+#13 18.97 <================-----> 76.00%
+#13 18.97 [10/22/26, 9:45:34:369 UTC]Checking features ...
+#13 18.97 <================-----> 76.00%
+#13 18.98 [10/22/26, 9:45:34:370 UTC]Installing a dependent feature ...
+#13 18.98 <================-----> 76.00%
+#13 19.03 [10/22/26, 9:45:34:421 UTC]Validating installed fixes ...
+#13 19.03 <================-----> 76.00%
+#13 19.03 [10/22/26, 9:45:34:422 UTC]No fix is required to be reapplied.
+#13 19.03 <================-----> 76.00%
+#13 19.03 [10/22/26, 9:45:34:422 UTC]Cleaning up temporary files ...
+#13 19.03 <================-----> 76.00%
+#13 19.03 [10/22/26, 9:45:34:422 UTC]Successfully completed cleaning up temporary files.
+#13 19.03 <================-----> 76.00%
+#13 19.03 [10/22/26, 9:45:34:423 UTC]Installation completed
+#13 19.03 <================-----> 76.00%
+#13 19.03 <================-----> 77.00%
+#13 19.03 [10/22/26, 9:45:34:423 UTC]Installing com.ibm.websphere.appserver.classloading-1.0 ...
+#13 19.03 <================-----> 77.00%
+#13 19.03 [10/22/26, 9:45:34:424 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.classloading-1.0/24.0.0.12/com.ibm.websphere.appserver.classloading-1.0-24.0.0.12.esa.
+#13 19.03 <================-----> 77.00%
+#13 19.03 [10/22/26, 9:45:34:425 UTC]Starting installation ...
+#13 19.03 <================-----> 77.00%
+#13 19.03 [10/22/26, 9:45:34:425 UTC]Checking features ...
+#13 19.03 <================-----> 77.00%
+#13 19.03 [10/22/26, 9:45:34:426 UTC]Installing a dependent feature ...
+#13 19.03 <================-----> 77.00%
+#13 19.08 [10/22/26, 9:45:34:473 UTC]Validating installed fixes ...
+#13 19.08 <================-----> 77.00%
+#13 19.08 [10/22/26, 9:45:34:473 UTC]No fix is required to be reapplied.
+#13 19.08 <================-----> 77.00%
+#13 19.08 [10/22/26, 9:45:34:474 UTC]Cleaning up temporary files ...
+#13 19.08 <================-----> 77.00%
+#13 19.08 [10/22/26, 9:45:34:474 UTC]Successfully completed cleaning up temporary files.
+#13 19.08 <================-----> 77.00%
+#13 19.08 [10/22/26, 9:45:34:474 UTC]Installation completed
+#13 19.08 <================-----> 77.00%
+#13 19.08 <================-----> 78.00%
+#13 19.08 [10/22/26, 9:45:34:475 UTC]Installing com.ibm.websphere.appserver.appLifecycle-1.0 ...
+#13 19.08 <================-----> 78.00%
+#13 19.08 [10/22/26, 9:45:34:475 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appLifecycle-1.0/24.0.0.12/com.ibm.websphere.appserver.appLifecycle-1.0-24.0.0.12.esa.
+#13 19.08 <================-----> 78.00%
+#13 19.08 [10/22/26, 9:45:34:476 UTC]Starting installation ...
+#13 19.08 <================-----> 78.00%
+#13 19.08 [10/22/26, 9:45:34:477 UTC]Checking features ...
+#13 19.08 <================-----> 78.00%
+#13 19.08 [10/22/26, 9:45:34:478 UTC]Installing a dependent feature ...
+#13 19.08 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:509 UTC]Validating installed fixes ...
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:510 UTC]No fix is required to be reapplied.
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:510 UTC]Cleaning up temporary files ...
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:510 UTC]Successfully completed cleaning up temporary files.
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:511 UTC]Installation completed
+#13 19.12 <================-----> 78.00%
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:511 UTC]Installing com.ibm.websphere.appserver.appmanager-1.0 ...
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:512 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.appmanager-1.0/24.0.0.12/com.ibm.websphere.appserver.appmanager-1.0-24.0.0.12.esa.
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:512 UTC]Starting installation ...
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:513 UTC]Checking features ...
+#13 19.12 <================-----> 78.00%
+#13 19.12 [10/22/26, 9:45:34:513 UTC]Installing a dependent feature ...
+#13 19.12 <================-----> 78.00%
+#13 19.16 [10/22/26, 9:45:34:558 UTC]Validating installed fixes ...
+#13 19.16 <================-----> 78.00%
+#13 19.16 [10/22/26, 9:45:34:558 UTC]No fix is required to be reapplied.
+#13 19.16 <================-----> 78.00%
+#13 19.16 [10/22/26, 9:45:34:558 UTC]Cleaning up temporary files ...
+#13 19.16 <================-----> 78.00%
+#13 19.16 [10/22/26, 9:45:34:558 UTC]Successfully completed cleaning up temporary files.
+#13 19.16 <================-----> 78.00%
+#13 19.16 [10/22/26, 9:45:34:559 UTC]Installation completed
+#13 19.16 <================-----> 78.00%
+#13 19.16 <================-----> 79.00%
+#13 19.16 [10/22/26, 9:45:34:559 UTC]Installing com.ibm.websphere.appserver.javaeePlatform-6.0 ...
+#13 19.17 <================-----> 79.00%
+#13 19.17 [10/22/26, 9:45:34:560 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-6.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-6.0-24.0.0.12.esa.
+#13 19.17 <================-----> 79.00%
+#13 19.17 [10/22/26, 9:45:34:560 UTC]Starting installation ...
+#13 19.17 <================-----> 79.00%
+#13 19.17 [10/22/26, 9:45:34:561 UTC]Checking features ...
+#13 19.17 <================-----> 79.00%
+#13 19.17 [10/22/26, 9:45:34:562 UTC]Installing a dependent feature ...
+#13 19.17 <================-----> 79.00%
+#13 19.20 [10/22/26, 9:45:34:595 UTC]Validating installed fixes ...
+#13 19.20 <================-----> 79.00%
+#13 19.20 [10/22/26, 9:45:34:596 UTC]No fix is required to be reapplied.
+#13 19.20 <================-----> 79.00%
+#13 19.20 [10/22/26, 9:45:34:596 UTC]Cleaning up temporary files ...
+#13 19.20 <================-----> 79.00%
+#13 19.20 [10/22/26, 9:45:34:596 UTC]Successfully completed cleaning up temporary files.
+#13 19.20 <================-----> 79.00%
+#13 19.20 [10/22/26, 9:45:34:597 UTC]Installation completed
+#13 19.20 <================-----> 79.00%
+#13 19.20 <================-----> 80.00%
+#13 19.20 [10/22/26, 9:45:34:597 UTC]Installing com.ibm.websphere.appserver.channelfw-1.0 ...
+#13 19.20 <================-----> 80.00%
+#13 19.20 [10/22/26, 9:45:34:598 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.channelfw-1.0/24.0.0.12/com.ibm.websphere.appserver.channelfw-1.0-24.0.0.12.esa.
+#13 19.20 <================-----> 80.00%
+#13 19.20 [10/22/26, 9:45:34:598 UTC]Starting installation ...
+#13 19.20 <================-----> 80.00%
+#13 19.20 [10/22/26, 9:45:34:599 UTC]Checking features ...
+#13 19.20 <================-----> 80.00%
+#13 19.21 [10/22/26, 9:45:34:599 UTC]Installing a dependent feature ...
+#13 19.21 <================-----> 80.00%
+#13 19.24 [10/22/26, 9:45:34:634 UTC]Validating installed fixes ...
+#13 19.24 <================-----> 80.00%
+#13 19.24 [10/22/26, 9:45:34:634 UTC]No fix is required to be reapplied.
+#13 19.24 <================-----> 80.00%
+#13 19.24 [10/22/26, 9:45:34:634 UTC]Cleaning up temporary files ...
+#13 19.24 <================-----> 80.00%
+#13 19.24 [10/22/26, 9:45:34:635 UTC]Successfully completed cleaning up temporary files.
+#13 19.24 <================-----> 80.00%
+#13 19.24 [10/22/26, 9:45:34:635 UTC]Installation completed
+#13 19.24 <================-----> 80.00%
+#13 19.24 <================-----> 81.00%
+#13 19.24 [10/22/26, 9:45:34:636 UTC]Installing io.openliberty.servlet.api-3.1 ...
+#13 19.24 <================-----> 81.00%
+#13 19.24 [10/22/26, 9:45:34:636 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.api-3.1/24.0.0.12/io.openliberty.servlet.api-3.1-24.0.0.12.esa.
+#13 19.24 <================-----> 81.00%
+#13 19.24 [10/22/26, 9:45:34:637 UTC]Starting installation ...
+#13 19.24 <================-----> 81.00%
+#13 19.24 [10/22/26, 9:45:34:637 UTC]Checking features ...
+#13 19.24 <================-----> 81.00%
+#13 19.24 [10/22/26, 9:45:34:638 UTC]Installing a dependent feature ...
+#13 19.24 <================-----> 81.00%
+#13 19.27 [10/22/26, 9:45:34:665 UTC]Validating installed fixes ...
+#13 19.27 <================-----> 81.00%
+#13 19.27 [10/22/26, 9:45:34:666 UTC]No fix is required to be reapplied.
+#13 19.27 <================-----> 81.00%
+#13 19.27 [10/22/26, 9:45:34:666 UTC]Cleaning up temporary files ...
+#13 19.27 <================-----> 81.00%
+#13 19.27 [10/22/26, 9:45:34:667 UTC]Successfully completed cleaning up temporary files.
+#13 19.27 <================-----> 81.00%
+#13 19.27 [10/22/26, 9:45:34:668 UTC]Installation completed
+#13 19.27 <================-----> 81.00%
+#13 19.27 <==================---> 81.00%
+#13 19.27 [10/22/26, 9:45:34:668 UTC]Installing com.ibm.websphere.appserver.injection-1.0 ...
+#13 19.27 <==================---> 81.00%
+#13 19.27 [10/22/26, 9:45:34:668 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.injection-1.0/24.0.0.12/com.ibm.websphere.appserver.injection-1.0-24.0.0.12.esa.
+#13 19.27 <==================---> 81.00%
+#13 19.27 [10/22/26, 9:45:34:669 UTC]Starting installation ...
+#13 19.27 <==================---> 81.00%
+#13 19.28 [10/22/26, 9:45:34:669 UTC]Checking features ...
+#13 19.28 <==================---> 81.00%
+#13 19.28 [10/22/26, 9:45:34:671 UTC]Installing a dependent feature ...
+#13 19.28 <==================---> 81.00%
+#13 19.31 [10/22/26, 9:45:34:700 UTC]Validating installed fixes ...
+#13 19.31 <==================---> 81.00%
+#13 19.31 [10/22/26, 9:45:34:700 UTC]No fix is required to be reapplied.
+#13 19.31 <==================---> 81.00%
+#13 19.31 [10/22/26, 9:45:34:701 UTC]Cleaning up temporary files ...
+#13 19.31 <==================---> 81.00%
+#13 19.31 [10/22/26, 9:45:34:702 UTC]Successfully completed cleaning up temporary files.
+#13 19.31 <==================---> 81.00%
+#13 19.31 [10/22/26, 9:45:34:702 UTC]Installation completed
+#13 19.31 <==================---> 81.00%
+#13 19.31 <==================---> 82.00%
+#13 19.31 [10/22/26, 9:45:34:703 UTC]Installing com.ibm.websphere.appserver.javaeePlatform-7.0 ...
+#13 19.31 <==================---> 82.00%
+#13 19.31 [10/22/26, 9:45:34:704 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeePlatform-7.0/24.0.0.12/com.ibm.websphere.appserver.javaeePlatform-7.0-24.0.0.12.esa.
+#13 19.31 <==================---> 82.00%
+#13 19.31 [10/22/26, 9:45:34:705 UTC]Starting installation ...
+#13 19.31 <==================---> 82.00%
+#13 19.31 [10/22/26, 9:45:34:705 UTC]Checking features ...
+#13 19.31 <==================---> 82.00%
+#13 19.31 [10/22/26, 9:45:34:706 UTC]Installing a dependent feature ...
+#13 19.31 <==================---> 82.00%
+#13 19.35 [10/22/26, 9:45:34:742 UTC]Validating installed fixes ...
+#13 19.35 <==================---> 82.00%
+#13 19.35 [10/22/26, 9:45:34:742 UTC]No fix is required to be reapplied.
+#13 19.35 <==================---> 82.00%
+#13 19.35 [10/22/26, 9:45:34:743 UTC]Cleaning up temporary files ...
+#13 19.35 <==================---> 82.00%
+#13 19.35 [10/22/26, 9:45:34:743 UTC]Successfully completed cleaning up temporary files.
+#13 19.35 <==================---> 82.00%
+#13 19.35 [10/22/26, 9:45:34:744 UTC]Installation completed
+#13 19.35 <==================---> 82.00%
+#13 19.35 <==================---> 83.00%
+#13 19.35 [10/22/26, 9:45:34:744 UTC]Installing com.ibm.websphere.appserver.javaeeddSchema-1.0 ...
+#13 19.35 <==================---> 83.00%
+#13 19.35 [10/22/26, 9:45:34:745 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javaeeddSchema-1.0/24.0.0.12/com.ibm.websphere.appserver.javaeeddSchema-1.0-24.0.0.12.esa.
+#13 19.35 <==================---> 83.00%
+#13 19.35 [10/22/26, 9:45:34:745 UTC]Starting installation ...
+#13 19.35 <==================---> 83.00%
+#13 19.35 [10/22/26, 9:45:34:746 UTC]Checking features ...
+#13 19.35 <==================---> 83.00%
+#13 19.35 [10/22/26, 9:45:34:747 UTC]Installing a dependent feature ...
+#13 19.35 <==================---> 83.00%
+#13 19.39 [10/22/26, 9:45:34:782 UTC]Validating installed fixes ...
+#13 19.39 <==================---> 83.00%
+#13 19.39 [10/22/26, 9:45:34:783 UTC]No fix is required to be reapplied.
+#13 19.39 <==================---> 83.00%
+#13 19.39 [10/22/26, 9:45:34:783 UTC]Cleaning up temporary files ...
+#13 19.39 <==================---> 83.00%
+#13 19.39 [10/22/26, 9:45:34:783 UTC]Successfully completed cleaning up temporary files.
+#13 19.39 <==================---> 83.00%
+#13 19.39 [10/22/26, 9:45:34:784 UTC]Installation completed
+#13 19.39 <==================---> 83.00%
+#13 19.39 <==================---> 84.00%
+#13 19.39 [10/22/26, 9:45:34:785 UTC]Installing com.ibm.websphere.appserver.requestProbes-1.0 ...
+#13 19.39 <==================---> 84.00%
+#13 19.39 [10/22/26, 9:45:34:786 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.requestProbes-1.0/24.0.0.12/com.ibm.websphere.appserver.requestProbes-1.0-24.0.0.12.esa.
+#13 19.39 <==================---> 84.00%
+#13 19.39 [10/22/26, 9:45:34:786 UTC]Starting installation ...
+#13 19.39 <==================---> 84.00%
+#13 19.39 [10/22/26, 9:45:34:786 UTC]Checking features ...
+#13 19.39 <==================---> 84.00%
+#13 19.39 [10/22/26, 9:45:34:787 UTC]Installing a dependent feature ...
+#13 19.39 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:815 UTC]Validating installed fixes ...
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:815 UTC]No fix is required to be reapplied.
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:815 UTC]Cleaning up temporary files ...
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:816 UTC]Successfully completed cleaning up temporary files.
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:816 UTC]Installation completed
+#13 19.42 <==================---> 84.00%
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:817 UTC]Installing com.ibm.websphere.appserver.servlet-servletSpi1.0 ...
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:818 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.servlet-servletSpi1.0/24.0.0.12/com.ibm.websphere.appserver.servlet-servletSpi1.0-24.0.0.12.esa.
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:818 UTC]Starting installation ...
+#13 19.42 <==================---> 84.00%
+#13 19.42 [10/22/26, 9:45:34:819 UTC]Checking features ...
+#13 19.42 <==================---> 84.00%
+#13 19.43 [10/22/26, 9:45:34:820 UTC]Installing a dependent feature ...
+#13 19.43 <==================---> 84.00%
+#13 19.46 [10/22/26, 9:45:34:854 UTC]Validating installed fixes ...
+#13 19.46 <==================---> 84.00%
+#13 19.46 [10/22/26, 9:45:34:855 UTC]No fix is required to be reapplied.
+#13 19.46 <==================---> 84.00%
+#13 19.46 [10/22/26, 9:45:34:855 UTC]Cleaning up temporary files ...
+#13 19.46 <==================---> 84.00%
+#13 19.46 [10/22/26, 9:45:34:855 UTC]Successfully completed cleaning up temporary files.
+#13 19.46 <==================---> 84.00%
+#13 19.46 [10/22/26, 9:45:34:855 UTC]Installation completed
+#13 19.46 <==================---> 84.00%
+#13 19.46 <==================---> 85.00%
+#13 19.46 [10/22/26, 9:45:34:856 UTC]Installing com.ibm.websphere.appserver.httptransport-1.0 ...
+#13 19.46 <==================---> 85.00%
+#13 19.46 [10/22/26, 9:45:34:856 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.httptransport-1.0/24.0.0.12/com.ibm.websphere.appserver.httptransport-1.0-24.0.0.12.esa.
+#13 19.46 <==================---> 85.00%
+#13 19.46 [10/22/26, 9:45:34:857 UTC]Starting installation ...
+#13 19.46 <==================---> 85.00%
+#13 19.46 [10/22/26, 9:45:34:857 UTC]Checking features ...
+#13 19.46 <==================---> 85.00%
+#13 19.46 [10/22/26, 9:45:34:858 UTC]Installing a dependent feature ...
+#13 19.46 <==================---> 85.00%
+#13 19.50 [10/22/26, 9:45:34:895 UTC]Validating installed fixes ...
+#13 19.50 <==================---> 85.00%
+#13 19.50 [10/22/26, 9:45:34:895 UTC]No fix is required to be reapplied.
+#13 19.50 <==================---> 85.00%
+#13 19.50 [10/22/26, 9:45:34:896 UTC]Cleaning up temporary files ...
+#13 19.50 <==================---> 85.00%
+#13 19.50 [10/22/26, 9:45:34:896 UTC]Successfully completed cleaning up temporary files.
+#13 19.50 <==================---> 85.00%
+#13 19.50 [10/22/26, 9:45:34:896 UTC]Installation completed
+#13 19.50 <==================---> 85.00%
+#13 19.50 <==================---> 86.00%
+#13 19.50 [10/22/26, 9:45:34:897 UTC]Installing servlet-3.1 ...
+#13 19.50 <==================---> 86.00%
+#13 19.50 [10/22/26, 9:45:34:897 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/servlet-3.1/24.0.0.12/servlet-3.1-24.0.0.12.esa.
+#13 19.50 <==================---> 86.00%
+#13 19.50 [10/22/26, 9:45:34:897 UTC]Starting installation ...
+#13 19.50 <==================---> 86.00%
+#13 19.50 [10/22/26, 9:45:34:898 UTC]Checking features ...
+#13 19.50 <==================---> 86.00%
+#13 19.50 [10/22/26, 9:45:34:899 UTC]Installing servlet-3.1 ...
+#13 19.50 <==================---> 86.00%
+#13 19.54 [10/22/26, 9:45:34:933 UTC]Successfully installed feature Java Servlets 3.1.
+#13 19.54 <==================---> 86.00%
+#13 19.58 [10/22/26, 9:45:34:976 UTC]Validating installed fixes ...
+#13 19.58 <==================---> 86.00%
+#13 19.58 [10/22/26, 9:45:34:976 UTC]No fix is required to be reapplied.
+#13 19.58 <==================---> 86.00%
+#13 19.58 [10/22/26, 9:45:34:977 UTC]Setting scripts permission ...
+#13 19.58 <==================---> 86.00%
+#13 19.60 [10/22/26, 9:45:34:997 UTC]Cleaning up temporary files ...
+#13 19.60 <==================---> 86.00%
+#13 19.60 [10/22/26, 9:45:34:998 UTC]Successfully completed cleaning up temporary files.
+#13 19.60 <==================---> 86.00%
+#13 19.60 [10/22/26, 9:45:34:998 UTC]Installation completed
+#13 19.60 <==================---> 86.00%
+#13 19.60 [10/22/26, 9:45:34:998 UTC]Successfully installed feature servlet-3.1.
+#13 19.60 <==================---> 87.00%
+#13 19.60 [10/22/26, 9:45:34:998 UTC]Installing io.openliberty.globalhandler1.0.internal.ee-6.0 ...
+#13 19.60 <==================---> 87.00%
+#13 19.60 [10/22/26, 9:45:34:998 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.globalhandler1.0.internal.ee-6.0/24.0.0.12/io.openliberty.globalhandler1.0.internal.ee-6.0-24.0.0.12.esa.
+#13 19.60 <==================---> 87.00%
+#13 19.60 [10/22/26, 9:45:34:999 UTC]Starting installation ...
+#13 19.60 <==================---> 87.00%
+#13 19.60 [10/22/26, 9:45:34:999 UTC]Checking features ...
+#13 19.60 <==================---> 87.00%
+#13 19.61 [10/22/26, 9:45:35:000 UTC]Installing a dependent feature ...
+#13 19.61 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:021 UTC]Validating installed fixes ...
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:021 UTC]No fix is required to be reapplied.
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:021 UTC]Cleaning up temporary files ...
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:022 UTC]Successfully completed cleaning up temporary files.
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:022 UTC]Installation completed
+#13 19.63 <==================---> 87.00%
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:022 UTC]Installing com.ibm.websphere.appserver.internal.optional.jaxb-2.2 ...
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:023 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.internal.optional.jaxb-2.2-24.0.0.12.esa.
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:023 UTC]Starting installation ...
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:023 UTC]Checking features ...
+#13 19.63 <==================---> 87.00%
+#13 19.63 [10/22/26, 9:45:35:024 UTC]Installing a dependent feature ...
+#13 19.63 <==================---> 87.00%
+#13 19.67 [10/22/26, 9:45:35:061 UTC]Validating installed fixes ...
+#13 19.67 <==================---> 87.00%
+#13 19.67 [10/22/26, 9:45:35:062 UTC]No fix is required to be reapplied.
+#13 19.67 <==================---> 87.00%
+#13 19.67 [10/22/26, 9:45:35:062 UTC]Cleaning up temporary files ...
+#13 19.67 <==================---> 87.00%
+#13 19.67 [10/22/26, 9:45:35:062 UTC]Successfully completed cleaning up temporary files.
+#13 19.67 <==================---> 87.00%
+#13 19.67 [10/22/26, 9:45:35:062 UTC]Installation completed
+#13 19.67 <==================---> 87.00%
+#13 19.67 <==================---> 88.00%
+#13 19.67 [10/22/26, 9:45:35:063 UTC]Installing json-1.0 ...
+#13 19.67 <==================---> 88.00%
+#13 19.67 [10/22/26, 9:45:35:063 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/json-1.0/24.0.0.12/json-1.0-24.0.0.12.esa.
+#13 19.67 <==================---> 88.00%
+#13 19.67 [10/22/26, 9:45:35:063 UTC]Starting installation ...
+#13 19.67 <==================---> 88.00%
+#13 19.67 [10/22/26, 9:45:35:064 UTC]Checking features ...
+#13 19.67 <==================---> 88.00%
+#13 19.67 [10/22/26, 9:45:35:065 UTC]Installing json-1.0 ...
+#13 19.67 <==================---> 88.00%
+#13 19.68 [10/22/26, 9:45:35:070 UTC]Successfully installed feature JavaScript Object Notation for Java 1.0.
+#13 19.68 <==================---> 88.00%
+#13 19.70 [10/22/26, 9:45:35:095 UTC]Validating installed fixes ...
+#13 19.70 <==================---> 88.00%
+#13 19.70 [10/22/26, 9:45:35:095 UTC]No fix is required to be reapplied.
+#13 19.70 <==================---> 88.00%
+#13 19.70 [10/22/26, 9:45:35:095 UTC]Cleaning up temporary files ...
+#13 19.70 <==================---> 88.00%
+#13 19.70 [10/22/26, 9:45:35:095 UTC]Successfully completed cleaning up temporary files.
+#13 19.70 <==================---> 88.00%
+#13 19.70 [10/22/26, 9:45:35:095 UTC]Installation completed
+#13 19.70 <==================---> 88.00%
+#13 19.70 [10/22/26, 9:45:35:095 UTC]Successfully installed feature json-1.0.
+#13 19.70 <==================---> 89.00%
+#13 19.70 [10/22/26, 9:45:35:096 UTC]Installing io.openliberty.servlet.internal-3.1 ...
+#13 19.70 <==================---> 89.00%
+#13 19.70 [10/22/26, 9:45:35:096 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/io.openliberty.servlet.internal-3.1/24.0.0.12/io.openliberty.servlet.internal-3.1-24.0.0.12.esa.
+#13 19.70 <==================---> 89.00%
+#13 19.70 [10/22/26, 9:45:35:097 UTC]Starting installation ...
+#13 19.70 <==================---> 89.00%
+#13 19.70 [10/22/26, 9:45:35:097 UTC]Checking features ...
+#13 19.70 <==================---> 89.00%
+#13 19.70 [10/22/26, 9:45:35:098 UTC]Installing a dependent feature ...
+#13 19.70 <==================---> 89.00%
+#13 19.73 [10/22/26, 9:45:35:122 UTC]Validating installed fixes ...
+#13 19.73 <==================---> 89.00%
+#13 19.73 [10/22/26, 9:45:35:122 UTC]No fix is required to be reapplied.
+#13 19.73 <==================---> 89.00%
+#13 19.73 [10/22/26, 9:45:35:122 UTC]Cleaning up temporary files ...
+#13 19.73 <==================---> 89.00%
+#13 19.73 [10/22/26, 9:45:35:123 UTC]Successfully completed cleaning up temporary files.
+#13 19.73 <==================---> 89.00%
+#13 19.73 [10/22/26, 9:45:35:123 UTC]Installation completed
+#13 19.73 <==================---> 89.00%
+#13 19.73 <==================---> 90.00%
+#13 19.73 [10/22/26, 9:45:35:123 UTC]Installing com.ibm.websphere.appserver.globalhandler-1.0 ...
+#13 19.73 <==================---> 90.00%
+#13 19.73 [10/22/26, 9:45:35:124 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.globalhandler-1.0/24.0.0.12/com.ibm.websphere.appserver.globalhandler-1.0-24.0.0.12.esa.
+#13 19.73 <==================---> 90.00%
+#13 19.73 [10/22/26, 9:45:35:124 UTC]Starting installation ...
+#13 19.73 <==================---> 90.00%
+#13 19.73 [10/22/26, 9:45:35:125 UTC]Checking features ...
+#13 19.73 <==================---> 90.00%
+#13 19.73 [10/22/26, 9:45:35:125 UTC]Installing a dependent feature ...
+#13 19.73 <==================---> 90.00%
+#13 19.75 [10/22/26, 9:45:35:148 UTC]Validating installed fixes ...
+#13 19.75 <==================---> 90.00%
+#13 19.75 [10/22/26, 9:45:35:148 UTC]No fix is required to be reapplied.
+#13 19.75 <==================---> 90.00%
+#13 19.75 [10/22/26, 9:45:35:149 UTC]Cleaning up temporary files ...
+#13 19.75 <==================---> 90.00%
+#13 19.75 [10/22/26, 9:45:35:149 UTC]Successfully completed cleaning up temporary files.
+#13 19.75 <==================---> 90.00%
+#13 19.75 [10/22/26, 9:45:35:149 UTC]Installation completed
+#13 19.75 <==================---> 90.00%
+#13 19.75 <==================---> 90.00%
+#13 19.75 [10/22/26, 9:45:35:149 UTC]Installing com.ibm.websphere.appserver.javax.jaxrs-2.0 ...
+#13 19.75 <==================---> 90.00%
+#13 19.76 [10/22/26, 9:45:35:150 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.javax.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.javax.jaxrs-2.0-24.0.0.12.esa.
+#13 19.76 <==================---> 90.00%
+#13 19.76 [10/22/26, 9:45:35:150 UTC]Starting installation ...
+#13 19.76 <==================---> 90.00%
+#13 19.76 [10/22/26, 9:45:35:150 UTC]Checking features ...
+#13 19.76 <==================---> 90.00%
+#13 19.76 [10/22/26, 9:45:35:151 UTC]Installing a dependent feature ...
+#13 19.76 <==================---> 90.00%
+#13 19.78 [10/22/26, 9:45:35:176 UTC]Validating installed fixes ...
+#13 19.78 <==================---> 90.00%
+#13 19.78 [10/22/26, 9:45:35:176 UTC]No fix is required to be reapplied.
+#13 19.78 <==================---> 90.00%
+#13 19.78 [10/22/26, 9:45:35:176 UTC]Cleaning up temporary files ...
+#13 19.78 <==================---> 90.00%
+#13 19.78 [10/22/26, 9:45:35:177 UTC]Successfully completed cleaning up temporary files.
+#13 19.78 <==================---> 90.00%
+#13 19.78 [10/22/26, 9:45:35:177 UTC]Installation completed
+#13 19.78 <==================---> 90.00%
+#13 19.78 <====================-> 91.00%
+#13 19.78 [10/22/26, 9:45:35:177 UTC]Installing com.ibm.websphere.appserver.optional.jaxb-2.2 ...
+#13 19.78 <====================-> 91.00%
+#13 19.78 [10/22/26, 9:45:35:178 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.optional.jaxb-2.2/24.0.0.12/com.ibm.websphere.appserver.optional.jaxb-2.2-24.0.0.12.esa.
+#13 19.78 <====================-> 91.00%
+#13 19.78 [10/22/26, 9:45:35:178 UTC]Starting installation ...
+#13 19.78 <====================-> 91.00%
+#13 19.78 [10/22/26, 9:45:35:178 UTC]Checking features ...
+#13 19.78 <====================-> 91.00%
+#13 19.78 [10/22/26, 9:45:35:179 UTC]Installing a dependent feature ...
+#13 19.78 <====================-> 91.00%
+#13 19.81 [10/22/26, 9:45:35:205 UTC]Validating installed fixes ...
+#13 19.81 <====================-> 91.00%
+#13 19.81 [10/22/26, 9:45:35:205 UTC]No fix is required to be reapplied.
+#13 19.81 <====================-> 91.00%
+#13 19.81 [10/22/26, 9:45:35:205 UTC]Cleaning up temporary files ...
+#13 19.81 <====================-> 91.00%
+#13 19.81 [10/22/26, 9:45:35:205 UTC]Successfully completed cleaning up temporary files.
+#13 19.81 <====================-> 91.00%
+#13 19.81 [10/22/26, 9:45:35:205 UTC]Installation completed
+#13 19.81 <====================-> 91.00%
+#13 19.81 <====================-> 92.00%
+#13 19.81 [10/22/26, 9:45:35:206 UTC]Installing com.ibm.websphere.appserver.jaxrs.common-2.0 ...
+#13 19.81 <====================-> 92.00%
+#13 19.81 [10/22/26, 9:45:35:206 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.jaxrs.common-2.0/24.0.0.12/com.ibm.websphere.appserver.jaxrs.common-2.0-24.0.0.12.esa.
+#13 19.81 <====================-> 92.00%
+#13 19.81 [10/22/26, 9:45:35:207 UTC]Starting installation ...
+#13 19.81 <====================-> 92.00%
+#13 19.81 [10/22/26, 9:45:35:207 UTC]Checking features ...
+#13 19.81 <====================-> 92.00%
+#13 19.81 [10/22/26, 9:45:35:208 UTC]Installing a dependent feature ...
+#13 19.81 <====================-> 92.00%
+#13 19.88 [10/22/26, 9:45:35:271 UTC]Validating installed fixes ...
+#13 19.88 <====================-> 92.00%
+#13 19.88 [10/22/26, 9:45:35:271 UTC]No fix is required to be reapplied.
+#13 19.88 <====================-> 92.00%
+#13 19.88 [10/22/26, 9:45:35:271 UTC]Setting scripts permission ...
+#13 19.88 <====================-> 92.00%
+#13 19.88 [10/22/26, 9:45:35:275 UTC]Cleaning up temporary files ...
+#13 19.88 <====================-> 92.00%
+#13 19.88 [10/22/26, 9:45:35:275 UTC]Successfully completed cleaning up temporary files.
+#13 19.88 <====================-> 92.00%
+#13 19.88 [10/22/26, 9:45:35:275 UTC]Installation completed
+#13 19.88 <====================-> 92.00%
+#13 19.88 <====================-> 93.00%
+#13 19.88 [10/22/26, 9:45:35:275 UTC]Installing com.ibm.websphere.appserver.internal.jaxrs-2.0 ...
+#13 19.88 <====================-> 93.00%
+#13 19.88 [10/22/26, 9:45:35:276 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/com.ibm.websphere.appserver.internal.jaxrs-2.0/24.0.0.12/com.ibm.websphere.appserver.internal.jaxrs-2.0-24.0.0.12.esa.
+#13 19.88 <====================-> 93.00%
+#13 19.88 [10/22/26, 9:45:35:276 UTC]Starting installation ...
+#13 19.88 <====================-> 93.00%
+#13 19.88 [10/22/26, 9:45:35:277 UTC]Checking features ...
+#13 19.88 <====================-> 93.00%
+#13 19.88 [10/22/26, 9:45:35:277 UTC]Installing a dependent feature ...
+#13 19.88 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:333 UTC]Validating installed fixes ...
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:333 UTC]No fix is required to be reapplied.
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:334 UTC]Setting scripts permission ...
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:337 UTC]Cleaning up temporary files ...
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:337 UTC]Successfully completed cleaning up temporary files.
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:337 UTC]Installation completed
+#13 19.94 <====================-> 93.00%
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:337 UTC]Installing jaxrsClient-2.0 ...
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:338 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/jaxrsClient-2.0/24.0.0.12/jaxrsClient-2.0-24.0.0.12.esa.
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:338 UTC]Starting installation ...
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:338 UTC]Checking features ...
+#13 19.94 <====================-> 93.00%
+#13 19.94 [10/22/26, 9:45:35:339 UTC]Installing jaxrsClient-2.0 ...
+#13 19.94 <====================-> 93.00%
+#13 19.95 [10/22/26, 9:45:35:344 UTC]Successfully installed feature Java RESTful Services Client 2.0.
+#13 19.95 <====================-> 93.00%
+#13 19.97 [10/22/26, 9:45:35:364 UTC]Validating installed fixes ...
+#13 19.97 <====================-> 93.00%
+#13 19.97 [10/22/26, 9:45:35:364 UTC]No fix is required to be reapplied.
+#13 19.97 <====================-> 93.00%
+#13 19.97 [10/22/26, 9:45:35:365 UTC]Cleaning up temporary files ...
+#13 19.97 <====================-> 93.00%
+#13 19.97 [10/22/26, 9:45:35:365 UTC]Successfully completed cleaning up temporary files.
+#13 19.97 <====================-> 93.00%
+#13 19.97 [10/22/26, 9:45:35:365 UTC]Installation completed
+#13 19.97 <====================-> 93.00%
+#13 19.97 [10/22/26, 9:45:35:366 UTC]Successfully installed feature jaxrsClient-2.0.
+#13 19.97 <====================-> 94.00%
+#13 19.97 [10/22/26, 9:45:35:366 UTC]Installing jaxrs-2.0 ...
+#13 19.97 <====================-> 94.00%
+#13 19.97 [10/22/26, 9:45:35:366 UTC]CWWKF1300I: Installing the following features: /root/.m2/repository/io/openliberty/features/jaxrs-2.0/24.0.0.12/jaxrs-2.0-24.0.0.12.esa.
+#13 19.97 <====================-> 94.00%
+#13 19.97 [10/22/26, 9:45:35:367 UTC]Starting installation ...
+#13 19.97 <====================-> 94.00%
+#13 19.97 [10/22/26, 9:45:35:367 UTC]Checking features ...
+#13 19.97 <====================-> 94.00%
+#13 19.97 [10/22/26, 9:45:35:368 UTC]Installing jaxrs-2.0 ...
+#13 19.97 <====================-> 94.00%
+#13 19.98 [10/22/26, 9:45:35:373 UTC]Successfully installed feature Java RESTful Services 2.0.
+#13 19.98 <====================-> 94.00%
+#13 20.00 [10/22/26, 9:45:35:393 UTC]Validating installed fixes ...
+#13 20.00 <====================-> 94.00%
+#13 20.00 [10/22/26, 9:45:35:393 UTC]No fix is required to be reapplied.
+#13 20.00 <====================-> 94.00%
+#13 20.00 [10/22/26, 9:45:35:394 UTC]Cleaning up temporary files ...
+#13 20.00 <====================-> 94.00%
+#13 20.00 [10/22/26, 9:45:35:394 UTC]Successfully completed cleaning up temporary files.
+#13 20.00 <====================-> 94.00%
+#13 20.00 [10/22/26, 9:45:35:394 UTC]Installation completed
+#13 20.00 <====================-> 94.00%
+#13 20.00 [10/22/26, 9:45:35:394 UTC]Successfully installed feature jaxrs-2.0.
+#13 20.00 <====================-> 95.00%
+#13 20.00 [10/22/26, 9:45:35:395 UTC]All features were successfully installed.
+#13 20.00 <====================-> 95.00%
+#13 20.00 <====================-> 100.00%
+#13 20.00 [10/22/26, 9:45:35:395 UTC]Successfully completed cleaning up temporary files.
+#13 20.00 <====================-> 100.00%
+#13 20.00 
+#13 20.01 [10/22/26, 9:45:35:400 UTC]Start product validation...
+#13 20.17 [10/22/26, 9:45:35:566 UTC]Product validation completed successfully.
+#13 DONE 20.2s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 1.9s done
+#14 exporting manifest sha256:7a16fad869f213433e8c08ec47e6aea21de30cac66ace3864fd4d8ef2af77ee3 0.0s done
+#14 exporting config sha256:873a8b75b0f0399b892a4e43c60715e8fefbd533c85d5a2743982396ed2d483d 0.0s done
+#14 exporting attestation manifest sha256:f5772efd1c5c9fccd34ea866ea405326f462c6bb4cb849f1f39c0b5de581ce32 0.0s done
+#14 exporting manifest list sha256:322eab864127e33eded796bd6c675c22f802661668dafcc3626773e38cb9a2b0 0.0s done
+#14 naming to docker.io/library/bookinfo-reviews:original done
+#14 unpacking to docker.io/library/bookinfo-reviews:original
+#14 unpacking to docker.io/library/bookinfo-reviews:original 0.3s done
+#14 DONE 2.3s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/sr3bn64anatdaa376xhqk4qx7
+Total Build Time: 52.76 seconds

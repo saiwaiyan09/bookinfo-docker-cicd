@@ -1,0 +1,75 @@
+# syntax=docker/dockerfile:1
+
+# ==========================================
+# Stage 1: Build and Test
+# ==========================================
+FROM python:3.13-slim AS builder
+
+WORKDIR /build
+
+# Create a virtual environment
+RUN python -m venv /opt/venv
+
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Install production dependencies
+COPY requirements.txt ./
+
+RUN pip install \
+    --no-cache-dir \
+    --require-hashes \
+    -r requirements.txt
+
+# Install testing dependencies
+COPY test-requirements.txt ./
+
+RUN pip install \
+    --no-cache-dir \
+    --require-hashes \
+    -r test-requirements.txt
+
+# Copy application files for testing
+COPY productpage.py ./
+COPY tests/unit/ ./
+COPY templates ./templates
+COPY static ./static
+
+# Execute unit tests during build
+RUN python -m unittest discover
+
+
+# ==========================================
+# Stage 2: Production Runtime
+# ==========================================
+FROM python:3.13-slim AS runtime
+
+WORKDIR /opt/microservices
+
+# Create a clean runtime environment
+RUN python -m venv /opt/venv
+
+ENV PATH="/opt/venv/bin:$PATH"
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Install only production dependencies
+COPY requirements.txt ./
+
+RUN pip install \
+    --no-cache-dir \
+    --require-hashes \
+    -r requirements.txt
+
+# Copy application files
+COPY productpage.py ./
+COPY templates ./templates
+COPY static ./static
+
+ARG flood_factor=0
+ENV FLOOD_FACTOR=${flood_factor}
+
+EXPOSE 9080
+
+USER 1000
+
+CMD ["gunicorn", "-b", "[::]:9080", "productpage:app", "-w", "8", "--keep-alive", "2", "-k", "gevent"]

@@ -1,0 +1,108 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.01kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ruby:3.4.3-slim
+#2 ...
+
+#3 [auth] library/ruby:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ruby:3.4.3-slim
+#2 DONE 4.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 6.33kB done
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/ruby:3.4.3-slim@sha256:bf1ae63808063b7c3ba614d7e2e290011812ebffb7fd773f5ac4081d0c88538a
+#6 resolve docker.io/library/ruby:3.4.3-slim@sha256:bf1ae63808063b7c3ba614d7e2e290011812ebffb7fd773f5ac4081d0c88538a 0.0s done
+#6 DONE 0.2s
+
+#6 [1/5] FROM docker.io/library/ruby:3.4.3-slim@sha256:bf1ae63808063b7c3ba614d7e2e290011812ebffb7fd773f5ac4081d0c88538a
+#6 sha256:b0fbf0c81f0cc84f490b75a243af01d371970efed13c68245152cb9c1f8d07a2 0B / 142B 0.2s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 0B / 41.35MB 0.2s
+#6 sha256:956798033913b36e678f776731db94a64d1425011adef2eb2724361f4e3c2121 0B / 188B 0.2s
+#6 sha256:500fab38b4fc9c5ad310cbe7cf60eaa8acd5059d067f48359c56bdb041215038 0B / 3.50MB 0.2s
+#6 sha256:b0fbf0c81f0cc84f490b75a243af01d371970efed13c68245152cb9c1f8d07a2 142B / 142B 0.3s done
+#6 sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 0B / 28.23MB 0.2s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 5.24MB / 41.35MB 0.8s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 13.27MB / 41.35MB 0.9s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 19.92MB / 41.35MB 1.1s
+#6 sha256:956798033913b36e678f776731db94a64d1425011adef2eb2724361f4e3c2121 188B / 188B 0.9s done
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 24.12MB / 41.35MB 1.2s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 27.26MB / 41.35MB 1.4s
+#6 sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 4.19MB / 28.23MB 0.9s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 30.41MB / 41.35MB 1.5s
+#6 sha256:500fab38b4fc9c5ad310cbe7cf60eaa8acd5059d067f48359c56bdb041215038 1.05MB / 3.50MB 1.4s
+#6 sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 8.39MB / 28.23MB 1.1s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 33.55MB / 41.35MB 1.7s
+#6 sha256:500fab38b4fc9c5ad310cbe7cf60eaa8acd5059d067f48359c56bdb041215038 2.10MB / 3.50MB 1.5s
+#6 sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 13.49MB / 28.23MB 1.2s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 36.70MB / 41.35MB 1.8s
+#6 sha256:500fab38b4fc9c5ad310cbe7cf60eaa8acd5059d067f48359c56bdb041215038 3.50MB / 3.50MB 1.7s done
+#6 sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 17.83MB / 28.23MB 1.4s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 39.85MB / 41.35MB 2.0s
+#6 sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 24.12MB / 28.23MB 1.5s
+#6 sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 41.35MB / 41.35MB 2.0s done
+#6 sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 28.23MB / 28.23MB 1.6s done
+#6 extracting sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659
+#6 extracting sha256:254e724d77862dc53abbd3bf0e27f9d2f64293909cdd3d0aad6a8fe5a6680659 1.1s done
+#6 DONE 3.4s
+
+#6 [1/5] FROM docker.io/library/ruby:3.4.3-slim@sha256:bf1ae63808063b7c3ba614d7e2e290011812ebffb7fd773f5ac4081d0c88538a
+#6 extracting sha256:500fab38b4fc9c5ad310cbe7cf60eaa8acd5059d067f48359c56bdb041215038
+#6 extracting sha256:500fab38b4fc9c5ad310cbe7cf60eaa8acd5059d067f48359c56bdb041215038 0.2s done
+#6 DONE 3.5s
+
+#6 [1/5] FROM docker.io/library/ruby:3.4.3-slim@sha256:bf1ae63808063b7c3ba614d7e2e290011812ebffb7fd773f5ac4081d0c88538a
+#6 extracting sha256:956798033913b36e678f776731db94a64d1425011adef2eb2724361f4e3c2121 0.0s done
+#6 extracting sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3
+#6 extracting sha256:c2fb3569a8b30e748c967d82769e74753f0784dcd7a8e232e64b1ad8b01df1a3 1.1s done
+#6 DONE 4.7s
+
+#6 [1/5] FROM docker.io/library/ruby:3.4.3-slim@sha256:bf1ae63808063b7c3ba614d7e2e290011812ebffb7fd773f5ac4081d0c88538a
+#6 extracting sha256:b0fbf0c81f0cc84f490b75a243af01d371970efed13c68245152cb9c1f8d07a2 0.0s done
+#6 DONE 4.7s
+
+#7 [2/5] WORKDIR /opt/microservices
+#7 DONE 0.9s
+
+#8 [3/5] COPY Gemfile Gemfile.lock /opt/microservices/
+#8 DONE 0.1s
+
+#9 [4/5] RUN bundle install
+#9 0.592 Bundler 2.6.7 is running, but your lockfile was generated with 2.5.3. Installing Bundler 2.5.3 and restarting using that version.
+#9 4.212 Fetching gem metadata from https://rubygems.org/.
+#9 4.584 Fetching bundler 2.5.3
+#9 4.745 Installing bundler 2.5.3
+#9 6.147 Fetching gem metadata from https://rubygems.org/.
+#9 6.225 Fetching webrick 1.8.2
+#9 6.342 Installing webrick 1.8.2
+#9 6.384 Bundle complete! 1 Gemfile dependency, 2 gems now installed.
+#9 6.384 Use `bundle info [gemname]` to see where a bundled gem is installed.
+#9 DONE 6.4s
+
+#10 [5/5] COPY details.rb /opt/microservices/
+#10 DONE 0.1s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 1.3s done
+#11 exporting manifest sha256:f4b0867f9b22b306ea5f0e10bf5d33b3d3886f89df80a22438adfbab5ac20f16 0.0s done
+#11 exporting config sha256:657f60c7c54754384f72491a4884841a544c2fe6f5f02d47cd94826190c71534 0.0s done
+#11 exporting attestation manifest sha256:5d1b51021c78f3fdf156b66adbaf1c4da92d3638e9006428676c65c19743c6ae 0.0s done
+#11 exporting manifest list sha256:1b145493fd3e258240cb52fd4b9f51a30960315e5849618dee5bf946783276a1 0.0s done
+#11 naming to docker.io/library/bookinfo-details:original done
+#11 unpacking to docker.io/library/bookinfo-details:original
+#11 unpacking to docker.io/library/bookinfo-details:original 0.2s done
+#11 DONE 1.6s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ob6xvjpiuadpb12qh6ys9ell5
+Total Build Time: 18.63 seconds

@@ -1,0 +1,44 @@
+# syntax=docker/dockerfile:1
+
+# ==========================================
+# Stage 1: Dependencies
+# ==========================================
+FROM ruby:3.4-slim AS builder
+
+WORKDIR /opt/microservices
+
+ENV BUNDLE_PATH=/usr/local/bundle \
+    BUNDLE_FROZEN=true
+
+COPY Gemfile Gemfile.lock ./
+
+RUN bundle install && \
+    rm -rf /usr/local/bundle/cache
+
+
+# ==========================================
+# Stage 2: Runtime
+# ==========================================
+FROM ruby:3.4-slim AS runtime
+
+WORKDIR /opt/microservices
+
+ENV BUNDLE_PATH=/usr/local/bundle \
+    BUNDLE_FROZEN=true
+
+COPY --from=builder /usr/local/bundle /usr/local/bundle
+
+COPY Gemfile Gemfile.lock ./
+COPY details.rb ./
+
+ARG service_version
+ENV SERVICE_VERSION=${service_version:-v1}
+
+ARG enable_external_book_service
+ENV ENABLE_EXTERNAL_BOOK_SERVICE=${enable_external_book_service:-false}
+
+EXPOSE 9080
+
+USER 1000
+
+CMD ["ruby", "details.rb", "9080"]

@@ -1,0 +1,44 @@
+# ===================================
+# Excluded Bookinfo Components
+# ===================================
+mongodb/
+mysql/
+note.coffee
+
+# ===================================
+# Secrets and Environment Variables
+# ===================================
+.env
+.env.*
+*.pem
+*.key
+
+# ===================================
+# Python
+# ===================================
+__pycache__/
+*.pyc
+.venv/
+
+# ===================================
+# Node.js
+# ===================================
+node_modules/
+npm-debug.log*
+
+# ===================================
+# Gradle / Java
+# ===================================
+.gradle/
+**/build/
+*.class
+
+# ===================================
+# Editors and OS
+# ===================================
+.vscode/
+.idea/
+.DS_Store
+
+note.coffee
+benchmarks/productpage/ubuntu-build.log

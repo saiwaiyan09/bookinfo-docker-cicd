@@ -1,0 +1,76 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.optimized
+#1 transferring dockerfile: 966B done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 ...
+
+#3 [auth] docker/dockerfile:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 2.6s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#4 CACHED
+
+#5 [internal] load metadata for docker.io/library/ruby:3.4-slim
+#5 DONE 1.0s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 90B done
+#7 DONE 0.0s
+
+#8 [builder 1/4] FROM docker.io/library/ruby:3.4-slim@sha256:a1e521f7710a59431695c0628de8ffdbbceec17065a217bd67b59343d4d17b22
+#8 resolve docker.io/library/ruby:3.4-slim@sha256:a1e521f7710a59431695c0628de8ffdbbceec17065a217bd67b59343d4d17b22 0.0s done
+#8 DONE 0.0s
+
+#9 [builder 2/4] WORKDIR /opt/microservices
+#9 CACHED
+
+#10 [builder 3/4] COPY Gemfile Gemfile.lock ./
+#10 DONE 0.0s
+
+#11 [builder 4/4] RUN bundle install &&     rm -rf /usr/local/bundle/cache
+#11 0.592 Bundler 2.6.9 is running, but your lockfile was generated with 2.5.3. Installing Bundler 2.5.3 and restarting using that version.
+#11 3.442 Fetching gem metadata from https://rubygems.org/.
+#11 3.588 Fetching bundler 2.5.3
+#11 3.893 Installing bundler 2.5.3
+#11 7.251 Fetching gem metadata from https://rubygems.org/.
+#11 7.655 Fetching webrick 1.8.2
+#11 7.840 Installing webrick 1.8.2
+#11 7.870 Bundle complete! 1 Gemfile dependency, 2 gems now installed.
+#11 7.870 Bundled gems are installed into `/usr/local/bundle`
+#11 DONE 8.0s
+
+#12 [runtime 3/5] COPY --from=builder /usr/local/bundle /usr/local/bundle
+#12 DONE 0.1s
+
+#13 [runtime 4/5] COPY Gemfile Gemfile.lock ./
+#13 DONE 0.1s
+
+#14 [runtime 5/5] COPY details.rb ./
+#14 DONE 0.1s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.4s done
+#15 exporting manifest sha256:15f10a8275736d457a7ec1062f6500e12e80c2c88860d650622f978da5dcd526 0.0s done
+#15 exporting config sha256:64f5c590af06bd0e69e2d55e5d7a5f64689b9918b6390e85df1732c8668a111d 0.0s done
+#15 exporting attestation manifest sha256:f8a3b8ae3c030f18461f6c1e3df86d733ae34e946f141bbeb39ee767cb71f22f 0.0s done
+#15 exporting manifest list sha256:e6513984484d8a080e6b2ff9e3f5331b3d3e7f45d3548ee25559437a83dc1c10 0.0s done
+#15 naming to docker.io/library/bookinfo-details:optimized
+#15 naming to docker.io/library/bookinfo-details:optimized done
+#15 unpacking to docker.io/library/bookinfo-details:optimized
+#15 unpacking to docker.io/library/bookinfo-details:optimized 0.2s done
+#15 DONE 0.8s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/kowyzfedme34fwbc0ulkwhw8q
+Total Build Time: 13.55 seconds
