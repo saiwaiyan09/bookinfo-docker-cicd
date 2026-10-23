@@ -59,6 +59,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
+        id: build
         uses: docker/build-push-action@v7
         with:
           context: ./${{ matrix.service }}
@@ -68,6 +69,37 @@ jobs:
           tags: saiwaiyan09/bookinfo-${{ matrix.service }}:${{ matrix.version }}
           cache-from: type=gha,scope=${{ matrix.service }}-${{ matrix.version }}
           cache-to: type=gha,mode=max,scope=${{ matrix.service }}-${{ matrix.version }}
+      
+      - name: Inspect published image size
+        if: github.event_name != 'pull_request'
+        shell: bash
+        env:
+          IMAGE: saiwaiyan09/bookinfo-${{ matrix.service }}:${{ matrix.version }}
+          DIGEST: ${{ steps.build.outputs.digest }}
+        run: |
+          set -euo pipefail
+
+          docker buildx imagetools inspect \
+            "$IMAGE@$DIGEST" --raw > index.json
+
+          MANIFEST_DIGEST=$(jq -r '
+            [.manifests[] |
+              select(.platform.os == "linux" and
+                     .platform.architecture == "amd64") |
+              .digest][0]
+          ' index.json)
+
+          docker buildx imagetools inspect \
+            "$IMAGE@$MANIFEST_DIGEST" --raw > image-manifest.json
+
+          SIZE_BYTES=$(jq '[.layers[].size] | add' image-manifest.json)
+
+          SIZE_MB=$(awk -v bytes="$SIZE_BYTES" \
+            'BEGIN {printf "%.2f", bytes/1000000}')
+
+          echo "IMAGE_SIZE_MB=$SIZE_MB" >> "$GITHUB_ENV"
+
+          echo "Compressed image layer size: ${SIZE_MB} MB"
 
       - name: Write build summary
         if: success()
@@ -77,3 +109,5 @@ jobs:
           echo "- Version: ${{ matrix.version }}" >> "$GITHUB_STEP_SUMMARY"
           echo "- Platform: linux/amd64" >> "$GITHUB_STEP_SUMMARY"
           echo "- Published: ${{ github.event_name != 'pull_request' }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Image digest: ${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Compressed image size: ${IMAGE_SIZE_MB:-N/A} MB" >> "$GITHUB_STEP_SUMMARY"
